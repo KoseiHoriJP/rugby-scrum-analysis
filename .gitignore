@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+data/raw/
+data/processed/
+artifacts/*
+!artifacts/Rugby_Scrum_Phase_Pilot_v1.zip
+!artifacts/Rugby_Scrum_Dataset_Tools_v1.zip
+!artifacts/SHA256SUMS
+.venv/
+.DS_Store

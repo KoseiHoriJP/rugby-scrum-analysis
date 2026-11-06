@@ -1,0 +1,5 @@
+{
+  "train": ["ARC_2018_URU_ARGXV"],
+  "validation": ["A1_2010_MIL_CAL"],
+  "test": ["TEST_2025_ITA_CHI"]
+}
