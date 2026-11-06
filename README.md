@@ -5,6 +5,14 @@ The first build preserves 279 sampled frames from five clips / three matches,
 1,378 automatic person detections and 23,426 COCO keypoints. It does **not**
 invent phase labels or treat YOLO estimates as verified human poses.
 
+## Automate new scrum clips
+
+Use [the Mac automatic clipping workflow](docs/AUTOMATIC_CLIPPING.md) to find
+referee Crouch/Bind/Set candidates, confirm each actual scrum ending and camera
+view in a browser, and batch-export clips into `aerial/` and `side/`. Every clip
+starts 15 seconds before Crouch and runs through the reviewed end; there is no
+fixed ten-second cutoff. Optional camera-model suggestions remain unverified.
+
 ## Download
 
 - [Dataset and offline labeling tool (5.2 MB)](https://github.com/KoseiHoriJP/rugby-scrum-analysis/raw/refs/heads/main/artifacts/Rugby_Scrum_Phase_Pilot_v1.zip)

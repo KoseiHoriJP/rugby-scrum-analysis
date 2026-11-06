@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Review detected scrums</title>
+  <style>
+    :root{color-scheme:light;--ink:#173039;--muted:#536970;--line:#cedcda;--accent:#126b5c;--background:#eef4f1;--paper:#fff}
+    *{box-sizing:border-box}body{margin:0;background:var(--background);color:var(--ink);font:16px/1.5 system-ui,sans-serif}main{max-width:1220px;margin:auto;padding:26px 22px 40px}h1{font-size:1.8rem;line-height:1.2;margin:0 0 8px}h2{font-size:1rem;margin:0 0 12px}p{margin:8px 0}.muted{color:var(--muted)}.small{font-size:.88rem}button,input,select,textarea{font:inherit}button,select,textarea{border:1px solid #afc5bf;border-radius:7px;background:var(--paper);color:var(--ink);padding:9px 11px}button{cursor:pointer}button:hover{background:#e6f2eb;border-color:var(--accent)}button:disabled{opacity:.45;cursor:default}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #5fae9c;outline-offset:2px}select{width:100%;max-width:100%}textarea{width:100%;resize:vertical}input[type=checkbox]{accent-color:var(--accent);width:18px;height:18px;vertical-align:middle;margin-right:7px}.card{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:18px}.notice{background:#fff7e7;border-left:4px solid #b67c21;padding:10px 14px;margin:18px 0}.source{margin:18px 0}.source-name{overflow-wrap:anywhere}.file-row{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin:10px 0}.file-row input{max-width:100%}.toolbar{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center;margin:18px 0}.workspace{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(290px,1fr);gap:20px}.video-wrap{min-height:240px;background:#132a2e;border-radius:8px;display:grid;place-items:center;overflow:hidden}video{display:block;width:100%;max-height:440px}.placeholder{padding:26px;color:#e6f0ed;text-align:center}.controls{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.primary{background:var(--accent);border-color:var(--accent);color:white}.primary:hover{background:#0d5548;color:white}.facts{display:grid;grid-template-columns:auto 1fr;gap:7px 15px;margin:14px 0;font-variant-numeric:tabular-nums}.facts dt{color:var(--muted)}.facts dd{margin:0}.status{display:inline-block;background:#fff3db;border:1px solid #d8bd85;padding:5px 10px;border-radius:6px;margin:0 0 12px}.status.reviewed{background:#e0f2e7;border-color:#8cbca1;color:#155f44}.status.excluded{background:#eef0f0;border-color:#bdcaca;color:#5c6b70}.field{display:grid;gap:6px;margin:14px 0}.hash{font:12px/1.5 ui-monospace,monospace;overflow-wrap:anywhere}.message{min-height:26px;color:#145d4c;margin:14px 0}.message.error{color:#a12424}.progress{margin-top:18px;border-top:1px solid var(--line);padding-top:14px}progress{width:100%;height:12px;accent-color:var(--accent)}footer{margin-top:20px}.hidden-file{display:none}[hidden]{display:none!important}
+    @media(max-width:800px){main{padding:20px 14px}.workspace{grid-template-columns:1fr}.toolbar{grid-template-columns:auto 1fr auto}.toolbar button{font-size:.85rem;padding:9px 8px}}
+  </style>
+</head>
+<body>
+<main>
+  <h1>Review detected scrums</h1>
+  <p class="muted">Check proposed Crouch–Bind–Set detections, mark the actual ending, and confirm the camera view.</p>
+  <div class="notice small"><strong>Detection proposals need review.</strong> Speech recognition can mistake commentary for referee calls. No actual scrum ending has been inferred. Mixed or unknown views remain held for review.</div>
+  <section class="card source" aria-label="Select original match video">
+    <h2>1. Open the same video that was scanned</h2>
+    <p id="source-description" class="source-name"></p>
+    <div class="file-row"><input id="video-file" type="file" accept="video/*" aria-label="Choose original match video"><span id="source-status" class="small muted">No video selected.</span></div>
+    <p class="small muted">The video stays on your computer. Its filename and duration are checked; its contents are not rehashed here. Use the original scanned file.</p>
+    <details class="small muted"><summary>Scanned source fingerprint</summary><p id="source-hash" class="hash"></p></details>
+  </section>
+  <div class="toolbar">
+    <button id="previous" type="button">← Previous</button>
+    <select id="event-picker" aria-label="Detected scrum event"></select>
+    <button id="next" type="button">Next →</button>
+  </div>
+  <div class="workspace">
+    <section class="card" aria-label="Video context and cue times">
+      <div class="video-wrap"><video id="video" controls preload="metadata" playsinline hidden></video><p id="video-placeholder" class="placeholder">Choose the original video above to inspect the proposed events.</p></div>
+      <p id="playhead" class="small muted">Playhead: unavailable</p>
+      <div class="controls">
+        <button id="seek-start" type="button">Start (Crouch − 15 s)</button>
+        <button id="seek-crouch" type="button">Crouch</button>
+        <button id="seek-bind" type="button">Bind</button>
+        <button id="seek-set" type="button">Set</button>
+        <button id="seek-end" type="button">Marked end</button>
+        <button id="play-context" type="button">▶ Play from start</button>
+      </div>
+      <dl class="facts small"><dt>Clip start</dt><dd id="start-time"></dd><dt>Detected cues</dt><dd id="cue-times"></dd><dt>Actual end</dt><dd id="end-time"></dd><dt>Clip duration</dt><dd id="clip-duration"></dd></dl>
+      <p class="small muted">Watch beyond Set until the scrum actually ends. Pause there, then use “Set end here”. An ending is never assigned as a fixed delay after Set.</p>
+    </section>
+    <section class="card" aria-label="Review decisions">
+      <h2>2. Review this detection</h2>
+      <p id="event-status" class="status">Needs review</p>
+      <label><input id="include" type="checkbox" checked>Include this scrum</label>
+      <p class="small muted">Uncheck to reject a false detection. Excluded records stay in the exported JSON.</p>
+      <div class="controls"><button id="set-end" type="button">Set end here</button><button id="clear-end" type="button">Clear end</button></div>
+      <label class="field" for="camera-view">Camera view<select id="camera-view"><option value="unknown">Unknown — hold</option><option value="aerial">Aerial</option><option value="side">Side</option><option value="mixed">Mixed — hold</option></select></label>
+      <p id="view-suggestion" class="small muted"></p>
+      <details id="suggestion-details" class="small muted" hidden><summary>View suggestion details</summary><pre id="suggestion-json" style="white-space:pre-wrap;overflow-wrap:anywhere"></pre></details>
+      <p class="small muted">Use aerial for a clear overhead view, side for a sideline or side-oblique view. Changing views within the retained interval should be marked mixed. A model suggestion is not a verified label.</p>
+      <label class="field" for="notes">Notes<textarea id="notes" rows="3" maxlength="2000" placeholder="False detection, obscured ending, camera cuts, or review notes"></textarea></label>
+      <button id="mark-reviewed" class="primary" type="button">Confirm end and view reviewed</button>
+      <p id="review-help" class="small muted"></p>
+      <div class="progress"><progress id="progress" max="1" value="0"></progress><p id="progress-text" class="small"></p><div class="controls"><button id="export-json" class="primary" type="button">Save reviewed events (JSON)</button><button id="import-json" type="button">Resume from JSON</button><input id="import-file" class="hidden-file" type="file" accept=".json,application/json" aria-label="Import event review JSON"></div></div>
+      <p class="small muted"><strong>Save before closing.</strong> Changes are held in this tab and disappear on reload. Keep the exported JSON and use it for the separate clip export step.</p>
+    </section>
+  </div>
+  <p id="message" class="message" role="status" aria-live="polite"></p>
+  <footer class="small muted">Reviewing does not train a model or turn its suggestions into ground truth. Only explicitly confirmed events with an actual end and an aerial or side view are ready for the clip export step.</footer>
+</main>
+<script type="application/json" id="scrum-events-data">__SCRUM_EVENTS_JSON__</script>
+<script>
+"use strict";
+(() => {
+  const $ = id => document.getElementById(id);
+  const say = (message, error = false) => { $("message").textContent = message; $("message").classList.toggle("error", error); };
+  const finite = number => typeof number === "number" && Number.isFinite(number);
+  const views = new Set(["aerial", "side", "mixed", "unknown"]);
+  const knownViews = new Set(["aerial", "side"]);
+  const requiredFields = ["event_id", "crouch_s", "bind_s", "set_s", "start_s", "end_s", "end_status", "camera_view", "view_status", "include", "notes"];
+  const clone = object => JSON.parse(JSON.stringify(object));
+  function validSuggestion(value) {
+    if (!value || typeof value !== "object" || Array.isArray(value) || JSON.stringify(value).length > 10000) return false;
+    const walk = (item, depth = 0) => {
+      if (depth > 12) return false;
+      if (item === null || typeof item === "string" || typeof item === "boolean") return true;
+      if (typeof item === "number") return Number.isFinite(item);
+      if (Array.isArray(item)) return item.every(child => walk(child, depth + 1));
+      if (typeof item === "object") return Object.values(item).every(child => walk(child, depth + 1));
+      return false;
+    };
+    return walk(value);
+  }
+  let original;
+  let events;
+  let baseline;
+  let position = 0;
+  let videoURL = null;
+  let fileMatches = false;
+  let pendingSeek = null;
+  let unsaved = false;
+  const video = $("video");
+
+  function validateRecord(row, source, expected = null) {
+    if (!row || typeof row !== "object" || Array.isArray(row) || requiredFields.some(field => !Object.hasOwn(row, field))) throw new Error("An event is missing required fields.");
+    if (typeof row.event_id !== "string" || !row.event_id || row.event_id.length > 200) throw new Error("An event has an invalid ID.");
+    if (![row.crouch_s, row.bind_s, row.set_s, row.start_s].every(finite) || !(0 <= row.start_s && row.start_s <= row.crouch_s && row.crouch_s < row.bind_s && row.bind_s < row.set_s && row.set_s < source.duration_s)) throw new Error("An event has invalid cue times or bounds.");
+    if (Math.abs(row.start_s - Math.max(0, row.crouch_s - 15)) > 0.001) throw new Error("An event start does not equal Crouch minus 15 seconds (clamped to zero).");
+    if (row.end_s !== null && (!finite(row.end_s) || row.end_s <= row.set_s || row.end_s > source.duration_s)) throw new Error("An event ending must follow Set and stay inside the source video.");
+    if (!["needs_review", "reviewed"].includes(row.end_status) || !["unverified", "reviewed"].includes(row.view_status) || !views.has(row.camera_view)) throw new Error("An event has an unsupported review status or camera view.");
+    if (row.end_status === "reviewed" && row.end_s === null) throw new Error("A reviewed ending must have an actual end time.");
+    if (row.view_status === "reviewed" && !knownViews.has(row.camera_view)) throw new Error("Mixed or unknown views cannot be marked reviewed.");
+    if (typeof row.include !== "boolean" || typeof row.notes !== "string" || row.notes.length > 2000) throw new Error("An event has invalid include or notes fields.");
+    if (Object.hasOwn(row, "view_suggestion") && !validSuggestion(row.view_suggestion)) throw new Error("An event has an invalid model view suggestion.");
+    if (expected) {
+      if (Object.keys(row).some(field => !Object.hasOwn(expected, field) && field !== "view_suggestion")) throw new Error("An event contains unexpected fields.");
+      for (const field of ["event_id", "crouch_s", "bind_s", "set_s", "start_s"]) if (row[field] !== expected[field]) throw new Error("An imported event changes the original event ID or detected cue times.");
+      for (const field of Object.keys(expected)) {
+        if (!requiredFields.includes(field) && field !== "view_suggestion" && JSON.stringify(row[field]) !== JSON.stringify(expected[field])) throw new Error("An import changes scan metadata.");
+      }
+    }
+    return clone(row);
+  }
+
+  try {
+    original = JSON.parse($("scrum-events-data").textContent);
+    const source = original.source;
+    if (original.schema_version !== 1 || !source || typeof source.filename !== "string" || !source.filename || !/^[a-fA-F0-9]{64}$/.test(source.sha256 || "") || !finite(source.duration_s) || source.duration_s <= 0 || !Array.isArray(original.events)) throw new Error("Invalid scan metadata.");
+    const ids = new Set();
+    events = original.events.map(row => {
+      const validated = validateRecord(row, source);
+      if (ids.has(row.event_id)) throw new Error("Duplicate event ID in scan metadata.");
+      ids.add(row.event_id);
+      return validated;
+    });
+    baseline = new Map(original.events.map(row => [row.event_id, row]));
+  } catch (error) { say("Cannot open this review: " + error.message, true); return; }
+
+  const source = original.source;
+  const current = () => events[position];
+  const validEnd = row => finite(row.end_s) && row.end_s > row.set_s && row.end_s <= source.duration_s;
+  const ready = row => row.include && validEnd(row) && knownViews.has(row.camera_view) && row.end_status === "reviewed" && row.view_status === "reviewed";
+  const formatTime = value => {
+    if (!finite(value)) return "not set";
+    const hours = Math.floor(value / 3600), minutes = Math.floor(value % 3600 / 60), seconds = (value % 60).toFixed(3).padStart(6, "0");
+    return (hours ? hours + ":" + String(minutes).padStart(2, "0") : String(minutes)) + ":" + seconds;
+  };
+  const recordState = row => !row.include ? "Excluded" : ready(row) ? "Reviewed" : "Needs review";
+  $("source-description").textContent = source.filename + " · " + formatTime(source.duration_s);
+  $("source-hash").textContent = "SHA-256: " + source.sha256;
+  for (const row of events) {
+    const option = document.createElement("option"); option.value = row.event_id; $("event-picker").append(option);
+  }
+
+  function seekTo(time, play = false) {
+    if (!fileMatches || !finite(time)) return;
+    video.pause();
+    pendingSeek = Math.min(Math.max(0, time), Math.max(0, source.duration_s - 0.001));
+    seekPending();
+    if (play) video.play().catch(() => say("Press play in the video controls to watch the context."));
+  }
+  function seekPending() {
+    if (pendingSeek === null || !fileMatches || video.readyState < 1) return;
+    try { video.currentTime = pendingSeek; pendingSeek = null; } catch (_) { /* Wait for media readiness. */ }
+  }
+  function mediaControls() {
+    const row = current();
+    for (const id of ["seek-start", "seek-crouch", "seek-bind", "seek-set", "play-context", "set-end"]) $(id).disabled = !row || !fileMatches;
+    $("seek-end").disabled = !row || !fileMatches || !validEnd(row);
+    $("mark-reviewed").disabled = !row || !fileMatches || !row.include || !validEnd(row) || !knownViews.has(row.camera_view);
+  }
+  function render() {
+    for (const option of $("event-picker").options) {
+      const row = events.find(event => event.event_id === option.value);
+      option.textContent = row.event_id + " — " + recordState(row);
+    }
+    const row = current();
+    $("previous").disabled = position <= 0;
+    $("next").disabled = position >= events.length - 1;
+    $("event-picker").disabled = !row;
+    for (const id of ["include", "camera-view", "notes", "clear-end"]) $(id).disabled = !row;
+    if (row) {
+      $("event-picker").value = row.event_id;
+      $("include").checked = row.include;
+      $("camera-view").value = row.camera_view;
+      $("notes").value = row.notes;
+      $("event-status").textContent = recordState(row);
+      $("event-status").classList.toggle("reviewed", ready(row));
+      $("event-status").classList.toggle("excluded", !row.include);
+      $("start-time").textContent = formatTime(row.start_s) + " (15 s before detected Crouch, clamped at video start)";
+      $("cue-times").textContent = "Crouch " + formatTime(row.crouch_s) + " · Bind " + formatTime(row.bind_s) + " · Set " + formatTime(row.set_s);
+      $("end-time").textContent = row.end_s === null ? "Not set — inspect and mark the actual ending" : formatTime(row.end_s) + " · " + row.end_status.replaceAll("_", " ");
+      $("clip-duration").textContent = validEnd(row) ? (row.end_s - row.start_s).toFixed(3) + " s" : "Unknown until the actual ending is marked";
+      const suggestion = baseline.get(row.event_id).camera_view;
+      const suggestionText = views.has(row.view_suggestion?.camera_view) ? row.view_suggestion.camera_view : suggestion;
+      $("view-suggestion").textContent = "Scan/model suggestion (unverified): " + suggestionText + ". Current selection: " + row.camera_view + " · " + row.view_status + ".";
+      $("suggestion-details").hidden = !row.view_suggestion;
+      $("suggestion-json").textContent = row.view_suggestion ? JSON.stringify(row.view_suggestion, null, 2) : "";
+      $("clear-end").disabled = row.end_s === null;
+      $("review-help").textContent = !row.include ? "Excluded as a false detection; its record will be kept." : !fileMatches ? "Select the matching scanned video before confirming a review." : !validEnd(row) ? "Pause at the actual scrum ending and set the end time." : !knownViews.has(row.camera_view) ? "Mixed or unknown views remain held. Choose aerial or side only if that describes the entire retained interval." : ready(row) ? "The actual ending and camera view were explicitly confirmed. This event is ready for the clip export step." : "Confirm only after checking both the actual ending and the camera view across the retained interval.";
+    } else {
+      $("event-status").textContent = "No detected scrums";
+      $("review-help").textContent = "No ordered Crouch–Bind–Set candidates were detected in this scan.";
+      say("This scan has no events to review. Check the scan output before continuing.");
+    }
+    const included = events.filter(row => row.include).length;
+    const completed = events.filter(ready).length;
+    $("progress").max = Math.max(1, included);
+    $("progress").value = completed;
+    $("progress-text").textContent = completed + " reviewed and ready · " + (included - completed) + " included but held · " + (events.length - included) + " excluded";
+    mediaControls();
+  }
+  function selectEvent(index) { video.pause(); position = Math.min(Math.max(0, index), events.length - 1); render(); if (current()) seekTo(current().start_s); }
+  function invalidateBoundReview(row) { row.end_status = "needs_review"; row.view_status = "unverified"; }
+  $("event-picker").addEventListener("change", () => selectEvent(events.findIndex(row => row.event_id === $("event-picker").value)));
+  $("previous").addEventListener("click", () => selectEvent(position - 1));
+  $("next").addEventListener("click", () => selectEvent(position + 1));
+  for (const [id, field] of [["seek-start", "start_s"], ["seek-crouch", "crouch_s"], ["seek-bind", "bind_s"], ["seek-set", "set_s"], ["seek-end", "end_s"]]) $(id).addEventListener("click", () => seekTo(current()?.[field]));
+  $("play-context").addEventListener("click", () => seekTo(current()?.start_s, true));
+
+  $("video-file").addEventListener("change", () => {
+    const file = $("video-file").files[0];
+    video.pause(); fileMatches = false; pendingSeek = null;
+    if (videoURL) URL.revokeObjectURL(videoURL);
+    videoURL = null;
+    if (!file) { video.removeAttribute("src"); video.load(); video.hidden = true; $("video-placeholder").hidden = false; $("source-status").textContent = "No video selected."; render(); return; }
+    videoURL = URL.createObjectURL(file);
+    video.src = videoURL;
+    video.hidden = false;
+    $("video-placeholder").hidden = true;
+    $("source-status").textContent = "Checking " + file.name + "…";
+    video.load(); render();
+  });
+  video.addEventListener("loadedmetadata", () => {
+    const file = $("video-file").files[0];
+    if (!file) return;
+    fileMatches = file.name === source.filename && finite(video.duration) && Math.abs(video.duration - source.duration_s) <= 0.5;
+    $("source-status").textContent = fileMatches ? "Filename and duration match the scan. Video stays local." : "This file does not match the scanned filename/duration. Select the original scanned file.";
+    if (!fileMatches) say("Video mismatch: setting an ending and confirming review are disabled.", true);
+    else { say("Video ready. Inspect the candidate calls and mark the actual ending."); if (current()) seekTo(current().start_s); }
+    render();
+  });
+  video.addEventListener("canplay", seekPending);
+  video.addEventListener("timeupdate", () => { $("playhead").textContent = "Playhead: " + formatTime(video.currentTime); });
+  video.addEventListener("error", () => { fileMatches = false; $("source-status").textContent = "This browser could not open the selected video."; say("Video could not be decoded. Select the scanned MP4 in a browser that supports its codec.", true); render(); });
+  $("include").addEventListener("change", () => { current().include = $("include").checked; unsaved = true; render(); });
+  $("camera-view").addEventListener("change", () => { const row = current(); row.camera_view = $("camera-view").value; row.view_status = "unverified"; unsaved = true; render(); });
+  $("notes").addEventListener("input", () => { current().notes = $("notes").value; unsaved = true; });
+  $("set-end").addEventListener("click", () => {
+    const row = current(); if (!row || !fileMatches) return;
+    video.pause();
+    if (video.seeking || video.readyState < 2) { say("Wait for the selected video moment to finish loading, inspect it, then set the end.", true); return; }
+    const time = video.currentTime;
+    if (!finite(time) || time <= row.set_s || time > source.duration_s) { say("The actual ending must be after Set and within the scanned video.", true); return; }
+    row.end_s = Math.round(time * 1000) / 1000;
+    if (!validEnd(row)) { row.end_s = time; }
+    invalidateBoundReview(row); unsaved = true;
+    say("End marked. Confirm the view over the whole retained interval, then explicitly confirm the review."); render();
+  });
+  $("clear-end").addEventListener("click", () => { const row = current(); row.end_s = null; invalidateBoundReview(row); unsaved = true; say("Ending cleared; the event is held for review."); render(); });
+  $("mark-reviewed").addEventListener("click", () => {
+    const row = current();
+    if (!row || !fileMatches || !row.include || !validEnd(row) || !knownViews.has(row.camera_view)) { say("Review requires the matching source video, a valid actual ending, and an aerial or side view.", true); return; }
+    row.end_status = "reviewed"; row.view_status = "reviewed"; unsaved = true;
+    say("Ending and camera view explicitly marked reviewed. Save the JSON before closing."); render();
+  });
+  $("export-json").addEventListener("click", () => {
+    try {
+      for (const row of events) validateRecord(row, source, baseline.get(row.event_id));
+      const content = JSON.stringify({...clone(original), source: clone(source), events: clone(events)}, null, 2) + "\n";
+      const url = URL.createObjectURL(new Blob([content], {type: "application/json"}));
+      const link = document.createElement("a"); link.href = url; link.download = "scrum-events-reviewed.json";
+      document.body.append(link); link.click(); link.remove(); setTimeout(() => URL.revokeObjectURL(url), 1000);
+      unsaved = false; say("JSON download requested. Check that it saved before closing; included events still needing review remain held.");
+    } catch (error) { say("Could not export review: " + error.message, true); }
+  });
+  $("import-json").addEventListener("click", () => $("import-file").click());
+  $("import-file").addEventListener("change", async () => {
+    const file = $("import-file").files[0]; if (!file) return;
+    try {
+      if (file.size > 10 * 1024 * 1024) throw new Error("Review JSON is unexpectedly large (maximum 10 MB).");
+      const incoming = JSON.parse(await file.text());
+      if (!incoming || incoming.schema_version !== 1 || Object.keys(incoming).some(key => !Object.hasOwn(original, key)) || !incoming.source || !Array.isArray(incoming.events)) throw new Error("Expected schema version 1 event review JSON.");
+      for (const key of Object.keys(original)) {
+        if (!["source", "events"].includes(key) && JSON.stringify(incoming[key]) !== JSON.stringify(original[key])) throw new Error("An import changes or omits original scan metadata.");
+      }
+      const sourceKeys = Object.keys(source);
+      if (Object.keys(incoming.source).length !== sourceKeys.length || sourceKeys.some(key => JSON.stringify(incoming.source[key]) !== JSON.stringify(source[key]))) throw new Error("The imported JSON belongs to a different source video or scan.");
+      if (incoming.events.length !== events.length) throw new Error("The import must contain exactly the original event IDs, including excluded events.");
+      const validated = new Map();
+      for (const row of incoming.events) {
+        const expected = row && baseline.get(row.event_id);
+        if (!expected || validated.has(row.event_id)) throw new Error("Unknown or duplicate event ID in import.");
+        validated.set(row.event_id, validateRecord(row, source, expected));
+      }
+      const replacements = events.map(row => validated.get(row.event_id));
+      if (replacements.some(row => !row)) throw new Error("The import omits an original event.");
+      events = replacements; unsaved = true;
+      say("Review imported. All records were validated before replacing this tab's decisions."); render();
+    } catch (error) { say("Import rejected; existing decisions were kept. " + error.message, true); }
+    finally { $("import-file").value = ""; }
+  });
+  window.addEventListener("beforeunload", event => { if (unsaved) { event.preventDefault(); event.returnValue = ""; } });
+  render();
+})();
+</script>
+</body>
+</html>

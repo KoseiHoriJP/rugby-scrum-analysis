@@ -1,0 +1,4 @@
+# Optional; model suggestions still require human review.
+transformers==5.22.1
+torch==2.15.0
+Pillow==13.0.0

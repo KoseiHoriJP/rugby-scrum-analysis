@@ -7,4 +7,8 @@ artifacts/*
 !artifacts/Rugby_Scrum_Dataset_Tools_v1.zip
 !artifacts/SHA256SUMS
 .venv/
+.venv-auto/
+media/
+runs/
+datasets/
 .DS_Store
