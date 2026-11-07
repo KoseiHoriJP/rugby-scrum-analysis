@@ -1,0 +1,319 @@
+{
+  "schema_id": "law19_full_annotation_v1",
+  "status": "annotation_specification_not_app_integration",
+  "source": {
+    "method": "user_supplied_html",
+    "declared_url": "https://passport.world.rugby/laws-of-the-game/laws-by-number/19-scrum/",
+    "sha256": "fbf3f5c31cd2ea7513c390d3fb4c8533cf008d92cc798224873af0037833a07b",
+    "edition_date": null,
+    "independently_fetched": false
+  },
+  "expected_source_coverage": {
+    "major_clauses": 39,
+    "subclauses": 49,
+    "principle": 1,
+    "restart_table_rows": 17,
+    "diagrams_referenced": 3,
+    "videos_referenced": 31,
+    "section_headings": 10
+  },
+  "tables": {
+    "events": {
+      "file": "events.csv",
+      "columns": [
+        "event_id",
+        "episode_id",
+        "attempt_index",
+        "previous_attempt_id",
+        "match_group",
+        "match_date",
+        "competition",
+        "ruleset_id",
+        "law_edition",
+        "trial_context",
+        "source_video_sha256",
+        "source_clip_id",
+        "camera_view",
+        "audio_status",
+        "mark_s",
+        "ready_s",
+        "crouch_s",
+        "bind_s",
+        "set_s",
+        "engagement_s",
+        "ball_feed_s",
+        "first_push_s",
+        "ball_available_s",
+        "use_it_s",
+        "ball_exit_s",
+        "whistle_s",
+        "attempt_end_s",
+        "end_reason_clause",
+        "explanation_end_s",
+        "clip_start_s",
+        "clip_end_s",
+        "context_status",
+        "review_status",
+        "reviewer",
+        "notes"
+      ],
+      "rows_seeded": 0
+    },
+    "teams": {
+      "file": "teams.csv",
+      "columns": [
+        "team_observation_id",
+        "event_id",
+        "team_id",
+        "start_s",
+        "end_s",
+        "players_on_field",
+        "players_in_scrum",
+        "prop_count",
+        "hooker_count",
+        "lock_count",
+        "back_row_count",
+        "reduction_context",
+        "formation_ready_s",
+        "actual_throwing_team",
+        "possession_team",
+        "evidence_ids",
+        "review_status",
+        "reviewer",
+        "notes"
+      ],
+      "rows_seeded": 0
+    },
+    "participants": {
+      "file": "participants.csv",
+      "columns": [
+        "participant_observation_id",
+        "event_id",
+        "participant_id",
+        "team_id",
+        "jersey_number",
+        "role",
+        "start_s",
+        "end_s",
+        "identity_basis",
+        "identity_status",
+        "track_id",
+        "track_review_status",
+        "evidence_ids",
+        "review_status",
+        "reviewer",
+        "notes"
+      ],
+      "rows_seeded": 0
+    },
+    "restarts": {
+      "file": "restarts.csv",
+      "columns": [
+        "restart_id",
+        "event_id",
+        "previous_attempt_id",
+        "restart_time_s",
+        "restart_reason_text",
+        "restart_table_row_id",
+        "reset_reason_clause",
+        "mark_location_reference",
+        "scrum_zone_status",
+        "distance_from_touch_m",
+        "throwing_team_entitlement",
+        "actual_throwing_team",
+        "previous_throwing_team",
+        "non_offending_team",
+        "last_moving_forward_team",
+        "last_possession_team",
+        "last_ball_playing_team",
+        "maul_start_possession_team",
+        "context_status",
+        "evidence_ids",
+        "review_status",
+        "reviewer",
+        "notes"
+      ],
+      "rows_seeded": 0
+    },
+    "observations": {
+      "file": "observations.csv",
+      "columns": [
+        "observation_id",
+        "event_id",
+        "start_s",
+        "end_s",
+        "subject_type",
+        "subject_id",
+        "observation_type",
+        "observed_value_json",
+        "value_unit",
+        "coordinate_frame",
+        "evidence_type",
+        "evidence_path",
+        "evidence_start_s",
+        "evidence_end_s",
+        "observability",
+        "certainty",
+        "review_status",
+        "reviewer",
+        "notes"
+      ],
+      "rows_seeded": 0
+    },
+    "rule_assessments": {
+      "file": "rule_assessments.csv",
+      "columns": [
+        "assessment_id",
+        "event_id",
+        "law_clause",
+        "start_s",
+        "end_s",
+        "applicability_status",
+        "assessment_status",
+        "supporting_observation_ids",
+        "rule_context",
+        "source_law_sha256",
+        "mapping_status",
+        "review_status",
+        "reviewer",
+        "notes"
+      ],
+      "rows_seeded": 0
+    },
+    "decisions": {
+      "file": "decisions.csv",
+      "columns": [
+        "decision_id",
+        "event_id",
+        "decision_index",
+        "decision_time_s",
+        "referee_decision",
+        "awarded_to_team",
+        "offending_team",
+        "offending_player_number",
+        "offending_player_role",
+        "attribution_basis",
+        "referee_reason_verbatim",
+        "reason_speaker",
+        "normalized_reason",
+        "law_source_url",
+        "law_clause",
+        "law_edition",
+        "law_variation",
+        "law_mapping_status",
+        "law_prescribed_sanction",
+        "evidence_ids",
+        "explanation_end_s",
+        "review_status",
+        "reviewer",
+        "notes"
+      ],
+      "rows_seeded": 0
+    }
+  },
+  "vocabularies": {
+    "assessment_status": [
+      "unreviewed",
+      "satisfied",
+      "not_satisfied",
+      "not_observable",
+      "not_applicable"
+    ],
+    "applicability_status": [
+      "applicable",
+      "not_applicable",
+      "unknown"
+    ],
+    "review_status": [
+      "unreviewed",
+      "draft",
+      "reviewed"
+    ],
+    "mapping_status": [
+      "unmapped",
+      "candidate",
+      "reviewed"
+    ],
+    "referee_decision": [
+      "penalty",
+      "free_kick",
+      "scrum_awarded",
+      "reset",
+      "advantage",
+      "play_continues",
+      "other",
+      "unknown"
+    ],
+    "camera_view": [
+      "aerial",
+      "side",
+      "mixed",
+      "unknown"
+    ],
+    "audio_status": [
+      "present",
+      "absent",
+      "unknown"
+    ],
+    "observability": [
+      "observable",
+      "partly_observable",
+      "not_observable",
+      "unreviewed"
+    ],
+    "evidence_type": [
+      "applicable_ruleset",
+      "audio",
+      "calibrated_pitch_geometry",
+      "match_context",
+      "match_metadata",
+      "multi_angle_video",
+      "official_reference_context",
+      "preceding_play_video",
+      "referee_audio",
+      "referee_explanation",
+      "referee_signal",
+      "reviewer_inference",
+      "roster",
+      "source_diagram",
+      "video"
+    ],
+    "identity_status": [
+      "confirmed",
+      "candidate",
+      "unknown"
+    ]
+  },
+  "relationships": [
+    "Every event_id references events.csv; multiple reset attempts may share episode_id.",
+    "rule_assessments.law_clause references the clause coverage catalog; informational/permission/context clauses need observations rather than forced offence assessments.",
+    "observations.observation_type uses observation_field_registry.json, generated from the full rule coverage.",
+    "restarts.restart_table_row_id references law19_full restart rows; reset_reason_clause independently references 19.34 conditions.",
+    "A decision and its referee-stated reason do not automatically populate the independent rule assessment or physical-cause labels.",
+    "Official media associations are reference metadata, not player-identity, intent, view or infringement ground truth.",
+    "All recordings and derived examples of one match require a common match_group for splitting; source hashes alone cannot identify alternate recordings."
+  ],
+  "unknowns": "Blank is unannotated. unknown/unobservable are explicit states, never converted to false or not_satisfied.",
+  "timebase": "Seconds in the original source video, not scoreboard time; legal scrum start under 19.16 is ball_feed_s.",
+  "media_review": {
+    "video_contents_reviewed": false,
+    "diagram_pixels_reviewed": false
+  },
+  "implementation_note": "Templates and vocabularies only. No data rows or automatically inferred legal verdicts; current browser UI has not been extended to these tables.",
+  "evidence_type_definitions": {
+    "video": "Timecoded match video with the relevant body, ball or event visible.",
+    "multi_angle_video": "Synchronized additional views supporting contact, causal or depth assessment.",
+    "referee_audio": "Audible referee words or whistle with a time reference; ASR output requires review.",
+    "referee_signal": "Visible referee mark, arm signal or indication, independently transcribed.",
+    "referee_explanation": "An attributable referee explanation; keep it separate from an annotator hypothesis.",
+    "preceding_play_video": "Video before the scrum establishing restart cause and prior possession or movement.",
+    "match_metadata": "Match, competition, date, team size or competition-level facts from identified sources.",
+    "roster": "Reviewed roster or substitution evidence linking player identity and role; shirt number alone is insufficient.",
+    "calibrated_pitch_geometry": "Visible calibrated pitch reference resolving location, distance or orientation.",
+    "applicable_ruleset": "Identified edition, competition rules, union adoption and trial applicability.",
+    "source_diagram": "Source image pixels reviewed separately; the current HTML only provides image references."
+  },
+  "observation_field_count": 179,
+  "numbered_clause_coverage": 88,
+  "supplementary_coverage": 21
+}

@@ -1,0 +1,19 @@
+{
+  "acquisition_method": "user_supplied_html",
+  "declared_source_url": "https://passport.world.rugby/laws-of-the-game/laws-by-number/19-scrum/",
+  "source_filename": "貼り付けたテキスト.txt",
+  "source_bytes": 152969,
+  "source_sha256": "fbf3f5c31cd2ea7513c390d3fb4c8533cf008d92cc798224873af0037833a07b",
+  "independently_fetched": false,
+  "edition_date": null,
+  "historical_applicability_verified": false,
+  "script_execution": false,
+  "reference_role": "official_rule_reference_not_match_ground_truth",
+  "association_method": "Last actual clause in document order; reset on new major clause or h3",
+  "text_handling": "Literal visible paragraph text; HTML layout whitespace normalized, entities decoded",
+  "catalog_scope": "Clause/video records remain numbered paragraphs and embed metadata. law19_document.json additionally preserves the principle, section headings, complete 19.1 restart table cells, diagram metadata, cross-references and a scoped visible-body text snapshot.",
+  "assets_downloaded": false,
+  "asset_content_inspected": false,
+  "external_law_contents_included": false,
+  "document_scope_note": "HTML assets are referenced, not downloaded or inspected. Out-of-page laws and law variations are not part of the supplied source. The text snapshot does not transcribe image pixels or establish historical applicability."
+}

@@ -7,6 +7,15 @@ The first build preserves 279 sampled frames from five clips / three matches,
 1,378 automatic person detections and 23,426 COCO keypoints. It does **not**
 invent phase labels or treat YOLO estimates as verified human poses.
 
+## Full Law 19 annotation design
+
+For the new dataset, see the [full annotation specification](data/source_catalog/scrum_full_annotation_plan.md),
+[clause-by-clause coverage](data/source_catalog/law19_rule_coverage.md), and
+[blank annotation tables](data/source_catalog/annotation_templates_full/).
+These cover normal play and the complete supplied Law 19 content. They are
+specifications and templates; the existing browser tool has not been extended
+to these fields, and the referenced images/videos have not been reviewed.
+
 ## Automate new scrum clips
 
 Use [the Mac automatic clipping workflow](docs/AUTOMATIC_CLIPPING.md) to find

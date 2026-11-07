@@ -1,0 +1,23 @@
+{
+  "source_sha256": "fbf3f5c31cd2ea7513c390d3fb4c8533cf008d92cc798224873af0037833a07b",
+  "coverage": {
+    "numbered_clauses": 88,
+    "restart_table_rows": 17,
+    "principle": 1,
+    "diagrams_referenced": 3,
+    "videos_referenced": 31,
+    "section_headings": 10,
+    "total_rule_and_supplementary_records": 109
+  },
+  "checks": {
+    "all_clause_text_matches_source": true,
+    "all_restart_cells_match_source": true,
+    "all_diagram_captions_and_paths_match_source": true,
+    "trial_scope_preserved": true,
+    "conditional_exception_preserved": true,
+    "seven_templates_have_no_label_rows": true
+  },
+  "scope": "Full supplied Law19 article text and metadata; external diagram pixels, video footage, linked laws and applicability to individual matches remain unverified.",
+  "existing_annotation_ui_modified": false,
+  "new_match_labels": 0
+}

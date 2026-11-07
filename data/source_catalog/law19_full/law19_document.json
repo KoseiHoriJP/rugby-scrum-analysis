@@ -1,0 +1,4342 @@
+{
+  "schema_version": 1,
+  "source_provenance": {
+    "acquisition_method": "user_supplied_html",
+    "declared_source_url": "https://passport.world.rugby/laws-of-the-game/laws-by-number/19-scrum/",
+    "source_filename": "貼り付けたテキスト.txt",
+    "source_bytes": 152969,
+    "source_sha256": "fbf3f5c31cd2ea7513c390d3fb4c8533cf008d92cc798224873af0037833a07b",
+    "independently_fetched": false,
+    "edition_date": null,
+    "historical_applicability_verified": false,
+    "script_execution": false,
+    "reference_role": "official_rule_reference_not_match_ground_truth",
+    "association_method": "Last actual clause in document order; reset on new major clause or h3",
+    "text_handling": "Literal visible paragraph text; HTML layout whitespace normalized, entities decoded",
+    "catalog_scope": "Clause/video records remain numbered paragraphs and embed metadata. law19_document.json additionally preserves the principle, section headings, complete 19.1 restart table cells, diagram metadata, cross-references and a scoped visible-body text snapshot.",
+    "assets_downloaded": false,
+    "asset_content_inspected": false,
+    "external_law_contents_included": false,
+    "document_scope_note": "HTML assets are referenced, not downloaded or inspected. Out-of-page laws and law variations are not part of the supplied source. The text snapshot does not transcribe image pixels or establish historical applicability."
+  },
+  "title": "19 Scrum",
+  "declared_source_url": "https://passport.world.rugby/laws-of-the-game/laws-by-number/19-scrum/",
+  "content_scope": ".page-law-number-page; article h1 retained separately; navigation, footer, scripts, modal player UI excluded",
+  "headings": [
+    {
+      "block_id": "heading_01",
+      "type": "heading",
+      "level": 3,
+      "text": "Principle",
+      "parent_section_id": null,
+      "section": "Principle",
+      "section_id": "section_01"
+    },
+    {
+      "block_id": "heading_02",
+      "type": "heading",
+      "level": 3,
+      "text": "Forming a scrum",
+      "parent_section_id": null,
+      "section": "Forming a scrum",
+      "section_id": "section_02"
+    },
+    {
+      "block_id": "heading_03",
+      "type": "heading",
+      "level": 3,
+      "text": "Engagement",
+      "parent_section_id": null,
+      "section": "Engagement",
+      "section_id": "section_03"
+    },
+    {
+      "block_id": "heading_04",
+      "type": "heading",
+      "level": 3,
+      "text": "Throw",
+      "parent_section_id": null,
+      "section": "Throw",
+      "section_id": "section_04"
+    },
+    {
+      "block_id": "heading_05",
+      "type": "heading",
+      "level": 3,
+      "text": "During a scrum",
+      "parent_section_id": null,
+      "section": "During a scrum",
+      "section_id": "section_05"
+    },
+    {
+      "block_id": "heading_06",
+      "type": "heading",
+      "level": 3,
+      "text": "Offside at a scrum",
+      "parent_section_id": null,
+      "section": "Offside at a scrum",
+      "section_id": "section_06"
+    },
+    {
+      "block_id": "heading_07",
+      "type": "heading",
+      "level": 6,
+      "text": "GLOBAL LAW TRIAL",
+      "parent_section_id": "section_06",
+      "section": "Offside at a scrum",
+      "section_id": "section_06"
+    },
+    {
+      "block_id": "heading_08",
+      "type": "heading",
+      "level": 3,
+      "text": "Resetting a scrum",
+      "parent_section_id": null,
+      "section": "Resetting a scrum",
+      "section_id": "section_07"
+    },
+    {
+      "block_id": "heading_09",
+      "type": "heading",
+      "level": 3,
+      "text": "Ending a scrum",
+      "parent_section_id": null,
+      "section": "Ending a scrum",
+      "section_id": "section_08"
+    },
+    {
+      "block_id": "heading_10",
+      "type": "heading",
+      "level": 3,
+      "text": "Dangerous play and restricted practices in a scrum",
+      "parent_section_id": null,
+      "section": "Dangerous play and restricted practices in a scrum",
+      "section_id": "section_09"
+    },
+    {
+      "block_id": "heading_11",
+      "type": "heading",
+      "level": 3,
+      "text": "Scrum law variations",
+      "parent_section_id": null,
+      "section": "Scrum law variations",
+      "section_id": "section_10"
+    }
+  ],
+  "sections": [
+    {
+      "section_id": "section_01",
+      "heading": "Principle",
+      "heading_level": 3,
+      "block_ids": [
+        "heading_01",
+        "principle",
+        "clause:19.1",
+        "table_01"
+      ]
+    },
+    {
+      "section_id": "section_02",
+      "heading": "Forming a scrum",
+      "heading_level": 3,
+      "block_ids": [
+        "heading_02",
+        "diagram_01",
+        "caption_01",
+        "clause:19.2",
+        "clause:19.3",
+        "clause:19.4",
+        "clause:19.5",
+        "clause:19.6",
+        "clause:19.7",
+        "clause:19.7(a)",
+        "clause:19.7(b)",
+        "clause:19.7(c)",
+        "clause:19.7(d)",
+        "clause:19.8",
+        "clause:19.9"
+      ]
+    },
+    {
+      "section_id": "section_03",
+      "heading": "Engagement",
+      "heading_level": 3,
+      "block_ids": [
+        "heading_03",
+        "clause:19.10",
+        "clause:19.10(a)",
+        "clause:19.10(b)",
+        "clause:19.10(c)",
+        "clause:19.11",
+        "clause:19.11(a)",
+        "clause:19.11(b)",
+        "clause:19.11(c)",
+        "clause:19.11(d)",
+        "clause:19.11(e)",
+        "clause:19.12",
+        "clause:19.12(a)",
+        "clause:19.12(b)",
+        "clause:19.12(c)",
+        "clause:19.12(d)"
+      ]
+    },
+    {
+      "section_id": "section_04",
+      "heading": "Throw",
+      "heading_level": 3,
+      "block_ids": [
+        "heading_04",
+        "clause:19.13",
+        "clause:19.14",
+        "clause:19.15",
+        "clause:19.15(a)",
+        "clause:19.15(b)",
+        "clause:19.15(c)",
+        "clause:19.15(d)",
+        "clause:19.15(e)",
+        "clause:19.15(f)",
+        "clause:19.15(g)",
+        "diagram_02",
+        "caption_02"
+      ]
+    },
+    {
+      "section_id": "section_05",
+      "heading": "During a scrum",
+      "heading_level": 3,
+      "block_ids": [
+        "heading_05",
+        "clause:19.16",
+        "clause:19.17",
+        "clause:19.18",
+        "clause:19.19",
+        "clause:19.20",
+        "clause:19.21",
+        "clause:19.22",
+        "clause:19.23",
+        "clause:19.24",
+        "clause:19.25",
+        "clause:19.26"
+      ]
+    },
+    {
+      "section_id": "section_06",
+      "heading": "Offside at a scrum",
+      "heading_level": 3,
+      "block_ids": [
+        "heading_06",
+        "clause:19.27",
+        "clause:19.28",
+        "clause:19.28(a)",
+        "clause:19.28(b)",
+        "clause:19.29",
+        "clause:19.30",
+        "heading_07",
+        "clause:19.30(a)",
+        "clause:19.30(b)",
+        "clause:19.30(c)",
+        "clause:19.31",
+        "clause:19.32",
+        "clause:19.33",
+        "diagram_03",
+        "caption_03"
+      ]
+    },
+    {
+      "section_id": "section_07",
+      "heading": "Resetting a scrum",
+      "heading_level": 3,
+      "block_ids": [
+        "heading_08",
+        "clause:19.34",
+        "clause:19.34(a)",
+        "clause:19.34(b)",
+        "clause:19.34(c)",
+        "clause:19.34(d)",
+        "clause:19.34(e)",
+        "clause:19.35"
+      ]
+    },
+    {
+      "section_id": "section_08",
+      "heading": "Ending a scrum",
+      "heading_level": 3,
+      "block_ids": [
+        "heading_09",
+        "clause:19.36",
+        "clause:19.36(a)",
+        "clause:19.36(b)",
+        "clause:19.36(c)",
+        "clause:19.36(d)",
+        "clause:19.36(e)"
+      ]
+    },
+    {
+      "section_id": "section_09",
+      "heading": "Dangerous play and restricted practices in a scrum",
+      "heading_level": 3,
+      "block_ids": [
+        "heading_10",
+        "clause:19.37",
+        "clause:19.37(a)",
+        "clause:19.37(b)",
+        "clause:19.37(c)",
+        "clause:19.37(d)",
+        "clause:19.37(e)",
+        "clause:19.38",
+        "clause:19.38(a)",
+        "clause:19.38(b)",
+        "clause:19.38(c)",
+        "clause:19.38(d)",
+        "clause:19.38(e)",
+        "clause:19.38(f)"
+      ]
+    },
+    {
+      "section_id": "section_10",
+      "heading": "Scrum law variations",
+      "heading_level": 3,
+      "block_ids": [
+        "heading_11",
+        "clause:19.39"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "block_id": "heading_01",
+      "type": "heading",
+      "level": 3,
+      "text": "Principle",
+      "parent_section_id": null,
+      "section": "Principle",
+      "section_id": "section_01"
+    },
+    {
+      "block_id": "principle",
+      "item_id": "principle",
+      "type": "non_numbered_paragraph",
+      "text": "The purpose of a scrum is to restart play with a contest for possession after a minor infringement or stoppage.",
+      "context_clause_id": null,
+      "section": "Principle",
+      "section_id": "section_01"
+    },
+    {
+      "block_id": "clause:19.1",
+      "type": "clause",
+      "clause_id": "19.1",
+      "text": "19.1 Where the game is restarted with a scrum and which team throws in is determined as follows:",
+      "section": "Principle",
+      "section_id": "section_01"
+    },
+    {
+      "block_id": "table_01",
+      "type": "table",
+      "table_id": "table_01",
+      "context_clause_id": "19.1",
+      "section": "Principle",
+      "section_id": "section_01"
+    },
+    {
+      "block_id": "heading_02",
+      "type": "heading",
+      "level": 3,
+      "text": "Forming a scrum",
+      "parent_section_id": null,
+      "section": "Forming a scrum",
+      "section_id": "section_02"
+    },
+    {
+      "block_id": "diagram_01",
+      "type": "image",
+      "item_id": "diagram_01",
+      "context_clause_id": null,
+      "section": "Forming a scrum",
+      "section_id": "section_02"
+    },
+    {
+      "block_id": "caption_01",
+      "type": "image_caption",
+      "caption_id": "caption_01",
+      "text": "Scrum formation (subject to 19.7)",
+      "image_ids": [
+        "diagram_01"
+      ],
+      "association_status": "adjacent_images",
+      "section": "Forming a scrum",
+      "section_id": "section_02"
+    },
+    {
+      "block_id": "clause:19.2",
+      "type": "clause",
+      "clause_id": "19.2",
+      "text": "19.2 A scrum is formed in the scrum zone at a mark indicated by the referee.",
+      "section": "Forming a scrum",
+      "section_id": "section_02"
+    },
+    {
+      "block_id": "clause:19.3",
+      "type": "clause",
+      "clause_id": "19.3",
+      "text": "19.3 The referee makes the mark to create the middle line of the scrum, which runs parallel to the try lines.",
+      "section": "Forming a scrum",
+      "section_id": "section_02"
+    },
+    {
+      "block_id": "clause:19.4",
+      "type": "clause",
+      "clause_id": "19.4",
+      "text": "19.4 Teams must be ready to form the scrum within 30 seconds of the mark being made. Sanction: Free-kick.",
+      "section": "Forming a scrum",
+      "section_id": "section_02"
+    },
+    {
+      "block_id": "clause:19.5",
+      "type": "clause",
+      "clause_id": "19.5",
+      "text": "19.5 When both teams have 15 players, eight players from each team bind together in formation (subject to 19.7d) as suggested in the diagram. Each team must have two props and one hooker in the front row and two locks in the second row. Three back-row players from each team complete the scrum. Sanction: Penalty.",
+      "section": "Forming a scrum",
+      "section_id": "section_02"
+    },
+    {
+      "block_id": "clause:19.6",
+      "type": "clause",
+      "clause_id": "19.6",
+      "text": "19.6 When a team is reduced to fewer than 15 for any reason, then the number of players in each team in the scrum may be similarly reduced. Where a permitted reduction is made by one team, there is no requirement for the other team to make a similar reduction. However, a team must not have fewer than five players in the scrum. (see also law 3.15)",
+      "section": "Forming a scrum",
+      "section_id": "section_02"
+    },
+    {
+      "block_id": "clause:19.7",
+      "type": "clause",
+      "clause_id": "19.7",
+      "text": "19.7 The players in the scrum bind in the following way:",
+      "section": "Forming a scrum",
+      "section_id": "section_02"
+    },
+    {
+      "block_id": "clause:19.7(a)",
+      "type": "clause",
+      "clause_id": "19.7(a)",
+      "text": "a. The props bind to the hooker. Sanction: Penalty.",
+      "section": "Forming a scrum",
+      "section_id": "section_02"
+    },
+    {
+      "block_id": "clause:19.7(b)",
+      "type": "clause",
+      "clause_id": "19.7(b)",
+      "text": "b. The hooker binds with both arms. This can be either over or under the arms of the props. Sanction: Penalty.",
+      "section": "Forming a scrum",
+      "section_id": "section_02"
+    },
+    {
+      "block_id": "clause:19.7(c)",
+      "type": "clause",
+      "clause_id": "19.7(c)",
+      "text": "c. The locks bind with the props immediately in front of them and with each other. Sanction: Penalty.",
+      "section": "Forming a scrum",
+      "section_id": "section_02"
+    },
+    {
+      "block_id": "clause:19.7(d)",
+      "type": "clause",
+      "clause_id": "19.7(d)",
+      "text": "d. All other players in the scrum bind on a lock’s body with at least one arm. Sanction: Penalty.",
+      "section": "Forming a scrum",
+      "section_id": "section_02"
+    },
+    {
+      "block_id": "clause:19.8",
+      "type": "clause",
+      "clause_id": "19.8",
+      "text": "19.8 The two groups face each other, either side of and parallel to the middle line.",
+      "section": "Forming a scrum",
+      "section_id": "section_02"
+    },
+    {
+      "block_id": "clause:19.9",
+      "type": "clause",
+      "clause_id": "19.9",
+      "text": "19.9 The two front rows stand not more than an arm’s length apart with the hookers at the mark.",
+      "section": "Forming a scrum",
+      "section_id": "section_02"
+    },
+    {
+      "block_id": "heading_03",
+      "type": "heading",
+      "level": 3,
+      "text": "Engagement",
+      "parent_section_id": null,
+      "section": "Engagement",
+      "section_id": "section_03"
+    },
+    {
+      "block_id": "clause:19.10",
+      "type": "clause",
+      "clause_id": "19.10",
+      "text": "19.10 When both sides are square, stable and stationary, the referee calls “crouch”.",
+      "section": "Engagement",
+      "section_id": "section_03"
+    },
+    {
+      "block_id": "clause:19.10(a)",
+      "type": "clause",
+      "clause_id": "19.10(a)",
+      "text": "a. The front-rows then adopt a crouched position if they have not already done so. Their heads and shoulders are no lower than their hips, a position that is maintained for the duration of the scrum. Sanction: Free-kick.",
+      "section": "Engagement",
+      "section_id": "section_03"
+    },
+    {
+      "block_id": "clause:19.10(b)",
+      "type": "clause",
+      "clause_id": "19.10(b)",
+      "text": "b. The front-rows crouch with their heads to the left of their immediate opponents’, so that no player’s head is touching the neck or shoulders of an opponent. Sanction: Free-kick.",
+      "section": "Engagement",
+      "section_id": "section_03"
+    },
+    {
+      "block_id": "clause:19.10(c)",
+      "type": "clause",
+      "clause_id": "19.10(c)",
+      "text": "c. Hookers must have a 'brake' foot positioned to help stability and to avoid axial loading. Sanction: Free-kick.",
+      "section": "Engagement",
+      "section_id": "section_03"
+    },
+    {
+      "block_id": "clause:19.11",
+      "type": "clause",
+      "clause_id": "19.11",
+      "text": "19.11 When both sides are square, stable and stationary, the referee calls “bind”.",
+      "section": "Engagement",
+      "section_id": "section_03"
+    },
+    {
+      "block_id": "clause:19.11(a)",
+      "type": "clause",
+      "clause_id": "19.11(a)",
+      "text": "a. Each loose-head prop binds by placing the left arm inside the right arm of the opposing tight-head prop. Sanction: Penalty.",
+      "section": "Engagement",
+      "section_id": "section_03"
+    },
+    {
+      "block_id": "clause:19.11(b)",
+      "type": "clause",
+      "clause_id": "19.11(b)",
+      "text": "b. Each tight-head prop binds by placing the right arm outside the left upper arm of the opposing loose-head prop. Sanction: Penalty.",
+      "section": "Engagement",
+      "section_id": "section_03"
+    },
+    {
+      "block_id": "clause:19.11(c)",
+      "type": "clause",
+      "clause_id": "19.11(c)",
+      "text": "c. Each prop binds by gripping the back or side of their opponent’s jersey. Sanction: Penalty.",
+      "section": "Engagement",
+      "section_id": "section_03"
+    },
+    {
+      "block_id": "clause:19.11(d)",
+      "type": "clause",
+      "clause_id": "19.11(d)",
+      "text": "d. All players’ binding is maintained, in the position they started in, for the duration of the scrum. Sanction: Penalty.",
+      "section": "Engagement",
+      "section_id": "section_03"
+    },
+    {
+      "block_id": "clause:19.11(e)",
+      "type": "clause",
+      "clause_id": "19.11(e)",
+      "text": "e. Hookers may adjust their 'brake' foot but it must still be acting as a brake. Sanction: Free-kick.",
+      "section": "Engagement",
+      "section_id": "section_03"
+    },
+    {
+      "block_id": "clause:19.12",
+      "type": "clause",
+      "clause_id": "19.12",
+      "text": "19.12 When both sides are square, stable and stationary, with the hooker still applying the brake foot, the referee calls “set”.",
+      "section": "Engagement",
+      "section_id": "section_03"
+    },
+    {
+      "block_id": "clause:19.12(a)",
+      "type": "clause",
+      "clause_id": "19.12(a)",
+      "text": "a. Only then must the hooker remove the 'brake' foot and the teams engage, completing the formation of the scrum and creating a tunnel into which the ball will be thrown. Sanction: Free-kick.",
+      "section": "Engagement",
+      "section_id": "section_03"
+    },
+    {
+      "block_id": "clause:19.12(b)",
+      "type": "clause",
+      "clause_id": "19.12(b)",
+      "text": "b. All players must be in position and ready to push forward. Sanction: Free-kick.",
+      "section": "Engagement",
+      "section_id": "section_03"
+    },
+    {
+      "block_id": "clause:19.12(c)",
+      "type": "clause",
+      "clause_id": "19.12(c)",
+      "text": "c. Each front-row player must have both their feet on the ground, with their weight firmly on at least one foot. Sanction: Free-kick.",
+      "section": "Engagement",
+      "section_id": "section_03"
+    },
+    {
+      "block_id": "clause:19.12(d)",
+      "type": "clause",
+      "clause_id": "19.12(d)",
+      "text": "d. Each hooker’s feet must be in line with, or behind, the foremost foot of that team’s props. Sanction: Free-kick.",
+      "section": "Engagement",
+      "section_id": "section_03"
+    },
+    {
+      "block_id": "heading_04",
+      "type": "heading",
+      "level": 3,
+      "text": "Throw",
+      "parent_section_id": null,
+      "section": "Throw",
+      "section_id": "section_04"
+    },
+    {
+      "block_id": "clause:19.13",
+      "type": "clause",
+      "clause_id": "19.13",
+      "text": "19.13 The scrum-half chooses which side of the scrum to throw in the ball.",
+      "section": "Throw",
+      "section_id": "section_04"
+    },
+    {
+      "block_id": "clause:19.14",
+      "type": "clause",
+      "clause_id": "19.14",
+      "text": "19.14 The scrum-half holds the ball as shown in the diagram.",
+      "section": "Throw",
+      "section_id": "section_04"
+    },
+    {
+      "block_id": "clause:19.15",
+      "type": "clause",
+      "clause_id": "19.15",
+      "text": "19.15 When both sides are square, stable and stationary, the scrum-half throws in the ball:",
+      "section": "Throw",
+      "section_id": "section_04"
+    },
+    {
+      "block_id": "clause:19.15(a)",
+      "type": "clause",
+      "clause_id": "19.15(a)",
+      "text": "a. From the chosen side. Sanction: Free-kick.",
+      "section": "Throw",
+      "section_id": "section_04"
+    },
+    {
+      "block_id": "clause:19.15(b)",
+      "type": "clause",
+      "clause_id": "19.15(b)",
+      "text": "b. From outside the tunnel. Sanction: Free-kick.",
+      "section": "Throw",
+      "section_id": "section_04"
+    },
+    {
+      "block_id": "clause:19.15(c)",
+      "type": "clause",
+      "clause_id": "19.15(c)",
+      "text": "c. Without delay. Sanction: Free-kick.",
+      "section": "Throw",
+      "section_id": "section_04"
+    },
+    {
+      "block_id": "clause:19.15(d)",
+      "type": "clause",
+      "clause_id": "19.15(d)",
+      "text": "d. With a single forward movement. Sanction: Free-kick.",
+      "section": "Throw",
+      "section_id": "section_04"
+    },
+    {
+      "block_id": "clause:19.15(e)",
+      "type": "clause",
+      "clause_id": "19.15(e)",
+      "text": "e. At a quick speed. Sanction: Free-kick.",
+      "section": "Throw",
+      "section_id": "section_04"
+    },
+    {
+      "block_id": "clause:19.15(f)",
+      "type": "clause",
+      "clause_id": "19.15(f)",
+      "text": "f. Straight. The scrum-half may align their shoulder on the middle line of the scrum, thereby standing a shoulder-width closer to their side of the scrum. Sanction: Free-kick.",
+      "section": "Throw",
+      "section_id": "section_04"
+    },
+    {
+      "block_id": "clause:19.15(g)",
+      "type": "clause",
+      "clause_id": "19.15(g)",
+      "text": "g. So that it first touches the ground inside the tunnel. Sanction: Free-kick.",
+      "section": "Throw",
+      "section_id": "section_04"
+    },
+    {
+      "block_id": "diagram_02",
+      "type": "image",
+      "item_id": "diagram_02",
+      "context_clause_id": "19.15(g)",
+      "section": "Throw",
+      "section_id": "section_04"
+    },
+    {
+      "block_id": "caption_02",
+      "type": "image_caption",
+      "caption_id": "caption_02",
+      "text": "Throw-in at the scrum",
+      "image_ids": [
+        "diagram_02"
+      ],
+      "association_status": "adjacent_images",
+      "section": "Throw",
+      "section_id": "section_04"
+    },
+    {
+      "block_id": "heading_05",
+      "type": "heading",
+      "level": 3,
+      "text": "During a scrum",
+      "parent_section_id": null,
+      "section": "During a scrum",
+      "section_id": "section_05"
+    },
+    {
+      "block_id": "clause:19.16",
+      "type": "clause",
+      "clause_id": "19.16",
+      "text": "19.16 The scrum begins when the ball leaves the hands of the scrum-half.",
+      "section": "During a scrum",
+      "section_id": "section_05"
+    },
+    {
+      "block_id": "clause:19.17",
+      "type": "clause",
+      "clause_id": "19.17",
+      "text": "19.17 Only when the scrum begins may the teams push. Sanction: Free-kick.",
+      "section": "During a scrum",
+      "section_id": "section_05"
+    },
+    {
+      "block_id": "clause:19.18",
+      "type": "clause",
+      "clause_id": "19.18",
+      "text": "19.18 Possession may be gained by pushing the opposition backwards and off the ball.",
+      "section": "During a scrum",
+      "section_id": "section_05"
+    },
+    {
+      "block_id": "clause:19.19",
+      "type": "clause",
+      "clause_id": "19.19",
+      "text": "19.19 Players may push provided they do so straight and parallel to the ground. Sanction: Penalty.",
+      "section": "During a scrum",
+      "section_id": "section_05"
+    },
+    {
+      "block_id": "clause:19.20",
+      "type": "clause",
+      "clause_id": "19.20",
+      "text": "19.20 Front-row players may gain possession by striking for the ball but only once the ball touches the ground in the tunnel. Sanction: Free-kick.",
+      "section": "During a scrum",
+      "section_id": "section_05"
+    },
+    {
+      "block_id": "clause:19.21",
+      "type": "clause",
+      "clause_id": "19.21",
+      "text": "19.21 A front-row player striking for the ball may do so with either foot but not both at the same time. Sanction: Penalty.",
+      "section": "During a scrum",
+      "section_id": "section_05"
+    },
+    {
+      "block_id": "clause:19.22",
+      "type": "clause",
+      "clause_id": "19.22",
+      "text": "19.22 The hooker from the team which threw in the ball must strike for the ball. Sanction: Free-kick.",
+      "section": "During a scrum",
+      "section_id": "section_05"
+    },
+    {
+      "block_id": "clause:19.23",
+      "type": "clause",
+      "clause_id": "19.23",
+      "text": "19.23 A front-row player must not intentionally kick the ball out of the tunnel from the direction it was thrown. Sanction: Free-kick.",
+      "section": "During a scrum",
+      "section_id": "section_05"
+    },
+    {
+      "block_id": "clause:19.24",
+      "type": "clause",
+      "clause_id": "19.24",
+      "text": "19.24 Any player within the scrum may play the ball but only with their feet or lower legs and they must not lift the ball. Sanction: Penalty.",
+      "section": "During a scrum",
+      "section_id": "section_05"
+    },
+    {
+      "block_id": "clause:19.25",
+      "type": "clause",
+      "clause_id": "19.25",
+      "text": "19.25 If a scrum collapses or if a player in the scrum is lifted or is forced upwards out of the scrum, the referee must blow the whistle immediately so that players stop pushing.",
+      "section": "During a scrum",
+      "section_id": "section_05"
+    },
+    {
+      "block_id": "clause:19.26",
+      "type": "clause",
+      "clause_id": "19.26",
+      "text": "19.26 When the scrum is stationary and the ball has been available at the back of the scrum for three-five seconds, the referee calls “use it”. The team must then play the ball out of the scrum immediately. Sanction: Scrum.",
+      "section": "During a scrum",
+      "section_id": "section_05"
+    },
+    {
+      "block_id": "heading_06",
+      "type": "heading",
+      "level": 3,
+      "text": "Offside at a scrum",
+      "parent_section_id": null,
+      "section": "Offside at a scrum",
+      "section_id": "section_06"
+    },
+    {
+      "block_id": "clause:19.27",
+      "type": "clause",
+      "clause_id": "19.27",
+      "text": "19.27 Players remain onside for the duration of the scrum. Sanction: Penalty.",
+      "section": "Offside at a scrum",
+      "section_id": "section_06"
+    },
+    {
+      "block_id": "clause:19.28",
+      "type": "clause",
+      "clause_id": "19.28",
+      "text": "19.28 Prior to the start of play in the scrum, the scrum-half of the team not throwing in the ball stands:",
+      "section": "Offside at a scrum",
+      "section_id": "section_06"
+    },
+    {
+      "block_id": "clause:19.28(a)",
+      "type": "clause",
+      "clause_id": "19.28(a)",
+      "text": "a. On that team’s side of the middle line next to the opposing scrum-half, or Sanction: Penalty.",
+      "section": "Offside at a scrum",
+      "section_id": "section_06"
+    },
+    {
+      "block_id": "clause:19.28(b)",
+      "type": "clause",
+      "clause_id": "19.28(b)",
+      "text": "b. At least five metres behind the hindmost foot of their team’s last player in the scrum and remains there until the completion of the scrum. Sanction: Penalty.",
+      "section": "Offside at a scrum",
+      "section_id": "section_06"
+    },
+    {
+      "block_id": "clause:19.29",
+      "type": "clause",
+      "clause_id": "19.29",
+      "text": "19.29 Once play in the scrum begins, the scrum-half of the team in possession has at least one foot level with or behind the ball.",
+      "section": "Offside at a scrum",
+      "section_id": "section_06"
+    },
+    {
+      "block_id": "clause:19.30",
+      "type": "clause",
+      "clause_id": "19.30",
+      "text": "19.30 Once play in the scrum begins, the scrum-half of the team not in possession:",
+      "section": "Offside at a scrum",
+      "section_id": "section_06"
+    },
+    {
+      "block_id": "heading_07",
+      "type": "heading",
+      "level": 6,
+      "text": "GLOBAL LAW TRIAL",
+      "parent_section_id": "section_06",
+      "section": "Offside at a scrum",
+      "section_id": "section_06"
+    },
+    {
+      "block_id": "clause:19.30(a)",
+      "type": "clause",
+      "clause_id": "19.30(a)",
+      "text": "a. Takes up a position near the scrum with both feet no further than the centre line of the tunnel, or Sanction: Penalty.",
+      "section": "Offside at a scrum",
+      "section_id": "section_06"
+    },
+    {
+      "block_id": "clause:19.30(b)",
+      "type": "clause",
+      "clause_id": "19.30(b)",
+      "text": "b. Permanently retires to a point on the offside line either at that team’s hindmost foot, or Sanction: Penalty.",
+      "section": "Offside at a scrum",
+      "section_id": "section_06"
+    },
+    {
+      "block_id": "clause:19.30(c)",
+      "type": "clause",
+      "clause_id": "19.30(c)",
+      "text": "c. Permanently retires at least five metres behind the hindmost foot. Sanction: Penalty.",
+      "section": "Offside at a scrum",
+      "section_id": "section_06"
+    },
+    {
+      "block_id": "clause:19.31",
+      "type": "clause",
+      "clause_id": "19.31",
+      "text": "19.31 All players not participating at the scrum remain at least five metres behind the hindmost foot of their team. Sanction: Penalty.",
+      "section": "Offside at a scrum",
+      "section_id": "section_06"
+    },
+    {
+      "block_id": "clause:19.32",
+      "type": "clause",
+      "clause_id": "19.32",
+      "text": "19.32 When the hindmost foot of a team is in in-goal or within five metres of that team’s try line, the offside line for that team’s non-participants is the try line. Sanction: Penalty.",
+      "section": "Offside at a scrum",
+      "section_id": "section_06"
+    },
+    {
+      "block_id": "clause:19.33",
+      "type": "clause",
+      "clause_id": "19.33",
+      "text": "19.33 As soon as the scrum ends, offside lines no longer apply.",
+      "section": "Offside at a scrum",
+      "section_id": "section_06"
+    },
+    {
+      "block_id": "diagram_03",
+      "type": "image",
+      "item_id": "diagram_03",
+      "context_clause_id": "19.33",
+      "section": "Offside at a scrum",
+      "section_id": "section_06"
+    },
+    {
+      "block_id": "caption_03",
+      "type": "image_caption",
+      "caption_id": "caption_03",
+      "text": "Scrum offside",
+      "image_ids": [
+        "diagram_03"
+      ],
+      "association_status": "adjacent_images",
+      "section": "Offside at a scrum",
+      "section_id": "section_06"
+    },
+    {
+      "block_id": "heading_08",
+      "type": "heading",
+      "level": 3,
+      "text": "Resetting a scrum",
+      "parent_section_id": null,
+      "section": "Resetting a scrum",
+      "section_id": "section_07"
+    },
+    {
+      "block_id": "clause:19.34",
+      "type": "clause",
+      "clause_id": "19.34",
+      "text": "19.34 When there is no infringement, the referee will stop play and reset the scrum if:",
+      "section": "Resetting a scrum",
+      "section_id": "section_07"
+    },
+    {
+      "block_id": "clause:19.34(a)",
+      "type": "clause",
+      "clause_id": "19.34(a)",
+      "text": "a. The scrum-half throws in the ball and it comes out at either end of the tunnel.",
+      "section": "Resetting a scrum",
+      "section_id": "section_07"
+    },
+    {
+      "block_id": "clause:19.34(b)",
+      "type": "clause",
+      "clause_id": "19.34(b)",
+      "text": "b. The scrum collapses or breaks up before it has otherwise ended.",
+      "section": "Resetting a scrum",
+      "section_id": "section_07"
+    },
+    {
+      "block_id": "clause:19.34(c)",
+      "type": "clause",
+      "clause_id": "19.34(c)",
+      "text": "c. The scrum is wheeled through more than 90 degrees, so the middle line has passed beyond a position parallel to the touchline.",
+      "section": "Resetting a scrum",
+      "section_id": "section_07"
+    },
+    {
+      "block_id": "clause:19.34(d)",
+      "type": "clause",
+      "clause_id": "19.34(d)",
+      "text": "d. Neither side wins possession.",
+      "section": "Resetting a scrum",
+      "section_id": "section_07"
+    },
+    {
+      "block_id": "clause:19.34(e)",
+      "type": "clause",
+      "clause_id": "19.34(e)",
+      "text": "e. The ball is unintentionally kicked out of the tunnel. Exception: If the ball is repeatedly kicked out, the referee must treat this as intentional. Sanction: Penalty.",
+      "section": "Resetting a scrum",
+      "section_id": "section_07"
+    },
+    {
+      "block_id": "clause:19.35",
+      "type": "clause",
+      "clause_id": "19.35",
+      "text": "19.35 When a scrum is reset, the ball is thrown in by the team that previously threw it in.",
+      "section": "Resetting a scrum",
+      "section_id": "section_07"
+    },
+    {
+      "block_id": "heading_09",
+      "type": "heading",
+      "level": 3,
+      "text": "Ending a scrum",
+      "parent_section_id": null,
+      "section": "Ending a scrum",
+      "section_id": "section_08"
+    },
+    {
+      "block_id": "clause:19.36",
+      "type": "clause",
+      "clause_id": "19.36",
+      "text": "19.36 The scrum ends:",
+      "section": "Ending a scrum",
+      "section_id": "section_08"
+    },
+    {
+      "block_id": "clause:19.36(a)",
+      "type": "clause",
+      "clause_id": "19.36(a)",
+      "text": "a. When the ball comes out of the scrum in any direction except the tunnel.",
+      "section": "Ending a scrum",
+      "section_id": "section_08"
+    },
+    {
+      "block_id": "clause:19.36(b)",
+      "type": "clause",
+      "clause_id": "19.36(b)",
+      "text": "b. When the ball reaches the feet of the hindmost player and it is picked up by that player or is played by that team’s scrum-half.",
+      "section": "Ending a scrum",
+      "section_id": "section_08"
+    },
+    {
+      "block_id": "clause:19.36(c)",
+      "type": "clause",
+      "clause_id": "19.36(c)",
+      "text": "c. When the number eight picks up the ball from the feet of a second-row player.",
+      "section": "Ending a scrum",
+      "section_id": "section_08"
+    },
+    {
+      "block_id": "clause:19.36(d)",
+      "type": "clause",
+      "clause_id": "19.36(d)",
+      "text": "d. When the referee blows the whistle for an infringement.",
+      "section": "Ending a scrum",
+      "section_id": "section_08"
+    },
+    {
+      "block_id": "clause:19.36(e)",
+      "type": "clause",
+      "clause_id": "19.36(e)",
+      "text": "e. When the ball in a scrum is on or over the try line.",
+      "section": "Ending a scrum",
+      "section_id": "section_08"
+    },
+    {
+      "block_id": "heading_10",
+      "type": "heading",
+      "level": 3,
+      "text": "Dangerous play and restricted practices in a scrum",
+      "parent_section_id": null,
+      "section": "Dangerous play and restricted practices in a scrum",
+      "section_id": "section_09"
+    },
+    {
+      "block_id": "clause:19.37",
+      "type": "clause",
+      "clause_id": "19.37",
+      "text": "19.37 Dangerous play in a scrum includes:",
+      "section": "Dangerous play and restricted practices in a scrum",
+      "section_id": "section_09"
+    },
+    {
+      "block_id": "clause:19.37(a)",
+      "type": "clause",
+      "clause_id": "19.37(a)",
+      "text": "a. A front-row charging against the opposition. Sanction: Penalty.",
+      "section": "Dangerous play and restricted practices in a scrum",
+      "section_id": "section_09"
+    },
+    {
+      "block_id": "clause:19.37(b)",
+      "type": "clause",
+      "clause_id": "19.37(b)",
+      "text": "b. Pulling an opponent. Sanction: Penalty.",
+      "section": "Dangerous play and restricted practices in a scrum",
+      "section_id": "section_09"
+    },
+    {
+      "block_id": "clause:19.37(c)",
+      "type": "clause",
+      "clause_id": "19.37(c)",
+      "text": "c. Intentionally lifting an opponent off their feet or forcing them upwards out of the scrum. Sanction: Penalty.",
+      "section": "Dangerous play and restricted practices in a scrum",
+      "section_id": "section_09"
+    },
+    {
+      "block_id": "clause:19.37(d)",
+      "type": "clause",
+      "clause_id": "19.37(d)",
+      "text": "d. Intentionally collapsing a scrum. Sanction: Penalty.",
+      "section": "Dangerous play and restricted practices in a scrum",
+      "section_id": "section_09"
+    },
+    {
+      "block_id": "clause:19.37(e)",
+      "type": "clause",
+      "clause_id": "19.37(e)",
+      "text": "e. Intentionally falling or kneeling. Sanction: Penalty.",
+      "section": "Dangerous play and restricted practices in a scrum",
+      "section_id": "section_09"
+    },
+    {
+      "block_id": "clause:19.38",
+      "type": "clause",
+      "clause_id": "19.38",
+      "text": "19.38 Other restricted practices at a scrum include:",
+      "section": "Dangerous play and restricted practices in a scrum",
+      "section_id": "section_09"
+    },
+    {
+      "block_id": "clause:19.38(a)",
+      "type": "clause",
+      "clause_id": "19.38(a)",
+      "text": "a. Falling on or over the ball immediately after it has emerged from the scrum. Sanction: Penalty.",
+      "section": "Dangerous play and restricted practices in a scrum",
+      "section_id": "section_09"
+    },
+    {
+      "block_id": "clause:19.38(b)",
+      "type": "clause",
+      "clause_id": "19.38(b)",
+      "text": "b. Scrum-half kicking the ball while it is in the scrum. Sanction: Penalty.",
+      "section": "Dangerous play and restricted practices in a scrum",
+      "section_id": "section_09"
+    },
+    {
+      "block_id": "clause:19.38(c)",
+      "type": "clause",
+      "clause_id": "19.38(c)",
+      "text": "c. Non-front-row player holding or pushing an opponent. Sanction: Penalty.",
+      "section": "Dangerous play and restricted practices in a scrum",
+      "section_id": "section_09"
+    },
+    {
+      "block_id": "clause:19.38(d)",
+      "type": "clause",
+      "clause_id": "19.38(d)",
+      "text": "d. Bringing the ball back into the scrum once it has left. Sanction: Free-kick.",
+      "section": "Dangerous play and restricted practices in a scrum",
+      "section_id": "section_09"
+    },
+    {
+      "block_id": "clause:19.38(e)",
+      "type": "clause",
+      "clause_id": "19.38(e)",
+      "text": "e. Non-front-row players playing the ball in the tunnel. Sanction: Free-kick.",
+      "section": "Dangerous play and restricted practices in a scrum",
+      "section_id": "section_09"
+    },
+    {
+      "block_id": "clause:19.38(f)",
+      "type": "clause",
+      "clause_id": "19.38(f)",
+      "text": "f. Scrum-half attempting to make an opponent believe the ball is out of the scrum when it is not. Sanction: Free-kick.",
+      "section": "Dangerous play and restricted practices in a scrum",
+      "section_id": "section_09"
+    },
+    {
+      "block_id": "heading_11",
+      "type": "heading",
+      "level": 3,
+      "text": "Scrum law variations",
+      "parent_section_id": null,
+      "section": "Scrum law variations",
+      "section_id": "section_10"
+    },
+    {
+      "block_id": "clause:19.39",
+      "type": "clause",
+      "clause_id": "19.39",
+      "text": "19.39 A union may implement the under-19 scrum law variations at defined levels of the game within its jurisdiction.",
+      "section": "Scrum law variations",
+      "section_id": "section_10"
+    }
+  ],
+  "principle": {
+    "item_id": "principle",
+    "paragraphs": [
+      "The purpose of a scrum is to restart play with a contest for possession after a minor infringement or stoppage."
+    ],
+    "text": "The purpose of a scrum is to restart play with a contest for possession after a minor infringement or stoppage."
+  },
+  "non_numbered_paragraphs": [
+    {
+      "block_id": "principle",
+      "item_id": "principle",
+      "type": "non_numbered_paragraph",
+      "text": "The purpose of a scrum is to restart play with a contest for possession after a minor infringement or stoppage.",
+      "context_clause_id": null,
+      "section": "Principle",
+      "section_id": "section_01"
+    }
+  ],
+  "tables": [
+    {
+      "table_id": "table_01",
+      "context_clause_id": "19.1",
+      "context_association": "preceding_clause_in_same_section",
+      "section": "Principle",
+      "caption": null,
+      "rows": [
+        {
+          "row_index": 0,
+          "item_id": null,
+          "is_header": true,
+          "cells": [
+            {
+              "tag": "th",
+              "text": "Infringement / stoppage",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "th",
+              "text": "Location of scrum",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "th",
+              "text": "Who throws in",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            }
+          ]
+        },
+        {
+          "row_index": 1,
+          "item_id": "restart_01",
+          "is_header": false,
+          "cells": [
+            {
+              "tag": "td",
+              "text": "A knock forward in the field of play or throw forward, apart from at a lineout.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "In the scrum zone at the point closest to the place of infringement.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "The non-offending team.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            }
+          ]
+        },
+        {
+          "row_index": 2,
+          "item_id": "restart_02",
+          "is_header": false,
+          "cells": [
+            {
+              "tag": "td",
+              "text": "A knock forward or throw forward at a lineout; incorrect throw at a lineout; incorrect quick throw.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "15 metres in from the mark of touch.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "The non-offending team.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            }
+          ]
+        },
+        {
+          "row_index": 3,
+          "item_id": "restart_03",
+          "is_header": false,
+          "cells": [
+            {
+              "tag": "td",
+              "text": "Offside in open play (scrum option).",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "In the scrum zone at the point closest to where the offending team last played the ball.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "The non-offending team.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            }
+          ]
+        },
+        {
+          "row_index": 4,
+          "item_id": "restart_04",
+          "is_header": false,
+          "cells": [
+            {
+              "tag": "td",
+              "text": "A penalty (scrum option).",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "In the scrum zone at the point closest to where the infringement took place.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "The non-offending team.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            }
+          ]
+        },
+        {
+          "row_index": 5,
+          "item_id": "restart_05",
+          "is_header": false,
+          "cells": [
+            {
+              "tag": "td",
+              "text": "The ball is played by, or taken into in-goal by the defending team and made dead.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "In the scrum zone at the point closest to where the ball was made dead.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "The attacking team.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            }
+          ]
+        },
+        {
+          "row_index": 6,
+          "item_id": "restart_06",
+          "is_header": false,
+          "cells": [
+            {
+              "tag": "td",
+              "text": "An unplayable tackle or ruck.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "In the scrum zone at the point closest to where the tackle or ruck took place.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "The team last moving forward.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            }
+          ]
+        },
+        {
+          "row_index": 7,
+          "item_id": "restart_07",
+          "is_header": false,
+          "cells": [
+            {
+              "tag": "td",
+              "text": "A maul that ends unsuccessfully.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "In the scrum zone at the point closest to where the maul ended.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "The team not in possession at the start of the maul. If the referee cannot decide which team had possession, the team last moving forward before the maul stopped.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            }
+          ]
+        },
+        {
+          "row_index": 8,
+          "item_id": "restart_08",
+          "is_header": false,
+          "cells": [
+            {
+              "tag": "td",
+              "text": "An unplayable maul after an opponent's kick in open play.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "In the scrum zone at the point nearest to place of maul.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "The team in possession at the start of the maul.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            }
+          ]
+        },
+        {
+          "row_index": 9,
+          "item_id": "restart_09",
+          "is_header": false,
+          "cells": [
+            {
+              "tag": "td",
+              "text": "An incorrect kick-off or restart kick (scrum option).",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "In the scrum zone at the point closest to where the ball was kicked.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "The non-kicking team.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            }
+          ]
+        },
+        {
+          "row_index": 10,
+          "item_id": "restart_10",
+          "is_header": false,
+          "cells": [
+            {
+              "tag": "td",
+              "text": "Failure to “use it” at scrum, ruck or maul.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "In the scrum zone at the point closest to where the scrum, ruck or maul took place.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "The team not in possession.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            }
+          ]
+        },
+        {
+          "row_index": 11,
+          "item_id": "restart_11",
+          "is_header": false,
+          "cells": [
+            {
+              "tag": "td",
+              "text": "The ball or ball-carrier touches the referee and either team gains an advantage.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "In the scrum zone at the point closest to the incident.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "The team that last played the ball.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            }
+          ]
+        },
+        {
+          "row_index": 12,
+          "item_id": "restart_12",
+          "is_header": false,
+          "cells": [
+            {
+              "tag": "td",
+              "text": "Stoppage due to injury.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "In the scrum zone at the point where the ball was last played.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "The team last in possession.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            }
+          ]
+        },
+        {
+          "row_index": 13,
+          "item_id": "restart_13",
+          "is_header": false,
+          "cells": [
+            {
+              "tag": "td",
+              "text": "Reset scrum – no infringement.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "Where the original scrum took place.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "The team originally awarded the scrum.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            }
+          ]
+        },
+        {
+          "row_index": 14,
+          "item_id": "restart_14",
+          "is_header": false,
+          "cells": [
+            {
+              "tag": "td",
+              "text": "A penalty attempt at goal not taken within the time limit.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "In the scrum zone at the point closest to where the penalty was awarded.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "The non-offending team.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            }
+          ]
+        },
+        {
+          "row_index": 15,
+          "item_id": "restart_15",
+          "is_header": false,
+          "cells": [
+            {
+              "tag": "td",
+              "text": "Ball kicked dead through in-goal (scrum option)",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "In the scrum zone at the point closest to where the ball was kicked.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "The non-kicking team.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            }
+          ]
+        },
+        {
+          "row_index": 16,
+          "item_id": "restart_16",
+          "is_header": false,
+          "cells": [
+            {
+              "tag": "td",
+              "text": "Penalty kick or free kick not taken correctly, or as first indicated",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "Place of infringement.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "The non-offending team.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            }
+          ]
+        },
+        {
+          "row_index": 17,
+          "item_id": "restart_17",
+          "is_header": false,
+          "cells": [
+            {
+              "tag": "td",
+              "text": "The referee awards a scrum for any other reason not covered in law.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "In the scrum zone at the point closest to the place of stoppage.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "The team that was last moving forward.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            }
+          ]
+        }
+      ],
+      "header_rows": [
+        {
+          "row_index": 0,
+          "item_id": null,
+          "is_header": true,
+          "cells": [
+            {
+              "tag": "th",
+              "text": "Infringement / stoppage",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "th",
+              "text": "Location of scrum",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "th",
+              "text": "Who throws in",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            }
+          ]
+        }
+      ],
+      "body_rows": [
+        {
+          "row_index": 1,
+          "item_id": "restart_01",
+          "is_header": false,
+          "cells": [
+            {
+              "tag": "td",
+              "text": "A knock forward in the field of play or throw forward, apart from at a lineout.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "In the scrum zone at the point closest to the place of infringement.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "The non-offending team.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            }
+          ]
+        },
+        {
+          "row_index": 2,
+          "item_id": "restart_02",
+          "is_header": false,
+          "cells": [
+            {
+              "tag": "td",
+              "text": "A knock forward or throw forward at a lineout; incorrect throw at a lineout; incorrect quick throw.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "15 metres in from the mark of touch.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "The non-offending team.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            }
+          ]
+        },
+        {
+          "row_index": 3,
+          "item_id": "restart_03",
+          "is_header": false,
+          "cells": [
+            {
+              "tag": "td",
+              "text": "Offside in open play (scrum option).",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "In the scrum zone at the point closest to where the offending team last played the ball.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "The non-offending team.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            }
+          ]
+        },
+        {
+          "row_index": 4,
+          "item_id": "restart_04",
+          "is_header": false,
+          "cells": [
+            {
+              "tag": "td",
+              "text": "A penalty (scrum option).",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "In the scrum zone at the point closest to where the infringement took place.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "The non-offending team.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            }
+          ]
+        },
+        {
+          "row_index": 5,
+          "item_id": "restart_05",
+          "is_header": false,
+          "cells": [
+            {
+              "tag": "td",
+              "text": "The ball is played by, or taken into in-goal by the defending team and made dead.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "In the scrum zone at the point closest to where the ball was made dead.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "The attacking team.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            }
+          ]
+        },
+        {
+          "row_index": 6,
+          "item_id": "restart_06",
+          "is_header": false,
+          "cells": [
+            {
+              "tag": "td",
+              "text": "An unplayable tackle or ruck.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "In the scrum zone at the point closest to where the tackle or ruck took place.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "The team last moving forward.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            }
+          ]
+        },
+        {
+          "row_index": 7,
+          "item_id": "restart_07",
+          "is_header": false,
+          "cells": [
+            {
+              "tag": "td",
+              "text": "A maul that ends unsuccessfully.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "In the scrum zone at the point closest to where the maul ended.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "The team not in possession at the start of the maul. If the referee cannot decide which team had possession, the team last moving forward before the maul stopped.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            }
+          ]
+        },
+        {
+          "row_index": 8,
+          "item_id": "restart_08",
+          "is_header": false,
+          "cells": [
+            {
+              "tag": "td",
+              "text": "An unplayable maul after an opponent's kick in open play.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "In the scrum zone at the point nearest to place of maul.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "The team in possession at the start of the maul.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            }
+          ]
+        },
+        {
+          "row_index": 9,
+          "item_id": "restart_09",
+          "is_header": false,
+          "cells": [
+            {
+              "tag": "td",
+              "text": "An incorrect kick-off or restart kick (scrum option).",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "In the scrum zone at the point closest to where the ball was kicked.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "The non-kicking team.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            }
+          ]
+        },
+        {
+          "row_index": 10,
+          "item_id": "restart_10",
+          "is_header": false,
+          "cells": [
+            {
+              "tag": "td",
+              "text": "Failure to “use it” at scrum, ruck or maul.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "In the scrum zone at the point closest to where the scrum, ruck or maul took place.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "The team not in possession.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            }
+          ]
+        },
+        {
+          "row_index": 11,
+          "item_id": "restart_11",
+          "is_header": false,
+          "cells": [
+            {
+              "tag": "td",
+              "text": "The ball or ball-carrier touches the referee and either team gains an advantage.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "In the scrum zone at the point closest to the incident.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "The team that last played the ball.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            }
+          ]
+        },
+        {
+          "row_index": 12,
+          "item_id": "restart_12",
+          "is_header": false,
+          "cells": [
+            {
+              "tag": "td",
+              "text": "Stoppage due to injury.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "In the scrum zone at the point where the ball was last played.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "The team last in possession.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            }
+          ]
+        },
+        {
+          "row_index": 13,
+          "item_id": "restart_13",
+          "is_header": false,
+          "cells": [
+            {
+              "tag": "td",
+              "text": "Reset scrum – no infringement.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "Where the original scrum took place.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "The team originally awarded the scrum.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            }
+          ]
+        },
+        {
+          "row_index": 14,
+          "item_id": "restart_14",
+          "is_header": false,
+          "cells": [
+            {
+              "tag": "td",
+              "text": "A penalty attempt at goal not taken within the time limit.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "In the scrum zone at the point closest to where the penalty was awarded.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "The non-offending team.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            }
+          ]
+        },
+        {
+          "row_index": 15,
+          "item_id": "restart_15",
+          "is_header": false,
+          "cells": [
+            {
+              "tag": "td",
+              "text": "Ball kicked dead through in-goal (scrum option)",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "In the scrum zone at the point closest to where the ball was kicked.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "The non-kicking team.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            }
+          ]
+        },
+        {
+          "row_index": 16,
+          "item_id": "restart_16",
+          "is_header": false,
+          "cells": [
+            {
+              "tag": "td",
+              "text": "Penalty kick or free kick not taken correctly, or as first indicated",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "Place of infringement.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "The non-offending team.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            }
+          ]
+        },
+        {
+          "row_index": 17,
+          "item_id": "restart_17",
+          "is_header": false,
+          "cells": [
+            {
+              "tag": "td",
+              "text": "The referee awards a scrum for any other reason not covered in law.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "In the scrum zone at the point closest to the place of stoppage.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            },
+            {
+              "tag": "td",
+              "text": "The team that was last moving forward.",
+              "rowspan": 1,
+              "colspan": 1,
+              "links": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "item_id": "diagram_01",
+      "src": "https://resources.world.rugby/worldrugby/photo/2020/11/04/12bda2a2-6e28-43d8-a2e5-54de7d17602c/scrum.jpg",
+      "resolved_src": "https://resources.world.rugby/worldrugby/photo/2020/11/04/12bda2a2-6e28-43d8-a2e5-54de7d17602c/scrum.jpg",
+      "alt": "",
+      "width": null,
+      "height": null,
+      "caption": "Scrum formation (subject to 19.7)",
+      "caption_clause_references": [
+        "19.7"
+      ],
+      "context_clause_id": null,
+      "section": "Forming a scrum",
+      "context_association": "section_only",
+      "semantic_clause_assignment": null,
+      "downloaded": false,
+      "content_inspected": false
+    },
+    {
+      "item_id": "diagram_02",
+      "src": "https://resources.world.rugby/worldrugby/photo/2020/11/04/90608a4b-1759-4d37-91b9-abaf6cbad15b/throw-in-at-scrum-2018.jpg",
+      "resolved_src": "https://resources.world.rugby/worldrugby/photo/2020/11/04/90608a4b-1759-4d37-91b9-abaf6cbad15b/throw-in-at-scrum-2018.jpg",
+      "alt": "",
+      "width": null,
+      "height": null,
+      "caption": "Throw-in at the scrum",
+      "caption_clause_references": [],
+      "context_clause_id": "19.15(g)",
+      "section": "Throw",
+      "context_association": "preceding_clause_in_same_section",
+      "semantic_clause_assignment": null,
+      "downloaded": false,
+      "content_inspected": false
+    },
+    {
+      "item_id": "diagram_03",
+      "src": "/media/tywovhpc/2607en-scrum-offside-graphic.png?rmode=max&width=500&height=462",
+      "resolved_src": "https://passport.world.rugby/media/tywovhpc/2607en-scrum-offside-graphic.png?rmode=max&width=500&height=462",
+      "alt": "",
+      "width": "500",
+      "height": "462",
+      "caption": "Scrum offside",
+      "caption_clause_references": [],
+      "context_clause_id": "19.33",
+      "section": "Offside at a scrum",
+      "context_association": "preceding_clause_in_same_section",
+      "semantic_clause_assignment": null,
+      "downloaded": false,
+      "content_inspected": false
+    }
+  ],
+  "image_captions": [
+    {
+      "caption_id": "caption_01",
+      "text": "Scrum formation (subject to 19.7)",
+      "image_ids": [
+        "diagram_01"
+      ],
+      "association_status": "adjacent_images"
+    },
+    {
+      "caption_id": "caption_02",
+      "text": "Throw-in at the scrum",
+      "image_ids": [
+        "diagram_02"
+      ],
+      "association_status": "adjacent_images"
+    },
+    {
+      "caption_id": "caption_03",
+      "text": "Scrum offside",
+      "image_ids": [
+        "diagram_03"
+      ],
+      "association_status": "adjacent_images"
+    }
+  ],
+  "cross_references": [
+    {
+      "kind": "textual_reference",
+      "context_item_id": "caption_01",
+      "context_clause_id": null,
+      "section": "Forming a scrum",
+      "context_text": "Scrum formation (subject to 19.7)",
+      "text": "19.7",
+      "target": "19.7",
+      "target_type": "law_clause",
+      "character_start": 28,
+      "character_end": 32,
+      "href": null,
+      "resolved_url": null,
+      "external_content_included": false,
+      "reference_id": "reference_001"
+    },
+    {
+      "kind": "textual_reference",
+      "context_item_id": "19.5",
+      "context_clause_id": "19.5",
+      "section": "Forming a scrum",
+      "context_text": "When both teams have 15 players, eight players from each team bind together in formation (subject to 19.7d) as suggested in the diagram. Each team must have two props and one hooker in the front row and two locks in the second row. Three back-row players from each team complete the scrum.",
+      "text": "19.7d",
+      "target": "19.7(d)",
+      "target_type": "law_clause",
+      "character_start": 101,
+      "character_end": 106,
+      "href": null,
+      "resolved_url": null,
+      "external_content_included": false,
+      "reference_id": "reference_002"
+    },
+    {
+      "kind": "hyperlink",
+      "context_item_id": "19.6",
+      "context_clause_id": "19.6",
+      "section": "Forming a scrum",
+      "text": "law 3.15",
+      "href": "/laws-of-the-game/laws-by-number/3-team/",
+      "resolved_url": "https://passport.world.rugby/laws-of-the-game/laws-by-number/3-team/",
+      "title": "3 Team",
+      "targets": [
+        {
+          "text": "law 3.15",
+          "target": "3.15",
+          "target_type": "law_clause",
+          "character_start": 0,
+          "character_end": 8
+        }
+      ],
+      "external_content_included": false,
+      "reference_id": "reference_003"
+    },
+    {
+      "kind": "textual_reference",
+      "context_item_id": "19.39",
+      "context_clause_id": "19.39",
+      "section": "Scrum law variations",
+      "context_text": "A union may implement the under-19 scrum law variations at defined levels of the game within its jurisdiction.",
+      "text": "under-19 scrum law variations",
+      "target": "under_19_scrum_law_variations",
+      "target_type": "named_external_variation",
+      "character_start": 26,
+      "character_end": 55,
+      "href": null,
+      "resolved_url": null,
+      "external_content_included": false,
+      "reference_id": "reference_004"
+    }
+  ],
+  "variation_authority": {
+    "clause_id": "19.39",
+    "text": "A union may implement the under-19 scrum law variations at defined levels of the game within its jurisdiction.",
+    "external_rules_included": false,
+    "linked_variation_url": null
+  },
+  "visible_body_text": "Principle\nThe purpose of a scrum is to restart play with a contest for possession after a minor infringement or stoppage.\n19.1 Where the game is restarted with a scrum and which team throws in is determined as follows:\nInfringement / stoppage\tLocation of scrum\tWho throws in\nA knock forward in the field of play or throw forward, apart from at a lineout.\tIn the scrum zone at the point closest to the place of infringement.\tThe non-offending team.\nA knock forward or throw forward at a lineout; incorrect throw at a lineout; incorrect quick throw.\t15 metres in from the mark of touch.\tThe non-offending team.\nOffside in open play (scrum option).\tIn the scrum zone at the point closest to where the offending team last played the ball.\tThe non-offending team.\nA penalty (scrum option).\tIn the scrum zone at the point closest to where the infringement took place.\tThe non-offending team.\nThe ball is played by, or taken into in-goal by the defending team and made dead.\tIn the scrum zone at the point closest to where the ball was made dead.\tThe attacking team.\nAn unplayable tackle or ruck.\tIn the scrum zone at the point closest to where the tackle or ruck took place.\tThe team last moving forward.\nA maul that ends unsuccessfully.\tIn the scrum zone at the point closest to where the maul ended.\tThe team not in possession at the start of the maul. If the referee cannot decide which team had possession, the team last moving forward before the maul stopped.\nAn unplayable maul after an opponent's kick in open play.\tIn the scrum zone at the point nearest to place of maul.\tThe team in possession at the start of the maul.\nAn incorrect kick-off or restart kick (scrum option).\tIn the scrum zone at the point closest to where the ball was kicked.\tThe non-kicking team.\nFailure to “use it” at scrum, ruck or maul.\tIn the scrum zone at the point closest to where the scrum, ruck or maul took place.\tThe team not in possession.\nThe ball or ball-carrier touches the referee and either team gains an advantage.\tIn the scrum zone at the point closest to the incident.\tThe team that last played the ball.\nStoppage due to injury.\tIn the scrum zone at the point where the ball was last played.\tThe team last in possession.\nReset scrum – no infringement.\tWhere the original scrum took place.\tThe team originally awarded the scrum.\nA penalty attempt at goal not taken within the time limit.\tIn the scrum zone at the point closest to where the penalty was awarded.\tThe non-offending team.\nBall kicked dead through in-goal (scrum option)\tIn the scrum zone at the point closest to where the ball was kicked.\tThe non-kicking team.\nPenalty kick or free kick not taken correctly, or as first indicated\tPlace of infringement.\tThe non-offending team.\nThe referee awards a scrum for any other reason not covered in law.\tIn the scrum zone at the point closest to the place of stoppage.\tThe team that was last moving forward.\nForming a scrum\nScrum formation (subject to 19.7)\n19.2 A scrum is formed in the scrum zone at a mark indicated by the referee.\n19.3 The referee makes the mark to create the middle line of the scrum, which runs parallel to the try lines.\n19.4 Teams must be ready to form the scrum within 30 seconds of the mark being made. Sanction: Free-kick.\n19.5 When both teams have 15 players, eight players from each team bind together in formation (subject to 19.7d) as suggested in the diagram. Each team must have two props and one hooker in the front row and two locks in the second row. Three back-row players from each team complete the scrum. Sanction: Penalty.\n19.6 When a team is reduced to fewer than 15 for any reason, then the number of players in each team in the scrum may be similarly reduced. Where a permitted reduction is made by one team, there is no requirement for the other team to make a similar reduction. However, a team must not have fewer than five players in the scrum. (see also law 3.15)\n19.7 The players in the scrum bind in the following way:\na. The props bind to the hooker. Sanction: Penalty.\nb. The hooker binds with both arms. This can be either over or under the arms of the props. Sanction: Penalty.\nc. The locks bind with the props immediately in front of them and with each other. Sanction: Penalty.\nd. All other players in the scrum bind on a lock’s body with at least one arm. Sanction: Penalty.\n19.8 The two groups face each other, either side of and parallel to the middle line.\n19.9 The two front rows stand not more than an arm’s length apart with the hookers at the mark.\nEngagement\n19.10 When both sides are square, stable and stationary, the referee calls “crouch”.\na. The front-rows then adopt a crouched position if they have not already done so. Their heads and shoulders are no lower than their hips, a position that is maintained for the duration of the scrum. Sanction: Free-kick.\nb. The front-rows crouch with their heads to the left of their immediate opponents’, so that no player’s head is touching the neck or shoulders of an opponent. Sanction: Free-kick.\nc. Hookers must have a 'brake' foot positioned to help stability and to avoid axial loading. Sanction: Free-kick.\n19.11 When both sides are square, stable and stationary, the referee calls “bind”.\na. Each loose-head prop binds by placing the left arm inside the right arm of the opposing tight-head prop. Sanction: Penalty.\nb. Each tight-head prop binds by placing the right arm outside the left upper arm of the opposing loose-head prop. Sanction: Penalty.\nc. Each prop binds by gripping the back or side of their opponent’s jersey. Sanction: Penalty.\nd. All players’ binding is maintained, in the position they started in, for the duration of the scrum. Sanction: Penalty.\ne. Hookers may adjust their 'brake' foot but it must still be acting as a brake. Sanction: Free-kick.\n19.12 When both sides are square, stable and stationary, with the hooker still applying the brake foot, the referee calls “set”.\na. Only then must the hooker remove the 'brake' foot and the teams engage, completing the formation of the scrum and creating a tunnel into which the ball will be thrown. Sanction: Free-kick.\nb. All players must be in position and ready to push forward. Sanction: Free-kick.\nc. Each front-row player must have both their feet on the ground, with their weight firmly on at least one foot. Sanction: Free-kick.\nd. Each hooker’s feet must be in line with, or behind, the foremost foot of that team’s props. Sanction: Free-kick.\nThrow\n19.13 The scrum-half chooses which side of the scrum to throw in the ball.\n19.14 The scrum-half holds the ball as shown in the diagram.\n19.15 When both sides are square, stable and stationary, the scrum-half throws in the ball:\na. From the chosen side. Sanction: Free-kick.\nb. From outside the tunnel. Sanction: Free-kick.\nc. Without delay. Sanction: Free-kick.\nd. With a single forward movement. Sanction: Free-kick.\ne. At a quick speed. Sanction: Free-kick.\nf. Straight. The scrum-half may align their shoulder on the middle line of the scrum, thereby standing a shoulder-width closer to their side of the scrum. Sanction: Free-kick.\ng. So that it first touches the ground inside the tunnel. Sanction: Free-kick.\nThrow-in at the scrum\nDuring a scrum\n19.16 The scrum begins when the ball leaves the hands of the scrum-half.\n19.17 Only when the scrum begins may the teams push. Sanction: Free-kick.\n19.18 Possession may be gained by pushing the opposition backwards and off the ball.\n19.19 Players may push provided they do so straight and parallel to the ground. Sanction: Penalty.\n19.20 Front-row players may gain possession by striking for the ball but only once the ball touches the ground in the tunnel. Sanction: Free-kick.\n19.21 A front-row player striking for the ball may do so with either foot but not both at the same time. Sanction: Penalty.\n19.22 The hooker from the team which threw in the ball must strike for the ball. Sanction: Free-kick.\n19.23 A front-row player must not intentionally kick the ball out of the tunnel from the direction it was thrown. Sanction: Free-kick.\n19.24 Any player within the scrum may play the ball but only with their feet or lower legs and they must not lift the ball. Sanction: Penalty.\n19.25 If a scrum collapses or if a player in the scrum is lifted or is forced upwards out of the scrum, the referee must blow the whistle immediately so that players stop pushing.\n19.26 When the scrum is stationary and the ball has been available at the back of the scrum for three-five seconds, the referee calls “use it”. The team must then play the ball out of the scrum immediately. Sanction: Scrum.\nOffside at a scrum\n19.27 Players remain onside for the duration of the scrum. Sanction: Penalty.\n19.28 Prior to the start of play in the scrum, the scrum-half of the team not throwing in the ball stands:\na. On that team’s side of the middle line next to the opposing scrum-half, or Sanction: Penalty.\nb. At least five metres behind the hindmost foot of their team’s last player in the scrum and remains there until the completion of the scrum. Sanction: Penalty.\n19.29 Once play in the scrum begins, the scrum-half of the team in possession has at least one foot level with or behind the ball.\n19.30 Once play in the scrum begins, the scrum-half of the team not in possession:\nGLOBAL LAW TRIAL\na. Takes up a position near the scrum with both feet no further than the centre line of the tunnel, or Sanction: Penalty.\nb. Permanently retires to a point on the offside line either at that team’s hindmost foot, or Sanction: Penalty.\nc. Permanently retires at least five metres behind the hindmost foot. Sanction: Penalty.\n19.31 All players not participating at the scrum remain at least five metres behind the hindmost foot of their team. Sanction: Penalty.\n19.32 When the hindmost foot of a team is in in-goal or within five metres of that team’s try line, the offside line for that team’s non-participants is the try line. Sanction: Penalty.\n19.33 As soon as the scrum ends, offside lines no longer apply.\nScrum offside\nResetting a scrum\n19.34 When there is no infringement, the referee will stop play and reset the scrum if:\na. The scrum-half throws in the ball and it comes out at either end of the tunnel.\nb. The scrum collapses or breaks up before it has otherwise ended.\nc. The scrum is wheeled through more than 90 degrees, so the middle line has passed beyond a position parallel to the touchline.\nd. Neither side wins possession.\ne. The ball is unintentionally kicked out of the tunnel. Exception: If the ball is repeatedly kicked out, the referee must treat this as intentional. Sanction: Penalty.\n19.35 When a scrum is reset, the ball is thrown in by the team that previously threw it in.\nEnding a scrum\n19.36 The scrum ends:\na. When the ball comes out of the scrum in any direction except the tunnel.\nb. When the ball reaches the feet of the hindmost player and it is picked up by that player or is played by that team’s scrum-half.\nc. When the number eight picks up the ball from the feet of a second-row player.\nd. When the referee blows the whistle for an infringement.\ne. When the ball in a scrum is on or over the try line.\nDangerous play and restricted practices in a scrum\n19.37 Dangerous play in a scrum includes:\na. A front-row charging against the opposition. Sanction: Penalty.\nb. Pulling an opponent. Sanction: Penalty.\nc. Intentionally lifting an opponent off their feet or forcing them upwards out of the scrum. Sanction: Penalty.\nd. Intentionally collapsing a scrum. Sanction: Penalty.\ne. Intentionally falling or kneeling. Sanction: Penalty.\n19.38 Other restricted practices at a scrum include:\na. Falling on or over the ball immediately after it has emerged from the scrum. Sanction: Penalty.\nb. Scrum-half kicking the ball while it is in the scrum. Sanction: Penalty.\nc. Non-front-row player holding or pushing an opponent. Sanction: Penalty.\nd. Bringing the ball back into the scrum once it has left. Sanction: Free-kick.\ne. Non-front-row players playing the ball in the tunnel. Sanction: Free-kick.\nf. Scrum-half attempting to make an opponent believe the ball is out of the scrum when it is not. Sanction: Free-kick.\nScrum law variations\n19.39 A union may implement the under-19 scrum law variations at defined levels of the game within its jurisdiction.",
+  "clauses": [
+    {
+      "clause_id": "19.1",
+      "parent_clause_id": null,
+      "section": "Principle",
+      "raw_paragraph_text": "19.1 Where the game is restarted with a scrum and which team throws in is determined as follows:",
+      "law_text": "Where the game is restarted with a scrum and which team throws in is determined as follows:",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.2",
+      "parent_clause_id": null,
+      "section": "Forming a scrum",
+      "raw_paragraph_text": "19.2 A scrum is formed in the scrum zone at a mark indicated by the referee.",
+      "law_text": "A scrum is formed in the scrum zone at a mark indicated by the referee.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.3",
+      "parent_clause_id": null,
+      "section": "Forming a scrum",
+      "raw_paragraph_text": "19.3 The referee makes the mark to create the middle line of the scrum, which runs parallel to the try lines.",
+      "law_text": "The referee makes the mark to create the middle line of the scrum, which runs parallel to the try lines.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.4",
+      "parent_clause_id": null,
+      "section": "Forming a scrum",
+      "raw_paragraph_text": "19.4 Teams must be ready to form the scrum within 30 seconds of the mark being made. Sanction: Free-kick.",
+      "law_text": "Teams must be ready to form the scrum within 30 seconds of the mark being made.",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.5",
+      "parent_clause_id": null,
+      "section": "Forming a scrum",
+      "raw_paragraph_text": "19.5 When both teams have 15 players, eight players from each team bind together in formation (subject to 19.7d) as suggested in the diagram. Each team must have two props and one hooker in the front row and two locks in the second row. Three back-row players from each team complete the scrum. Sanction: Penalty.",
+      "law_text": "When both teams have 15 players, eight players from each team bind together in formation (subject to 19.7d) as suggested in the diagram. Each team must have two props and one hooker in the front row and two locks in the second row. Three back-row players from each team complete the scrum.",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.6",
+      "parent_clause_id": null,
+      "section": "Forming a scrum",
+      "raw_paragraph_text": "19.6 When a team is reduced to fewer than 15 for any reason, then the number of players in each team in the scrum may be similarly reduced. Where a permitted reduction is made by one team, there is no requirement for the other team to make a similar reduction. However, a team must not have fewer than five players in the scrum. (see also law 3.15)",
+      "law_text": "When a team is reduced to fewer than 15 for any reason, then the number of players in each team in the scrum may be similarly reduced. Where a permitted reduction is made by one team, there is no requirement for the other team to make a similar reduction. However, a team must not have fewer than five players in the scrum. (see also law 3.15)",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.7",
+      "parent_clause_id": null,
+      "section": "Forming a scrum",
+      "raw_paragraph_text": "19.7 The players in the scrum bind in the following way:",
+      "law_text": "The players in the scrum bind in the following way:",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.7(a)",
+      "parent_clause_id": "19.7",
+      "section": "Forming a scrum",
+      "raw_paragraph_text": "a. The props bind to the hooker. Sanction: Penalty.",
+      "law_text": "The props bind to the hooker.",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "The players in the scrum bind in the following way:",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.7(b)",
+      "parent_clause_id": "19.7",
+      "section": "Forming a scrum",
+      "raw_paragraph_text": "b. The hooker binds with both arms. This can be either over or under the arms of the props. Sanction: Penalty.",
+      "law_text": "The hooker binds with both arms. This can be either over or under the arms of the props.",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "The players in the scrum bind in the following way:",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.7(c)",
+      "parent_clause_id": "19.7",
+      "section": "Forming a scrum",
+      "raw_paragraph_text": "c. The locks bind with the props immediately in front of them and with each other. Sanction: Penalty.",
+      "law_text": "The locks bind with the props immediately in front of them and with each other.",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "The players in the scrum bind in the following way:",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.7(d)",
+      "parent_clause_id": "19.7",
+      "section": "Forming a scrum",
+      "raw_paragraph_text": "d. All other players in the scrum bind on a lock’s body with at least one arm. Sanction: Penalty.",
+      "law_text": "All other players in the scrum bind on a lock’s body with at least one arm.",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "The players in the scrum bind in the following way:",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.8",
+      "parent_clause_id": null,
+      "section": "Forming a scrum",
+      "raw_paragraph_text": "19.8 The two groups face each other, either side of and parallel to the middle line.",
+      "law_text": "The two groups face each other, either side of and parallel to the middle line.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.9",
+      "parent_clause_id": null,
+      "section": "Forming a scrum",
+      "raw_paragraph_text": "19.9 The two front rows stand not more than an arm’s length apart with the hookers at the mark.",
+      "law_text": "The two front rows stand not more than an arm’s length apart with the hookers at the mark.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.10",
+      "parent_clause_id": null,
+      "section": "Engagement",
+      "raw_paragraph_text": "19.10 When both sides are square, stable and stationary, the referee calls “crouch”.",
+      "law_text": "When both sides are square, stable and stationary, the referee calls “crouch”.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.10(a)",
+      "parent_clause_id": "19.10",
+      "section": "Engagement",
+      "raw_paragraph_text": "a. The front-rows then adopt a crouched position if they have not already done so. Their heads and shoulders are no lower than their hips, a position that is maintained for the duration of the scrum. Sanction: Free-kick.",
+      "law_text": "The front-rows then adopt a crouched position if they have not already done so. Their heads and shoulders are no lower than their hips, a position that is maintained for the duration of the scrum.",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "When both sides are square, stable and stationary, the referee calls “crouch”.",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.10(b)",
+      "parent_clause_id": "19.10",
+      "section": "Engagement",
+      "raw_paragraph_text": "b. The front-rows crouch with their heads to the left of their immediate opponents’, so that no player’s head is touching the neck or shoulders of an opponent. Sanction: Free-kick.",
+      "law_text": "The front-rows crouch with their heads to the left of their immediate opponents’, so that no player’s head is touching the neck or shoulders of an opponent.",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "When both sides are square, stable and stationary, the referee calls “crouch”.",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.10(c)",
+      "parent_clause_id": "19.10",
+      "section": "Engagement",
+      "raw_paragraph_text": "c. Hookers must have a 'brake' foot positioned to help stability and to avoid axial loading. Sanction: Free-kick.",
+      "law_text": "Hookers must have a 'brake' foot positioned to help stability and to avoid axial loading.",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "When both sides are square, stable and stationary, the referee calls “crouch”.",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.11",
+      "parent_clause_id": null,
+      "section": "Engagement",
+      "raw_paragraph_text": "19.11 When both sides are square, stable and stationary, the referee calls “bind”.",
+      "law_text": "When both sides are square, stable and stationary, the referee calls “bind”.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.11(a)",
+      "parent_clause_id": "19.11",
+      "section": "Engagement",
+      "raw_paragraph_text": "a. Each loose-head prop binds by placing the left arm inside the right arm of the opposing tight-head prop. Sanction: Penalty.",
+      "law_text": "Each loose-head prop binds by placing the left arm inside the right arm of the opposing tight-head prop.",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "When both sides are square, stable and stationary, the referee calls “bind”.",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.11(b)",
+      "parent_clause_id": "19.11",
+      "section": "Engagement",
+      "raw_paragraph_text": "b. Each tight-head prop binds by placing the right arm outside the left upper arm of the opposing loose-head prop. Sanction: Penalty.",
+      "law_text": "Each tight-head prop binds by placing the right arm outside the left upper arm of the opposing loose-head prop.",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "When both sides are square, stable and stationary, the referee calls “bind”.",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.11(c)",
+      "parent_clause_id": "19.11",
+      "section": "Engagement",
+      "raw_paragraph_text": "c. Each prop binds by gripping the back or side of their opponent’s jersey. Sanction: Penalty.",
+      "law_text": "Each prop binds by gripping the back or side of their opponent’s jersey.",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "When both sides are square, stable and stationary, the referee calls “bind”.",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.11(d)",
+      "parent_clause_id": "19.11",
+      "section": "Engagement",
+      "raw_paragraph_text": "d. All players’ binding is maintained, in the position they started in, for the duration of the scrum. Sanction: Penalty.",
+      "law_text": "All players’ binding is maintained, in the position they started in, for the duration of the scrum.",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "When both sides are square, stable and stationary, the referee calls “bind”.",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.11(e)",
+      "parent_clause_id": "19.11",
+      "section": "Engagement",
+      "raw_paragraph_text": "e. Hookers may adjust their 'brake' foot but it must still be acting as a brake. Sanction: Free-kick.",
+      "law_text": "Hookers may adjust their 'brake' foot but it must still be acting as a brake.",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "When both sides are square, stable and stationary, the referee calls “bind”.",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.12",
+      "parent_clause_id": null,
+      "section": "Engagement",
+      "raw_paragraph_text": "19.12 When both sides are square, stable and stationary, with the hooker still applying the brake foot, the referee calls “set”.",
+      "law_text": "When both sides are square, stable and stationary, with the hooker still applying the brake foot, the referee calls “set”.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.12(a)",
+      "parent_clause_id": "19.12",
+      "section": "Engagement",
+      "raw_paragraph_text": "a. Only then must the hooker remove the 'brake' foot and the teams engage, completing the formation of the scrum and creating a tunnel into which the ball will be thrown. Sanction: Free-kick.",
+      "law_text": "Only then must the hooker remove the 'brake' foot and the teams engage, completing the formation of the scrum and creating a tunnel into which the ball will be thrown.",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "When both sides are square, stable and stationary, with the hooker still applying the brake foot, the referee calls “set”.",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.12(b)",
+      "parent_clause_id": "19.12",
+      "section": "Engagement",
+      "raw_paragraph_text": "b. All players must be in position and ready to push forward. Sanction: Free-kick.",
+      "law_text": "All players must be in position and ready to push forward.",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "When both sides are square, stable and stationary, with the hooker still applying the brake foot, the referee calls “set”.",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.12(c)",
+      "parent_clause_id": "19.12",
+      "section": "Engagement",
+      "raw_paragraph_text": "c. Each front-row player must have both their feet on the ground, with their weight firmly on at least one foot. Sanction: Free-kick.",
+      "law_text": "Each front-row player must have both their feet on the ground, with their weight firmly on at least one foot.",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "When both sides are square, stable and stationary, with the hooker still applying the brake foot, the referee calls “set”.",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.12(d)",
+      "parent_clause_id": "19.12",
+      "section": "Engagement",
+      "raw_paragraph_text": "d. Each hooker’s feet must be in line with, or behind, the foremost foot of that team’s props. Sanction: Free-kick.",
+      "law_text": "Each hooker’s feet must be in line with, or behind, the foremost foot of that team’s props.",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "When both sides are square, stable and stationary, with the hooker still applying the brake foot, the referee calls “set”.",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.13",
+      "parent_clause_id": null,
+      "section": "Throw",
+      "raw_paragraph_text": "19.13 The scrum-half chooses which side of the scrum to throw in the ball.",
+      "law_text": "The scrum-half chooses which side of the scrum to throw in the ball.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.14",
+      "parent_clause_id": null,
+      "section": "Throw",
+      "raw_paragraph_text": "19.14 The scrum-half holds the ball as shown in the diagram.",
+      "law_text": "The scrum-half holds the ball as shown in the diagram.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.15",
+      "parent_clause_id": null,
+      "section": "Throw",
+      "raw_paragraph_text": "19.15 When both sides are square, stable and stationary, the scrum-half throws in the ball:",
+      "law_text": "When both sides are square, stable and stationary, the scrum-half throws in the ball:",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.15(a)",
+      "parent_clause_id": "19.15",
+      "section": "Throw",
+      "raw_paragraph_text": "a. From the chosen side. Sanction: Free-kick.",
+      "law_text": "From the chosen side.",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "When both sides are square, stable and stationary, the scrum-half throws in the ball:",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.15(b)",
+      "parent_clause_id": "19.15",
+      "section": "Throw",
+      "raw_paragraph_text": "b. From outside the tunnel. Sanction: Free-kick.",
+      "law_text": "From outside the tunnel.",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "When both sides are square, stable and stationary, the scrum-half throws in the ball:",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.15(c)",
+      "parent_clause_id": "19.15",
+      "section": "Throw",
+      "raw_paragraph_text": "c. Without delay. Sanction: Free-kick.",
+      "law_text": "Without delay.",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "When both sides are square, stable and stationary, the scrum-half throws in the ball:",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.15(d)",
+      "parent_clause_id": "19.15",
+      "section": "Throw",
+      "raw_paragraph_text": "d. With a single forward movement. Sanction: Free-kick.",
+      "law_text": "With a single forward movement.",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "When both sides are square, stable and stationary, the scrum-half throws in the ball:",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.15(e)",
+      "parent_clause_id": "19.15",
+      "section": "Throw",
+      "raw_paragraph_text": "e. At a quick speed. Sanction: Free-kick.",
+      "law_text": "At a quick speed.",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "When both sides are square, stable and stationary, the scrum-half throws in the ball:",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.15(f)",
+      "parent_clause_id": "19.15",
+      "section": "Throw",
+      "raw_paragraph_text": "f. Straight. The scrum-half may align their shoulder on the middle line of the scrum, thereby standing a shoulder-width closer to their side of the scrum. Sanction: Free-kick.",
+      "law_text": "Straight. The scrum-half may align their shoulder on the middle line of the scrum, thereby standing a shoulder-width closer to their side of the scrum.",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "When both sides are square, stable and stationary, the scrum-half throws in the ball:",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.15(g)",
+      "parent_clause_id": "19.15",
+      "section": "Throw",
+      "raw_paragraph_text": "g. So that it first touches the ground inside the tunnel. Sanction: Free-kick.",
+      "law_text": "So that it first touches the ground inside the tunnel.",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "When both sides are square, stable and stationary, the scrum-half throws in the ball:",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.16",
+      "parent_clause_id": null,
+      "section": "During a scrum",
+      "raw_paragraph_text": "19.16 The scrum begins when the ball leaves the hands of the scrum-half.",
+      "law_text": "The scrum begins when the ball leaves the hands of the scrum-half.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.17",
+      "parent_clause_id": null,
+      "section": "During a scrum",
+      "raw_paragraph_text": "19.17 Only when the scrum begins may the teams push. Sanction: Free-kick.",
+      "law_text": "Only when the scrum begins may the teams push.",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.18",
+      "parent_clause_id": null,
+      "section": "During a scrum",
+      "raw_paragraph_text": "19.18 Possession may be gained by pushing the opposition backwards and off the ball.",
+      "law_text": "Possession may be gained by pushing the opposition backwards and off the ball.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.19",
+      "parent_clause_id": null,
+      "section": "During a scrum",
+      "raw_paragraph_text": "19.19 Players may push provided they do so straight and parallel to the ground. Sanction: Penalty.",
+      "law_text": "Players may push provided they do so straight and parallel to the ground.",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.20",
+      "parent_clause_id": null,
+      "section": "During a scrum",
+      "raw_paragraph_text": "19.20 Front-row players may gain possession by striking for the ball but only once the ball touches the ground in the tunnel. Sanction: Free-kick.",
+      "law_text": "Front-row players may gain possession by striking for the ball but only once the ball touches the ground in the tunnel.",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.21",
+      "parent_clause_id": null,
+      "section": "During a scrum",
+      "raw_paragraph_text": "19.21 A front-row player striking for the ball may do so with either foot but not both at the same time. Sanction: Penalty.",
+      "law_text": "A front-row player striking for the ball may do so with either foot but not both at the same time.",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.22",
+      "parent_clause_id": null,
+      "section": "During a scrum",
+      "raw_paragraph_text": "19.22 The hooker from the team which threw in the ball must strike for the ball. Sanction: Free-kick.",
+      "law_text": "The hooker from the team which threw in the ball must strike for the ball.",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.23",
+      "parent_clause_id": null,
+      "section": "During a scrum",
+      "raw_paragraph_text": "19.23 A front-row player must not intentionally kick the ball out of the tunnel from the direction it was thrown. Sanction: Free-kick.",
+      "law_text": "A front-row player must not intentionally kick the ball out of the tunnel from the direction it was thrown.",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.24",
+      "parent_clause_id": null,
+      "section": "During a scrum",
+      "raw_paragraph_text": "19.24 Any player within the scrum may play the ball but only with their feet or lower legs and they must not lift the ball. Sanction: Penalty.",
+      "law_text": "Any player within the scrum may play the ball but only with their feet or lower legs and they must not lift the ball.",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.25",
+      "parent_clause_id": null,
+      "section": "During a scrum",
+      "raw_paragraph_text": "19.25 If a scrum collapses or if a player in the scrum is lifted or is forced upwards out of the scrum, the referee must blow the whistle immediately so that players stop pushing.",
+      "law_text": "If a scrum collapses or if a player in the scrum is lifted or is forced upwards out of the scrum, the referee must blow the whistle immediately so that players stop pushing.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.26",
+      "parent_clause_id": null,
+      "section": "During a scrum",
+      "raw_paragraph_text": "19.26 When the scrum is stationary and the ball has been available at the back of the scrum for three-five seconds, the referee calls “use it”. The team must then play the ball out of the scrum immediately. Sanction: Scrum.",
+      "law_text": "When the scrum is stationary and the ball has been available at the back of the scrum for three-five seconds, the referee calls “use it”. The team must then play the ball out of the scrum immediately.",
+      "printed_explicit_sanction": "Scrum.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.27",
+      "parent_clause_id": null,
+      "section": "Offside at a scrum",
+      "raw_paragraph_text": "19.27 Players remain onside for the duration of the scrum. Sanction: Penalty.",
+      "law_text": "Players remain onside for the duration of the scrum.",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.28",
+      "parent_clause_id": null,
+      "section": "Offside at a scrum",
+      "raw_paragraph_text": "19.28 Prior to the start of play in the scrum, the scrum-half of the team not throwing in the ball stands:",
+      "law_text": "Prior to the start of play in the scrum, the scrum-half of the team not throwing in the ball stands:",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.28(a)",
+      "parent_clause_id": "19.28",
+      "section": "Offside at a scrum",
+      "raw_paragraph_text": "a. On that team’s side of the middle line next to the opposing scrum-half, or Sanction: Penalty.",
+      "law_text": "On that team’s side of the middle line next to the opposing scrum-half, or",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "Prior to the start of play in the scrum, the scrum-half of the team not throwing in the ball stands:",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.28(b)",
+      "parent_clause_id": "19.28",
+      "section": "Offside at a scrum",
+      "raw_paragraph_text": "b. At least five metres behind the hindmost foot of their team’s last player in the scrum and remains there until the completion of the scrum. Sanction: Penalty.",
+      "law_text": "At least five metres behind the hindmost foot of their team’s last player in the scrum and remains there until the completion of the scrum.",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "Prior to the start of play in the scrum, the scrum-half of the team not throwing in the ball stands:",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.29",
+      "parent_clause_id": null,
+      "section": "Offside at a scrum",
+      "raw_paragraph_text": "19.29 Once play in the scrum begins, the scrum-half of the team in possession has at least one foot level with or behind the ball.",
+      "law_text": "Once play in the scrum begins, the scrum-half of the team in possession has at least one foot level with or behind the ball.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.30",
+      "parent_clause_id": null,
+      "section": "Offside at a scrum",
+      "raw_paragraph_text": "19.30 Once play in the scrum begins, the scrum-half of the team not in possession:",
+      "law_text": "Once play in the scrum begins, the scrum-half of the team not in possession:",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.30(a)",
+      "parent_clause_id": "19.30",
+      "section": "Offside at a scrum",
+      "raw_paragraph_text": "a. Takes up a position near the scrum with both feet no further than the centre line of the tunnel, or Sanction: Penalty.",
+      "law_text": "Takes up a position near the scrum with both feet no further than the centre line of the tunnel, or",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "Once play in the scrum begins, the scrum-half of the team not in possession:",
+      "qualification_labels": [
+        "GLOBAL LAW TRIAL"
+      ],
+      "global_law_trial": true,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.30(b)",
+      "parent_clause_id": "19.30",
+      "section": "Offside at a scrum",
+      "raw_paragraph_text": "b. Permanently retires to a point on the offside line either at that team’s hindmost foot, or Sanction: Penalty.",
+      "law_text": "Permanently retires to a point on the offside line either at that team’s hindmost foot, or",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "Once play in the scrum begins, the scrum-half of the team not in possession:",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.30(c)",
+      "parent_clause_id": "19.30",
+      "section": "Offside at a scrum",
+      "raw_paragraph_text": "c. Permanently retires at least five metres behind the hindmost foot. Sanction: Penalty.",
+      "law_text": "Permanently retires at least five metres behind the hindmost foot.",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "Once play in the scrum begins, the scrum-half of the team not in possession:",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.31",
+      "parent_clause_id": null,
+      "section": "Offside at a scrum",
+      "raw_paragraph_text": "19.31 All players not participating at the scrum remain at least five metres behind the hindmost foot of their team. Sanction: Penalty.",
+      "law_text": "All players not participating at the scrum remain at least five metres behind the hindmost foot of their team.",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.32",
+      "parent_clause_id": null,
+      "section": "Offside at a scrum",
+      "raw_paragraph_text": "19.32 When the hindmost foot of a team is in in-goal or within five metres of that team’s try line, the offside line for that team’s non-participants is the try line. Sanction: Penalty.",
+      "law_text": "When the hindmost foot of a team is in in-goal or within five metres of that team’s try line, the offside line for that team’s non-participants is the try line.",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.33",
+      "parent_clause_id": null,
+      "section": "Offside at a scrum",
+      "raw_paragraph_text": "19.33 As soon as the scrum ends, offside lines no longer apply.",
+      "law_text": "As soon as the scrum ends, offside lines no longer apply.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.34",
+      "parent_clause_id": null,
+      "section": "Resetting a scrum",
+      "raw_paragraph_text": "19.34 When there is no infringement, the referee will stop play and reset the scrum if:",
+      "law_text": "When there is no infringement, the referee will stop play and reset the scrum if:",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.34(a)",
+      "parent_clause_id": "19.34",
+      "section": "Resetting a scrum",
+      "raw_paragraph_text": "a. The scrum-half throws in the ball and it comes out at either end of the tunnel.",
+      "law_text": "The scrum-half throws in the ball and it comes out at either end of the tunnel.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "When there is no infringement, the referee will stop play and reset the scrum if:",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.34(b)",
+      "parent_clause_id": "19.34",
+      "section": "Resetting a scrum",
+      "raw_paragraph_text": "b. The scrum collapses or breaks up before it has otherwise ended.",
+      "law_text": "The scrum collapses or breaks up before it has otherwise ended.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "When there is no infringement, the referee will stop play and reset the scrum if:",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.34(c)",
+      "parent_clause_id": "19.34",
+      "section": "Resetting a scrum",
+      "raw_paragraph_text": "c. The scrum is wheeled through more than 90 degrees, so the middle line has passed beyond a position parallel to the touchline.",
+      "law_text": "The scrum is wheeled through more than 90 degrees, so the middle line has passed beyond a position parallel to the touchline.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "When there is no infringement, the referee will stop play and reset the scrum if:",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.34(d)",
+      "parent_clause_id": "19.34",
+      "section": "Resetting a scrum",
+      "raw_paragraph_text": "d. Neither side wins possession.",
+      "law_text": "Neither side wins possession.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "When there is no infringement, the referee will stop play and reset the scrum if:",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.34(e)",
+      "parent_clause_id": "19.34",
+      "section": "Resetting a scrum",
+      "raw_paragraph_text": "e. The ball is unintentionally kicked out of the tunnel. Exception: If the ball is repeatedly kicked out, the referee must treat this as intentional. Sanction: Penalty.",
+      "law_text": "The ball is unintentionally kicked out of the tunnel. Exception: If the ball is repeatedly kicked out, the referee must treat this as intentional.",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "conditional_exception_only",
+      "sanction_qualification_quote": "Exception: If the ball is repeatedly kicked out, the referee must treat this as intentional.",
+      "inherited_parent_context": "When there is no infringement, the referee will stop play and reset the scrum if:",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.35",
+      "parent_clause_id": null,
+      "section": "Resetting a scrum",
+      "raw_paragraph_text": "19.35 When a scrum is reset, the ball is thrown in by the team that previously threw it in.",
+      "law_text": "When a scrum is reset, the ball is thrown in by the team that previously threw it in.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.36",
+      "parent_clause_id": null,
+      "section": "Ending a scrum",
+      "raw_paragraph_text": "19.36 The scrum ends:",
+      "law_text": "The scrum ends:",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.36(a)",
+      "parent_clause_id": "19.36",
+      "section": "Ending a scrum",
+      "raw_paragraph_text": "a. When the ball comes out of the scrum in any direction except the tunnel.",
+      "law_text": "When the ball comes out of the scrum in any direction except the tunnel.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "The scrum ends:",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.36(b)",
+      "parent_clause_id": "19.36",
+      "section": "Ending a scrum",
+      "raw_paragraph_text": "b. When the ball reaches the feet of the hindmost player and it is picked up by that player or is played by that team’s scrum-half.",
+      "law_text": "When the ball reaches the feet of the hindmost player and it is picked up by that player or is played by that team’s scrum-half.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "The scrum ends:",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.36(c)",
+      "parent_clause_id": "19.36",
+      "section": "Ending a scrum",
+      "raw_paragraph_text": "c. When the number eight picks up the ball from the feet of a second-row player.",
+      "law_text": "When the number eight picks up the ball from the feet of a second-row player.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "The scrum ends:",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.36(d)",
+      "parent_clause_id": "19.36",
+      "section": "Ending a scrum",
+      "raw_paragraph_text": "d. When the referee blows the whistle for an infringement.",
+      "law_text": "When the referee blows the whistle for an infringement.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "The scrum ends:",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.36(e)",
+      "parent_clause_id": "19.36",
+      "section": "Ending a scrum",
+      "raw_paragraph_text": "e. When the ball in a scrum is on or over the try line.",
+      "law_text": "When the ball in a scrum is on or over the try line.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "The scrum ends:",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.37",
+      "parent_clause_id": null,
+      "section": "Dangerous play and restricted practices in a scrum",
+      "raw_paragraph_text": "19.37 Dangerous play in a scrum includes:",
+      "law_text": "Dangerous play in a scrum includes:",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.37(a)",
+      "parent_clause_id": "19.37",
+      "section": "Dangerous play and restricted practices in a scrum",
+      "raw_paragraph_text": "a. A front-row charging against the opposition. Sanction: Penalty.",
+      "law_text": "A front-row charging against the opposition.",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "Dangerous play in a scrum includes:",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.37(b)",
+      "parent_clause_id": "19.37",
+      "section": "Dangerous play and restricted practices in a scrum",
+      "raw_paragraph_text": "b. Pulling an opponent. Sanction: Penalty.",
+      "law_text": "Pulling an opponent.",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "Dangerous play in a scrum includes:",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.37(c)",
+      "parent_clause_id": "19.37",
+      "section": "Dangerous play and restricted practices in a scrum",
+      "raw_paragraph_text": "c. Intentionally lifting an opponent off their feet or forcing them upwards out of the scrum. Sanction: Penalty.",
+      "law_text": "Intentionally lifting an opponent off their feet or forcing them upwards out of the scrum.",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "Dangerous play in a scrum includes:",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.37(d)",
+      "parent_clause_id": "19.37",
+      "section": "Dangerous play and restricted practices in a scrum",
+      "raw_paragraph_text": "d. Intentionally collapsing a scrum. Sanction: Penalty.",
+      "law_text": "Intentionally collapsing a scrum.",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "Dangerous play in a scrum includes:",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.37(e)",
+      "parent_clause_id": "19.37",
+      "section": "Dangerous play and restricted practices in a scrum",
+      "raw_paragraph_text": "e. Intentionally falling or kneeling. Sanction: Penalty.",
+      "law_text": "Intentionally falling or kneeling.",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "Dangerous play in a scrum includes:",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.38",
+      "parent_clause_id": null,
+      "section": "Dangerous play and restricted practices in a scrum",
+      "raw_paragraph_text": "19.38 Other restricted practices at a scrum include:",
+      "law_text": "Other restricted practices at a scrum include:",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.38(a)",
+      "parent_clause_id": "19.38",
+      "section": "Dangerous play and restricted practices in a scrum",
+      "raw_paragraph_text": "a. Falling on or over the ball immediately after it has emerged from the scrum. Sanction: Penalty.",
+      "law_text": "Falling on or over the ball immediately after it has emerged from the scrum.",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "Other restricted practices at a scrum include:",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.38(b)",
+      "parent_clause_id": "19.38",
+      "section": "Dangerous play and restricted practices in a scrum",
+      "raw_paragraph_text": "b. Scrum-half kicking the ball while it is in the scrum. Sanction: Penalty.",
+      "law_text": "Scrum-half kicking the ball while it is in the scrum.",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "Other restricted practices at a scrum include:",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.38(c)",
+      "parent_clause_id": "19.38",
+      "section": "Dangerous play and restricted practices in a scrum",
+      "raw_paragraph_text": "c. Non-front-row player holding or pushing an opponent. Sanction: Penalty.",
+      "law_text": "Non-front-row player holding or pushing an opponent.",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "Other restricted practices at a scrum include:",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.38(d)",
+      "parent_clause_id": "19.38",
+      "section": "Dangerous play and restricted practices in a scrum",
+      "raw_paragraph_text": "d. Bringing the ball back into the scrum once it has left. Sanction: Free-kick.",
+      "law_text": "Bringing the ball back into the scrum once it has left.",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "Other restricted practices at a scrum include:",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.38(e)",
+      "parent_clause_id": "19.38",
+      "section": "Dangerous play and restricted practices in a scrum",
+      "raw_paragraph_text": "e. Non-front-row players playing the ball in the tunnel. Sanction: Free-kick.",
+      "law_text": "Non-front-row players playing the ball in the tunnel.",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "Other restricted practices at a scrum include:",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.38(f)",
+      "parent_clause_id": "19.38",
+      "section": "Dangerous play and restricted practices in a scrum",
+      "raw_paragraph_text": "f. Scrum-half attempting to make an opponent believe the ball is out of the scrum when it is not. Sanction: Free-kick.",
+      "law_text": "Scrum-half attempting to make an opponent believe the ball is out of the scrum when it is not.",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "Other restricted practices at a scrum include:",
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.39",
+      "parent_clause_id": null,
+      "section": "Scrum law variations",
+      "raw_paragraph_text": "19.39 A union may implement the under-19 scrum law variations at defined levels of the game within its jurisdiction.",
+      "law_text": "A union may implement the under-19 scrum law variations at defined levels of the game within its jurisdiction.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "qualification_labels": [],
+      "global_law_trial": false,
+      "automatic_infringement_label": null
+    }
+  ],
+  "reference_videos": [
+    {
+      "clause_id": "19.5",
+      "parent_clause_id": null,
+      "section": "Forming a scrum",
+      "modal_id": "law-model-law-text-864",
+      "provider": "Brightcove",
+      "account_id": "6068525061001",
+      "player_id": "2BhxkP0So",
+      "video_id": "6205008379001",
+      "constructed_player_url": "https://players.brightcove.net/6068525061001/2BhxkP0So_default/index.html?videoId=6205008379001",
+      "association_status": "associated_from_document_order",
+      "raw_paragraph_text": "19.5 When both teams have 15 players, eight players from each team bind together in formation (subject to 19.7d) as suggested in the diagram. Each team must have two props and one hooker in the front row and two locks in the second row. Three back-row players from each team complete the scrum. Sanction: Penalty.",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "global_law_trial": false,
+      "role": "official_rule_reference",
+      "playback_verified": false,
+      "video_file": null,
+      "camera_view": "unknown",
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.10",
+      "parent_clause_id": null,
+      "section": "Engagement",
+      "modal_id": "law-model-law-text-874",
+      "provider": "Brightcove",
+      "account_id": "6068525061001",
+      "player_id": "2BhxkP0So",
+      "video_id": "6205010770001",
+      "constructed_player_url": "https://players.brightcove.net/6068525061001/2BhxkP0So_default/index.html?videoId=6205010770001",
+      "association_status": "associated_from_document_order",
+      "raw_paragraph_text": "19.10 When both sides are square, stable and stationary, the referee calls “crouch”.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "global_law_trial": false,
+      "role": "official_rule_reference",
+      "playback_verified": false,
+      "video_file": null,
+      "camera_view": "unknown",
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.10",
+      "parent_clause_id": null,
+      "section": "Engagement",
+      "modal_id": "law-model-law-text-874",
+      "provider": "Brightcove",
+      "account_id": "6068525061001",
+      "player_id": "2BhxkP0So",
+      "video_id": "6205006810001",
+      "constructed_player_url": "https://players.brightcove.net/6068525061001/2BhxkP0So_default/index.html?videoId=6205006810001",
+      "association_status": "associated_from_document_order",
+      "raw_paragraph_text": "19.10 When both sides are square, stable and stationary, the referee calls “crouch”.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "global_law_trial": false,
+      "role": "official_rule_reference",
+      "playback_verified": false,
+      "video_file": null,
+      "camera_view": "unknown",
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.10",
+      "parent_clause_id": null,
+      "section": "Engagement",
+      "modal_id": "law-model-law-text-874",
+      "provider": "Brightcove",
+      "account_id": "6068525061001",
+      "player_id": "2BhxkP0So",
+      "video_id": "6205010497001",
+      "constructed_player_url": "https://players.brightcove.net/6068525061001/2BhxkP0So_default/index.html?videoId=6205010497001",
+      "association_status": "associated_from_document_order",
+      "raw_paragraph_text": "19.10 When both sides are square, stable and stationary, the referee calls “crouch”.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "global_law_trial": false,
+      "role": "official_rule_reference",
+      "playback_verified": false,
+      "video_file": null,
+      "camera_view": "unknown",
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.10",
+      "parent_clause_id": null,
+      "section": "Engagement",
+      "modal_id": "law-model-law-text-874",
+      "provider": "Brightcove",
+      "account_id": "6068525061001",
+      "player_id": "2BhxkP0So",
+      "video_id": "6205010498001",
+      "constructed_player_url": "https://players.brightcove.net/6068525061001/2BhxkP0So_default/index.html?videoId=6205010498001",
+      "association_status": "associated_from_document_order",
+      "raw_paragraph_text": "19.10 When both sides are square, stable and stationary, the referee calls “crouch”.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "global_law_trial": false,
+      "role": "official_rule_reference",
+      "playback_verified": false,
+      "video_file": null,
+      "camera_view": "unknown",
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.11",
+      "parent_clause_id": null,
+      "section": "Engagement",
+      "modal_id": "law-model-law-text-878",
+      "provider": "Brightcove",
+      "account_id": "6068525061001",
+      "player_id": "2BhxkP0So",
+      "video_id": "6205219625001",
+      "constructed_player_url": "https://players.brightcove.net/6068525061001/2BhxkP0So_default/index.html?videoId=6205219625001",
+      "association_status": "associated_from_document_order",
+      "raw_paragraph_text": "19.11 When both sides are square, stable and stationary, the referee calls “bind”.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "global_law_trial": false,
+      "role": "official_rule_reference",
+      "playback_verified": false,
+      "video_file": null,
+      "camera_view": "unknown",
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.12",
+      "parent_clause_id": null,
+      "section": "Engagement",
+      "modal_id": "law-model-law-text-883",
+      "provider": "Brightcove",
+      "account_id": "6068525061001",
+      "player_id": "2BhxkP0So",
+      "video_id": "6205220438001",
+      "constructed_player_url": "https://players.brightcove.net/6068525061001/2BhxkP0So_default/index.html?videoId=6205220438001",
+      "association_status": "associated_from_document_order",
+      "raw_paragraph_text": "19.12 When both sides are square, stable and stationary, with the hooker still applying the brake foot, the referee calls “set”.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "global_law_trial": false,
+      "role": "official_rule_reference",
+      "playback_verified": false,
+      "video_file": null,
+      "camera_view": "unknown",
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.12",
+      "parent_clause_id": null,
+      "section": "Engagement",
+      "modal_id": "law-model-law-text-883",
+      "provider": "Brightcove",
+      "account_id": "6068525061001",
+      "player_id": "2BhxkP0So",
+      "video_id": "6205219720001",
+      "constructed_player_url": "https://players.brightcove.net/6068525061001/2BhxkP0So_default/index.html?videoId=6205219720001",
+      "association_status": "associated_from_document_order",
+      "raw_paragraph_text": "19.12 When both sides are square, stable and stationary, with the hooker still applying the brake foot, the referee calls “set”.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "global_law_trial": false,
+      "role": "official_rule_reference",
+      "playback_verified": false,
+      "video_file": null,
+      "camera_view": "unknown",
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.17",
+      "parent_clause_id": null,
+      "section": "During a scrum",
+      "modal_id": "law-model-law-text-902",
+      "provider": "Brightcove",
+      "account_id": "6068525061001",
+      "player_id": "2BhxkP0So",
+      "video_id": "6205216270001",
+      "constructed_player_url": "https://players.brightcove.net/6068525061001/2BhxkP0So_default/index.html?videoId=6205216270001",
+      "association_status": "associated_from_document_order",
+      "raw_paragraph_text": "19.17 Only when the scrum begins may the teams push. Sanction: Free-kick.",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "global_law_trial": false,
+      "role": "official_rule_reference",
+      "playback_verified": false,
+      "video_file": null,
+      "camera_view": "unknown",
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.17",
+      "parent_clause_id": null,
+      "section": "During a scrum",
+      "modal_id": "law-model-law-text-902",
+      "provider": "Brightcove",
+      "account_id": "6068525061001",
+      "player_id": "2BhxkP0So",
+      "video_id": "6205211907001",
+      "constructed_player_url": "https://players.brightcove.net/6068525061001/2BhxkP0So_default/index.html?videoId=6205211907001",
+      "association_status": "associated_from_document_order",
+      "raw_paragraph_text": "19.17 Only when the scrum begins may the teams push. Sanction: Free-kick.",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "global_law_trial": false,
+      "role": "official_rule_reference",
+      "playback_verified": false,
+      "video_file": null,
+      "camera_view": "unknown",
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.19",
+      "parent_clause_id": null,
+      "section": "During a scrum",
+      "modal_id": "law-model-law-text-904",
+      "provider": "Brightcove",
+      "account_id": "6068525061001",
+      "player_id": "2BhxkP0So",
+      "video_id": "6205211122001",
+      "constructed_player_url": "https://players.brightcove.net/6068525061001/2BhxkP0So_default/index.html?videoId=6205211122001",
+      "association_status": "associated_from_document_order",
+      "raw_paragraph_text": "19.19 Players may push provided they do so straight and parallel to the ground. Sanction: Penalty.",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "global_law_trial": false,
+      "role": "official_rule_reference",
+      "playback_verified": false,
+      "video_file": null,
+      "camera_view": "unknown",
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.19",
+      "parent_clause_id": null,
+      "section": "During a scrum",
+      "modal_id": "law-model-law-text-904",
+      "provider": "Brightcove",
+      "account_id": "6068525061001",
+      "player_id": "2BhxkP0So",
+      "video_id": "6205218580001",
+      "constructed_player_url": "https://players.brightcove.net/6068525061001/2BhxkP0So_default/index.html?videoId=6205218580001",
+      "association_status": "associated_from_document_order",
+      "raw_paragraph_text": "19.19 Players may push provided they do so straight and parallel to the ground. Sanction: Penalty.",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "global_law_trial": false,
+      "role": "official_rule_reference",
+      "playback_verified": false,
+      "video_file": null,
+      "camera_view": "unknown",
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.24",
+      "parent_clause_id": null,
+      "section": "During a scrum",
+      "modal_id": "law-model-law-text-908",
+      "provider": "Brightcove",
+      "account_id": "6068525061001",
+      "player_id": "2BhxkP0So",
+      "video_id": "6205219626001",
+      "constructed_player_url": "https://players.brightcove.net/6068525061001/2BhxkP0So_default/index.html?videoId=6205219626001",
+      "association_status": "associated_from_document_order",
+      "raw_paragraph_text": "19.24 Any player within the scrum may play the ball but only with their feet or lower legs and they must not lift the ball. Sanction: Penalty.",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "global_law_trial": false,
+      "role": "official_rule_reference",
+      "playback_verified": false,
+      "video_file": null,
+      "camera_view": "unknown",
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.25",
+      "parent_clause_id": null,
+      "section": "During a scrum",
+      "modal_id": "law-model-law-text-909",
+      "provider": "Brightcove",
+      "account_id": "6068525061001",
+      "player_id": "2BhxkP0So",
+      "video_id": "6205220439001",
+      "constructed_player_url": "https://players.brightcove.net/6068525061001/2BhxkP0So_default/index.html?videoId=6205220439001",
+      "association_status": "associated_from_document_order",
+      "raw_paragraph_text": "19.25 If a scrum collapses or if a player in the scrum is lifted or is forced upwards out of the scrum, the referee must blow the whistle immediately so that players stop pushing.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "global_law_trial": false,
+      "role": "official_rule_reference",
+      "playback_verified": false,
+      "video_file": null,
+      "camera_view": "unknown",
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.25",
+      "parent_clause_id": null,
+      "section": "During a scrum",
+      "modal_id": "law-model-law-text-909",
+      "provider": "Brightcove",
+      "account_id": "6068525061001",
+      "player_id": "2BhxkP0So",
+      "video_id": "6205211528001",
+      "constructed_player_url": "https://players.brightcove.net/6068525061001/2BhxkP0So_default/index.html?videoId=6205211528001",
+      "association_status": "associated_from_document_order",
+      "raw_paragraph_text": "19.25 If a scrum collapses or if a player in the scrum is lifted or is forced upwards out of the scrum, the referee must blow the whistle immediately so that players stop pushing.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "global_law_trial": false,
+      "role": "official_rule_reference",
+      "playback_verified": false,
+      "video_file": null,
+      "camera_view": "unknown",
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.26",
+      "parent_clause_id": null,
+      "section": "During a scrum",
+      "modal_id": "law-model-law-text-910",
+      "provider": "Brightcove",
+      "account_id": "6068525061001",
+      "player_id": "2BhxkP0So",
+      "video_id": "6205218581001",
+      "constructed_player_url": "https://players.brightcove.net/6068525061001/2BhxkP0So_default/index.html?videoId=6205218581001",
+      "association_status": "associated_from_document_order",
+      "raw_paragraph_text": "19.26 When the scrum is stationary and the ball has been available at the back of the scrum for three-five seconds, the referee calls “use it”. The team must then play the ball out of the scrum immediately. Sanction: Scrum.",
+      "printed_explicit_sanction": "Scrum.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "global_law_trial": false,
+      "role": "official_rule_reference",
+      "playback_verified": false,
+      "video_file": null,
+      "camera_view": "unknown",
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.27",
+      "parent_clause_id": null,
+      "section": "Offside at a scrum",
+      "modal_id": "law-model-law-text-912",
+      "provider": "Brightcove",
+      "account_id": "6068525061001",
+      "player_id": "2BhxkP0So",
+      "video_id": "6205211908001",
+      "constructed_player_url": "https://players.brightcove.net/6068525061001/2BhxkP0So_default/index.html?videoId=6205211908001",
+      "association_status": "associated_from_document_order",
+      "raw_paragraph_text": "19.27 Players remain onside for the duration of the scrum. Sanction: Penalty.",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "global_law_trial": false,
+      "role": "official_rule_reference",
+      "playback_verified": false,
+      "video_file": null,
+      "camera_view": "unknown",
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.29",
+      "parent_clause_id": null,
+      "section": "Offside at a scrum",
+      "modal_id": "law-model-law-text-916",
+      "provider": "Brightcove",
+      "account_id": "6068525061001",
+      "player_id": "2BhxkP0So",
+      "video_id": "6205211123001",
+      "constructed_player_url": "https://players.brightcove.net/6068525061001/2BhxkP0So_default/index.html?videoId=6205211123001",
+      "association_status": "associated_from_document_order",
+      "raw_paragraph_text": "19.29 Once play in the scrum begins, the scrum-half of the team in possession has at least one foot level with or behind the ball.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "global_law_trial": false,
+      "role": "official_rule_reference",
+      "playback_verified": false,
+      "video_file": null,
+      "camera_view": "unknown",
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.31",
+      "parent_clause_id": null,
+      "section": "Offside at a scrum",
+      "modal_id": "law-model-law-text-921",
+      "provider": "Brightcove",
+      "account_id": "6068525061001",
+      "player_id": "2BhxkP0So",
+      "video_id": "6205216271001",
+      "constructed_player_url": "https://players.brightcove.net/6068525061001/2BhxkP0So_default/index.html?videoId=6205216271001",
+      "association_status": "associated_from_document_order",
+      "raw_paragraph_text": "19.31 All players not participating at the scrum remain at least five metres behind the hindmost foot of their team. Sanction: Penalty.",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "global_law_trial": false,
+      "role": "official_rule_reference",
+      "playback_verified": false,
+      "video_file": null,
+      "camera_view": "unknown",
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.31",
+      "parent_clause_id": null,
+      "section": "Offside at a scrum",
+      "modal_id": "law-model-law-text-921",
+      "provider": "Brightcove",
+      "account_id": "6068525061001",
+      "player_id": "2BhxkP0So",
+      "video_id": "6205220440001",
+      "constructed_player_url": "https://players.brightcove.net/6068525061001/2BhxkP0So_default/index.html?videoId=6205220440001",
+      "association_status": "associated_from_document_order",
+      "raw_paragraph_text": "19.31 All players not participating at the scrum remain at least five metres behind the hindmost foot of their team. Sanction: Penalty.",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": null,
+      "global_law_trial": false,
+      "role": "official_rule_reference",
+      "playback_verified": false,
+      "video_file": null,
+      "camera_view": "unknown",
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.34(a)",
+      "parent_clause_id": "19.34",
+      "section": "Resetting a scrum",
+      "modal_id": "law-model-law-text-927",
+      "provider": "Brightcove",
+      "account_id": "6068525061001",
+      "player_id": "2BhxkP0So",
+      "video_id": "6205219223001",
+      "constructed_player_url": "https://players.brightcove.net/6068525061001/2BhxkP0So_default/index.html?videoId=6205219223001",
+      "association_status": "associated_from_document_order",
+      "raw_paragraph_text": "a. The scrum-half throws in the ball and it comes out at either end of the tunnel.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "When there is no infringement, the referee will stop play and reset the scrum if:",
+      "global_law_trial": false,
+      "role": "official_rule_reference",
+      "playback_verified": false,
+      "video_file": null,
+      "camera_view": "unknown",
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.34(a)",
+      "parent_clause_id": "19.34",
+      "section": "Resetting a scrum",
+      "modal_id": "law-model-law-text-927",
+      "provider": "Brightcove",
+      "account_id": "6068525061001",
+      "player_id": "2BhxkP0So",
+      "video_id": "6205219721001",
+      "constructed_player_url": "https://players.brightcove.net/6068525061001/2BhxkP0So_default/index.html?videoId=6205219721001",
+      "association_status": "associated_from_document_order",
+      "raw_paragraph_text": "a. The scrum-half throws in the ball and it comes out at either end of the tunnel.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "When there is no infringement, the referee will stop play and reset the scrum if:",
+      "global_law_trial": false,
+      "role": "official_rule_reference",
+      "playback_verified": false,
+      "video_file": null,
+      "camera_view": "unknown",
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.34(b)",
+      "parent_clause_id": "19.34",
+      "section": "Resetting a scrum",
+      "modal_id": "law-model-law-text-928",
+      "provider": "Brightcove",
+      "account_id": "6068525061001",
+      "player_id": "2BhxkP0So",
+      "video_id": "6205217737001",
+      "constructed_player_url": "https://players.brightcove.net/6068525061001/2BhxkP0So_default/index.html?videoId=6205217737001",
+      "association_status": "associated_from_document_order",
+      "raw_paragraph_text": "b. The scrum collapses or breaks up before it has otherwise ended.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "When there is no infringement, the referee will stop play and reset the scrum if:",
+      "global_law_trial": false,
+      "role": "official_rule_reference",
+      "playback_verified": false,
+      "video_file": null,
+      "camera_view": "unknown",
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.34(b)",
+      "parent_clause_id": "19.34",
+      "section": "Resetting a scrum",
+      "modal_id": "law-model-law-text-928",
+      "provider": "Brightcove",
+      "account_id": "6068525061001",
+      "player_id": "2BhxkP0So",
+      "video_id": "6205219627001",
+      "constructed_player_url": "https://players.brightcove.net/6068525061001/2BhxkP0So_default/index.html?videoId=6205219627001",
+      "association_status": "associated_from_document_order",
+      "raw_paragraph_text": "b. The scrum collapses or breaks up before it has otherwise ended.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "When there is no infringement, the referee will stop play and reset the scrum if:",
+      "global_law_trial": false,
+      "role": "official_rule_reference",
+      "playback_verified": false,
+      "video_file": null,
+      "camera_view": "unknown",
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.34(c)",
+      "parent_clause_id": "19.34",
+      "section": "Resetting a scrum",
+      "modal_id": "law-model-law-text-929",
+      "provider": "Brightcove",
+      "account_id": "6068525061001",
+      "player_id": "2BhxkP0So",
+      "video_id": "6205216272001",
+      "constructed_player_url": "https://players.brightcove.net/6068525061001/2BhxkP0So_default/index.html?videoId=6205216272001",
+      "association_status": "associated_from_document_order",
+      "raw_paragraph_text": "c. The scrum is wheeled through more than 90 degrees, so the middle line has passed beyond a position parallel to the touchline.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "When there is no infringement, the referee will stop play and reset the scrum if:",
+      "global_law_trial": false,
+      "role": "official_rule_reference",
+      "playback_verified": false,
+      "video_file": null,
+      "camera_view": "unknown",
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.34(c)",
+      "parent_clause_id": "19.34",
+      "section": "Resetting a scrum",
+      "modal_id": "law-model-law-text-929",
+      "provider": "Brightcove",
+      "account_id": "6068525061001",
+      "player_id": "2BhxkP0So",
+      "video_id": "6205211909001",
+      "constructed_player_url": "https://players.brightcove.net/6068525061001/2BhxkP0So_default/index.html?videoId=6205211909001",
+      "association_status": "associated_from_document_order",
+      "raw_paragraph_text": "c. The scrum is wheeled through more than 90 degrees, so the middle line has passed beyond a position parallel to the touchline.",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "When there is no infringement, the referee will stop play and reset the scrum if:",
+      "global_law_trial": false,
+      "role": "official_rule_reference",
+      "playback_verified": false,
+      "video_file": null,
+      "camera_view": "unknown",
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.37(c)",
+      "parent_clause_id": "19.37",
+      "section": "Dangerous play and restricted practices in a scrum",
+      "modal_id": "law-model-law-text-944",
+      "provider": "Brightcove",
+      "account_id": "6068525061001",
+      "player_id": "2BhxkP0So",
+      "video_id": "6205220441001",
+      "constructed_player_url": "https://players.brightcove.net/6068525061001/2BhxkP0So_default/index.html?videoId=6205220441001",
+      "association_status": "associated_from_document_order",
+      "raw_paragraph_text": "c. Intentionally lifting an opponent off their feet or forcing them upwards out of the scrum. Sanction: Penalty.",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "Dangerous play in a scrum includes:",
+      "global_law_trial": false,
+      "role": "official_rule_reference",
+      "playback_verified": false,
+      "video_file": null,
+      "camera_view": "unknown",
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.37(d)",
+      "parent_clause_id": "19.37",
+      "section": "Dangerous play and restricted practices in a scrum",
+      "modal_id": "law-model-law-text-945",
+      "provider": "Brightcove",
+      "account_id": "6068525061001",
+      "player_id": "2BhxkP0So",
+      "video_id": "6205216273001",
+      "constructed_player_url": "https://players.brightcove.net/6068525061001/2BhxkP0So_default/index.html?videoId=6205216273001",
+      "association_status": "associated_from_document_order",
+      "raw_paragraph_text": "d. Intentionally collapsing a scrum. Sanction: Penalty.",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "Dangerous play in a scrum includes:",
+      "global_law_trial": false,
+      "role": "official_rule_reference",
+      "playback_verified": false,
+      "video_file": null,
+      "camera_view": "unknown",
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.37(d)",
+      "parent_clause_id": "19.37",
+      "section": "Dangerous play and restricted practices in a scrum",
+      "modal_id": "law-model-law-text-945",
+      "provider": "Brightcove",
+      "account_id": "6068525061001",
+      "player_id": "2BhxkP0So",
+      "video_id": "6205211529001",
+      "constructed_player_url": "https://players.brightcove.net/6068525061001/2BhxkP0So_default/index.html?videoId=6205211529001",
+      "association_status": "associated_from_document_order",
+      "raw_paragraph_text": "d. Intentionally collapsing a scrum. Sanction: Penalty.",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "Dangerous play in a scrum includes:",
+      "global_law_trial": false,
+      "role": "official_rule_reference",
+      "playback_verified": false,
+      "video_file": null,
+      "camera_view": "unknown",
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.37(e)",
+      "parent_clause_id": "19.37",
+      "section": "Dangerous play and restricted practices in a scrum",
+      "modal_id": "law-model-law-text-946",
+      "provider": "Brightcove",
+      "account_id": "6068525061001",
+      "player_id": "2BhxkP0So",
+      "video_id": "6205211910001",
+      "constructed_player_url": "https://players.brightcove.net/6068525061001/2BhxkP0So_default/index.html?videoId=6205211910001",
+      "association_status": "associated_from_document_order",
+      "raw_paragraph_text": "e. Intentionally falling or kneeling. Sanction: Penalty.",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "Dangerous play in a scrum includes:",
+      "global_law_trial": false,
+      "role": "official_rule_reference",
+      "playback_verified": false,
+      "video_file": null,
+      "camera_view": "unknown",
+      "automatic_infringement_label": null
+    },
+    {
+      "clause_id": "19.37(e)",
+      "parent_clause_id": "19.37",
+      "section": "Dangerous play and restricted practices in a scrum",
+      "modal_id": "law-model-law-text-946",
+      "provider": "Brightcove",
+      "account_id": "6068525061001",
+      "player_id": "2BhxkP0So",
+      "video_id": "6205219722001",
+      "constructed_player_url": "https://players.brightcove.net/6068525061001/2BhxkP0So_default/index.html?videoId=6205219722001",
+      "association_status": "associated_from_document_order",
+      "raw_paragraph_text": "e. Intentionally falling or kneeling. Sanction: Penalty.",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "sanction_qualification_quote": null,
+      "inherited_parent_context": "Dangerous play in a scrum includes:",
+      "global_law_trial": false,
+      "role": "official_rule_reference",
+      "playback_verified": false,
+      "video_file": null,
+      "camera_view": "unknown",
+      "automatic_infringement_label": null
+    }
+  ],
+  "scope_notes": [
+    "Asset URLs and alt/caption text are literal source metadata; image pixels and reference videos were not downloaded or inspected.",
+    "Preceding-clause image context records document order, not an exclusive interpretation of what a diagram depicts.",
+    "Out-of-page laws and law variations are referenced only; their contents and historical applicability are not part of this supplied source.",
+    "Visible text normalizes HTML layout whitespace; table cells retain explicit boundaries. This is not a rendered-browser or image transcription."
+  ],
+  "warnings": []
+}

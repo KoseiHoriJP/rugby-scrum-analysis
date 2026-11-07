@@ -1,0 +1,1 @@
+observation_id,event_id,start_s,end_s,subject_type,subject_id,observation_type,observed_value_json,value_unit,coordinate_frame,evidence_type,evidence_path,evidence_start_s,evidence_end_s,observability,certainty,review_status,reviewer,notes

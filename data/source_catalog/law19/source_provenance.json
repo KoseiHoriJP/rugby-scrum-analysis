@@ -1,0 +1,15 @@
+{
+  "acquisition_method": "user_supplied_html",
+  "declared_source_url": "https://passport.world.rugby/laws-of-the-game/laws-by-number/19-scrum/",
+  "source_filename": "貼り付けたテキスト.txt",
+  "source_bytes": 152969,
+  "source_sha256": "fbf3f5c31cd2ea7513c390d3fb4c8533cf008d92cc798224873af0037833a07b",
+  "independently_fetched": false,
+  "edition_date": null,
+  "historical_applicability_verified": false,
+  "script_execution": false,
+  "reference_role": "official_rule_reference_not_match_ground_truth",
+  "association_method": "Last actual clause in document order; reset on new major clause or h3",
+  "text_handling": "Literal visible paragraph text; HTML layout whitespace normalized, entities decoded",
+  "catalog_scope": "Numbered law paragraphs and video embed metadata only; the 19.1 restart table, diagrams and non-numbered introductory text are not flattened into these records. Consult the supplied HTML for full page context."
+}

@@ -1,0 +1,3071 @@
+{
+  "schema_id": "law19_observation_fields_v1",
+  "source_sha256": "fbf3f5c31cd2ea7513c390d3fb4c8533cf008d92cc798224873af0037833a07b",
+  "fields": [
+    {
+      "observation_type": "actor_player_id",
+      "coverage_ids": [
+        "19.10(a)",
+        "19.10(b)",
+        "19.10(c)",
+        "19.11(a)",
+        "19.11(b)",
+        "19.11(c)",
+        "19.11(d)",
+        "19.11(e)",
+        "19.12(b)",
+        "19.12(c)",
+        "19.12(d)",
+        "19.19",
+        "19.20",
+        "19.21",
+        "19.22",
+        "19.23",
+        "19.24",
+        "19.27",
+        "19.28(a)",
+        "19.28(b)",
+        "19.29",
+        "19.30",
+        "19.30(a)",
+        "19.30(b)",
+        "19.30(c)",
+        "19.31",
+        "19.37(a)",
+        "19.37(b)",
+        "19.37(c)",
+        "19.37(d)",
+        "19.37(e)",
+        "19.38(a)",
+        "19.38(b)",
+        "19.38(c)",
+        "19.38(d)",
+        "19.38(e)",
+        "19.38(f)",
+        "19.7(a)",
+        "19.7(b)",
+        "19.7(c)",
+        "19.7(d)"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "multi_angle_video",
+        "referee_explanation",
+        "video"
+      ],
+      "context_requirements": [
+        "alternative_position_choice",
+        "ball_visibility",
+        "binding_visibility",
+        "continuous_timeline",
+        "engagement_timeline",
+        "feed_direction",
+        "foot_visibility",
+        "global_trial_applicability",
+        "grip_visibility",
+        "head_contact_visibility",
+        "intent_review",
+        "legal_start_timeline",
+        "offside_diagram",
+        "pitch_geometry",
+        "player_roles",
+        "possession_timeline",
+        "posture_visibility",
+        "push_visibility",
+        "ruleset_applicability",
+        "safety_event_visibility",
+        "scrum_end_timeline",
+        "throwing_entitlement",
+        "tunnel_geometry"
+      ]
+    },
+    {
+      "observation_type": "actor_position",
+      "coverage_ids": [
+        "19.12(b)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "engagement_timeline",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "actor_role",
+      "coverage_ids": [
+        "19.10(a)",
+        "19.10(b)",
+        "19.10(c)",
+        "19.11(a)",
+        "19.11(b)",
+        "19.11(c)",
+        "19.11(e)",
+        "19.12(c)",
+        "19.12(d)",
+        "19.20",
+        "19.21",
+        "19.22",
+        "19.23",
+        "19.24",
+        "19.27",
+        "19.37(a)",
+        "19.38(b)",
+        "19.38(c)",
+        "19.38(e)",
+        "19.38(f)",
+        "19.7(a)",
+        "19.7(b)",
+        "19.7(c)",
+        "19.7(d)"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "multi_angle_video",
+        "referee_explanation",
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "binding_visibility",
+        "engagement_timeline",
+        "feed_direction",
+        "foot_visibility",
+        "grip_visibility",
+        "head_contact_visibility",
+        "intent_review",
+        "legal_start_timeline",
+        "pitch_geometry",
+        "player_roles",
+        "possession_timeline",
+        "posture_visibility",
+        "safety_event_visibility",
+        "scrum_end_timeline",
+        "throwing_entitlement",
+        "tunnel_geometry"
+      ]
+    },
+    {
+      "observation_type": "actual_feed_side",
+      "coverage_ids": [
+        "19.15(a)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "chosen_feed_side_context",
+        "feed_visibility"
+      ]
+    },
+    {
+      "observation_type": "apparent_action_sequence",
+      "coverage_ids": [
+        "19.37(c)",
+        "19.37(d)",
+        "19.37(e)",
+        "19.38(f)"
+      ],
+      "evidence_types": [
+        "multi_angle_video",
+        "referee_explanation",
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "intent_review",
+        "player_roles",
+        "safety_event_visibility"
+      ]
+    },
+    {
+      "observation_type": "applicable_offside_line",
+      "coverage_ids": [
+        "19.27",
+        "diagram_03"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "source_diagram",
+        "video"
+      ],
+      "context_requirements": [
+        "legal_start_timeline",
+        "offside_diagram",
+        "pitch_geometry",
+        "player_roles",
+        "possession_timeline",
+        "scrum_end_timeline"
+      ]
+    },
+    {
+      "observation_type": "applicable_ruleset_id",
+      "coverage_ids": [
+        "19.39"
+      ],
+      "evidence_types": [
+        "applicable_ruleset",
+        "match_metadata"
+      ],
+      "context_requirements": [
+        "ruleset_applicability",
+        "union_authority"
+      ]
+    },
+    {
+      "observation_type": "availability_duration_s",
+      "coverage_ids": [
+        "19.26"
+      ],
+      "evidence_types": [
+        "referee_audio",
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "command_audio",
+        "continuous_timeline"
+      ]
+    },
+    {
+      "observation_type": "back_row_player_count",
+      "coverage_ids": [
+        "19.5"
+      ],
+      "evidence_types": [
+        "roster",
+        "video"
+      ],
+      "context_requirements": [
+        "binding_context",
+        "formation_diagram",
+        "player_roles",
+        "team_player_counts"
+      ]
+    },
+    {
+      "observation_type": "ball_at_hindmost_feet_time_s",
+      "coverage_ids": [
+        "19.36(b)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "hindmost_player_context",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "ball_available_at_back_time_s",
+      "coverage_ids": [
+        "19.26"
+      ],
+      "evidence_types": [
+        "referee_audio",
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "command_audio",
+        "continuous_timeline"
+      ]
+    },
+    {
+      "observation_type": "ball_contact_body_part",
+      "coverage_ids": [
+        "19.24"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "ball_contact_time_s",
+      "coverage_ids": [
+        "19.38(e)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "player_roles",
+        "tunnel_geometry"
+      ]
+    },
+    {
+      "observation_type": "ball_exit_direction",
+      "coverage_ids": [
+        "19.23",
+        "19.34(a)",
+        "19.34(e)",
+        "19.36(a)"
+      ],
+      "evidence_types": [
+        "multi_angle_video",
+        "referee_explanation",
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "continuous_timeline",
+        "feed_direction",
+        "intent_review",
+        "no_infringement_context",
+        "player_roles",
+        "repeated_kick_history",
+        "tunnel_geometry"
+      ]
+    },
+    {
+      "observation_type": "ball_exit_time_s",
+      "coverage_ids": [
+        "19.34(a)",
+        "19.36(a)",
+        "19.38(a)",
+        "19.38(d)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "continuous_timeline",
+        "no_infringement_context",
+        "tunnel_geometry"
+      ]
+    },
+    {
+      "observation_type": "ball_feed_duration_s",
+      "coverage_ids": [
+        "19.15(e)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "continuous_timeline",
+        "feed_visibility"
+      ]
+    },
+    {
+      "observation_type": "ball_feed_motion_count",
+      "coverage_ids": [
+        "19.15(d)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "continuous_timeline",
+        "feed_visibility"
+      ]
+    },
+    {
+      "observation_type": "ball_feed_motion_direction",
+      "coverage_ids": [
+        "19.15(d)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "continuous_timeline",
+        "feed_visibility"
+      ]
+    },
+    {
+      "observation_type": "ball_feed_speed",
+      "coverage_ids": [
+        "19.15(e)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "continuous_timeline",
+        "feed_visibility"
+      ]
+    },
+    {
+      "observation_type": "ball_feed_time_s",
+      "coverage_ids": [
+        "19.15",
+        "19.15(c)",
+        "19.34(a)"
+      ],
+      "evidence_types": [
+        "referee_audio",
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "continuous_timeline",
+        "engagement_timeline",
+        "feed_visibility",
+        "no_infringement_context",
+        "tunnel_geometry"
+      ]
+    },
+    {
+      "observation_type": "ball_feed_trajectory",
+      "coverage_ids": [
+        "19.15(f)"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "video"
+      ],
+      "context_requirements": [
+        "feed_visibility",
+        "pitch_geometry",
+        "tunnel_geometry"
+      ]
+    },
+    {
+      "observation_type": "ball_first_ground_contact_location",
+      "coverage_ids": [
+        "19.15(g)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "tunnel_geometry"
+      ]
+    },
+    {
+      "observation_type": "ball_first_ground_contact_time_s",
+      "coverage_ids": [
+        "19.15(g)",
+        "19.20"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "legal_start_timeline",
+        "player_roles",
+        "tunnel_geometry"
+      ]
+    },
+    {
+      "observation_type": "ball_hold_configuration",
+      "coverage_ids": [
+        "19.14",
+        "diagram_02"
+      ],
+      "evidence_types": [
+        "source_diagram",
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "feed_diagram",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "ball_kick_time_s",
+      "coverage_ids": [
+        "19.23",
+        "19.34(e)",
+        "19.38(b)"
+      ],
+      "evidence_types": [
+        "multi_angle_video",
+        "referee_explanation",
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "continuous_timeline",
+        "feed_direction",
+        "intent_review",
+        "no_infringement_context",
+        "player_roles",
+        "repeated_kick_history",
+        "tunnel_geometry"
+      ]
+    },
+    {
+      "observation_type": "ball_leave_hands_time_s",
+      "coverage_ids": [
+        "19.16",
+        "19.17"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "continuous_timeline",
+        "feed_visibility",
+        "legal_start_timeline",
+        "push_visibility"
+      ]
+    },
+    {
+      "observation_type": "ball_lift_observed",
+      "coverage_ids": [
+        "19.24"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "ball_location_at_contact",
+      "coverage_ids": [
+        "19.38(e)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "player_roles",
+        "tunnel_geometry"
+      ]
+    },
+    {
+      "observation_type": "ball_location_at_kick",
+      "coverage_ids": [
+        "19.38(b)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "player_roles",
+        "tunnel_geometry"
+      ]
+    },
+    {
+      "observation_type": "ball_on_or_over_try_line_time_s",
+      "coverage_ids": [
+        "19.36(e)"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "pitch_geometry"
+      ]
+    },
+    {
+      "observation_type": "ball_pickup_origin",
+      "coverage_ids": [
+        "19.36(c)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "ball_pickup_time_s",
+      "coverage_ids": [
+        "19.36(b)",
+        "19.36(c)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "hindmost_player_context",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "ball_played_by_scrum_half_time_s",
+      "coverage_ids": [
+        "19.36(b)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "hindmost_player_context",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "ball_played_out_time_s",
+      "coverage_ids": [
+        "19.26"
+      ],
+      "evidence_types": [
+        "referee_audio",
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "command_audio",
+        "continuous_timeline"
+      ]
+    },
+    {
+      "observation_type": "ball_position",
+      "coverage_ids": [
+        "19.18",
+        "19.29",
+        "19.36(e)",
+        "19.38(f)",
+        "diagram_03"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "multi_angle_video",
+        "referee_explanation",
+        "source_diagram",
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "intent_review",
+        "legal_start_timeline",
+        "offside_diagram",
+        "pitch_geometry",
+        "player_roles",
+        "possession_timeline",
+        "push_visibility"
+      ]
+    },
+    {
+      "observation_type": "ball_reentry_path",
+      "coverage_ids": [
+        "19.38(d)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "continuous_timeline",
+        "tunnel_geometry"
+      ]
+    },
+    {
+      "observation_type": "ball_reentry_time_s",
+      "coverage_ids": [
+        "19.38(d)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "continuous_timeline",
+        "tunnel_geometry"
+      ]
+    },
+    {
+      "observation_type": "ball_release_position",
+      "coverage_ids": [
+        "19.15(b)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "feed_visibility",
+        "tunnel_geometry"
+      ]
+    },
+    {
+      "observation_type": "bind_command_time_s",
+      "coverage_ids": [
+        "19.11"
+      ],
+      "evidence_types": [
+        "referee_audio",
+        "video"
+      ],
+      "context_requirements": [
+        "command_audio",
+        "engagement_timeline"
+      ]
+    },
+    {
+      "observation_type": "binding_arm",
+      "coverage_ids": [
+        "19.11(a)",
+        "19.11(b)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "binding_visibility",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "binding_arm_count",
+      "coverage_ids": [
+        "19.7(b)",
+        "19.7(d)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "binding_visibility",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "binding_arm_position",
+      "coverage_ids": [
+        "19.11(a)",
+        "19.11(b)",
+        "19.7(b)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "binding_visibility",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "binding_configuration",
+      "coverage_ids": [
+        "19.11(d)",
+        "19.7",
+        "19.7(c)",
+        "diagram_01"
+      ],
+      "evidence_types": [
+        "multi_angle_video",
+        "source_diagram",
+        "video"
+      ],
+      "context_requirements": [
+        "binding_context",
+        "binding_visibility",
+        "continuous_timeline",
+        "formation_diagram",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "binding_contact_area",
+      "coverage_ids": [
+        "19.7(d)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "binding_visibility",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "binding_observation_interval",
+      "coverage_ids": [
+        "19.11(d)"
+      ],
+      "evidence_types": [
+        "multi_angle_video",
+        "video"
+      ],
+      "context_requirements": [
+        "binding_visibility",
+        "continuous_timeline"
+      ]
+    },
+    {
+      "observation_type": "binding_target_player_id",
+      "coverage_ids": [
+        "19.7(a)",
+        "19.7(c)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "binding_visibility",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "binding_target_role",
+      "coverage_ids": [
+        "19.7(a)",
+        "19.7(c)",
+        "19.7(d)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "binding_visibility",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "brake_foot_adjustment",
+      "coverage_ids": [
+        "19.11(e)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "engagement_timeline",
+        "foot_visibility",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "brake_foot_contact",
+      "coverage_ids": [
+        "19.10(c)",
+        "19.11(e)",
+        "19.12"
+      ],
+      "evidence_types": [
+        "referee_audio",
+        "video"
+      ],
+      "context_requirements": [
+        "command_audio",
+        "engagement_timeline",
+        "foot_visibility",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "brake_foot_position",
+      "coverage_ids": [
+        "19.10(c)",
+        "19.11(e)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "engagement_timeline",
+        "foot_visibility",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "brake_foot_removal_time_s",
+      "coverage_ids": [
+        "19.12(a)"
+      ],
+      "evidence_types": [
+        "referee_audio",
+        "video"
+      ],
+      "context_requirements": [
+        "command_audio",
+        "engagement_timeline",
+        "foot_visibility"
+      ]
+    },
+    {
+      "observation_type": "charge_motion",
+      "coverage_ids": [
+        "19.37(a)"
+      ],
+      "evidence_types": [
+        "multi_angle_video",
+        "video"
+      ],
+      "context_requirements": [
+        "engagement_timeline",
+        "player_roles",
+        "safety_event_visibility"
+      ]
+    },
+    {
+      "observation_type": "charge_time_s",
+      "coverage_ids": [
+        "19.37(a)"
+      ],
+      "evidence_types": [
+        "multi_angle_video",
+        "video"
+      ],
+      "context_requirements": [
+        "engagement_timeline",
+        "player_roles",
+        "safety_event_visibility"
+      ]
+    },
+    {
+      "observation_type": "chosen_feed_side",
+      "coverage_ids": [
+        "19.13",
+        "19.15(a)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "chosen_feed_side_context",
+        "feed_visibility",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "competition_level",
+      "coverage_ids": [
+        "19.39"
+      ],
+      "evidence_types": [
+        "applicable_ruleset",
+        "match_metadata"
+      ],
+      "context_requirements": [
+        "ruleset_applicability",
+        "union_authority"
+      ]
+    },
+    {
+      "observation_type": "crouch_command_time_s",
+      "coverage_ids": [
+        "19.10"
+      ],
+      "evidence_types": [
+        "referee_audio",
+        "video"
+      ],
+      "context_requirements": [
+        "command_audio",
+        "engagement_timeline"
+      ]
+    },
+    {
+      "observation_type": "crouched_position",
+      "coverage_ids": [
+        "19.10(a)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "engagement_timeline",
+        "player_roles",
+        "posture_visibility"
+      ]
+    },
+    {
+      "observation_type": "dangerous_play_observation_type",
+      "coverage_ids": [
+        "19.37"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "safety_event_visibility"
+      ]
+    },
+    {
+      "observation_type": "distance_behind_hindmost_foot",
+      "coverage_ids": [
+        "19.28(b)",
+        "19.30(c)",
+        "19.31"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "video"
+      ],
+      "context_requirements": [
+        "alternative_position_choice",
+        "legal_start_timeline",
+        "offside_diagram",
+        "pitch_geometry",
+        "player_roles",
+        "possession_timeline",
+        "scrum_end_timeline"
+      ]
+    },
+    {
+      "observation_type": "distance_hindmost_foot_to_try_line",
+      "coverage_ids": [
+        "19.32"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "video"
+      ],
+      "context_requirements": [
+        "pitch_geometry",
+        "player_roles",
+        "scrum_end_timeline"
+      ]
+    },
+    {
+      "observation_type": "engagement_time_s",
+      "coverage_ids": [
+        "19.12(a)"
+      ],
+      "evidence_types": [
+        "referee_audio",
+        "video"
+      ],
+      "context_requirements": [
+        "command_audio",
+        "engagement_timeline",
+        "foot_visibility"
+      ]
+    },
+    {
+      "observation_type": "fall_on_ball_time_s",
+      "coverage_ids": [
+        "19.38(a)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "continuous_timeline"
+      ]
+    },
+    {
+      "observation_type": "fall_relative_to_ball",
+      "coverage_ids": [
+        "19.38(a)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "continuous_timeline"
+      ]
+    },
+    {
+      "observation_type": "fall_time_s",
+      "coverage_ids": [
+        "19.37(e)"
+      ],
+      "evidence_types": [
+        "multi_angle_video",
+        "referee_explanation",
+        "video"
+      ],
+      "context_requirements": [
+        "intent_review",
+        "safety_event_visibility"
+      ]
+    },
+    {
+      "observation_type": "feed_delay_s",
+      "coverage_ids": [
+        "19.15(c)"
+      ],
+      "evidence_types": [
+        "referee_audio",
+        "video"
+      ],
+      "context_requirements": [
+        "continuous_timeline",
+        "engagement_timeline"
+      ]
+    },
+    {
+      "observation_type": "feet_ground_contact_count",
+      "coverage_ids": [
+        "19.12(c)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "foot_visibility",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "forced_upward_time_s",
+      "coverage_ids": [
+        "19.25",
+        "19.37(c)"
+      ],
+      "evidence_types": [
+        "multi_angle_video",
+        "referee_audio",
+        "referee_explanation",
+        "referee_signal",
+        "video"
+      ],
+      "context_requirements": [
+        "continuous_timeline",
+        "intent_review",
+        "safety_event_visibility"
+      ]
+    },
+    {
+      "observation_type": "foremost_prop_foot_position",
+      "coverage_ids": [
+        "19.12(d)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "foot_visibility",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "front_row_hooker_count",
+      "coverage_ids": [
+        "19.5"
+      ],
+      "evidence_types": [
+        "roster",
+        "video"
+      ],
+      "context_requirements": [
+        "binding_context",
+        "formation_diagram",
+        "player_roles",
+        "team_player_counts"
+      ]
+    },
+    {
+      "observation_type": "front_row_prop_count",
+      "coverage_ids": [
+        "19.5"
+      ],
+      "evidence_types": [
+        "roster",
+        "video"
+      ],
+      "context_requirements": [
+        "binding_context",
+        "formation_diagram",
+        "player_roles",
+        "team_player_counts"
+      ]
+    },
+    {
+      "observation_type": "front_row_separation_arm_lengths",
+      "coverage_ids": [
+        "19.9"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "referee_mark",
+        "scale_visibility"
+      ]
+    },
+    {
+      "observation_type": "governing_union",
+      "coverage_ids": [
+        "19.39"
+      ],
+      "evidence_types": [
+        "applicable_ruleset",
+        "match_metadata"
+      ],
+      "context_requirements": [
+        "ruleset_applicability",
+        "union_authority"
+      ]
+    },
+    {
+      "observation_type": "grip_contact_area",
+      "coverage_ids": [
+        "19.11(c)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "grip_visibility",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "grip_contact_material",
+      "coverage_ids": [
+        "19.11(c)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "grip_visibility",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "head_contact_opponent_body_area",
+      "coverage_ids": [
+        "19.10(b)"
+      ],
+      "evidence_types": [
+        "multi_angle_video",
+        "video"
+      ],
+      "context_requirements": [
+        "head_contact_visibility",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "head_height_relative_to_hips",
+      "coverage_ids": [
+        "19.10(a)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "engagement_timeline",
+        "player_roles",
+        "posture_visibility"
+      ]
+    },
+    {
+      "observation_type": "head_side_relative_to_opponent",
+      "coverage_ids": [
+        "19.10(b)"
+      ],
+      "evidence_types": [
+        "multi_angle_video",
+        "video"
+      ],
+      "context_requirements": [
+        "head_contact_visibility",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "hindmost_foot_position",
+      "coverage_ids": [
+        "19.28(b)",
+        "19.30(b)",
+        "19.30(c)",
+        "19.31",
+        "19.32",
+        "diagram_03"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "source_diagram",
+        "video"
+      ],
+      "context_requirements": [
+        "alternative_position_choice",
+        "legal_start_timeline",
+        "offside_diagram",
+        "pitch_geometry",
+        "player_roles",
+        "possession_timeline",
+        "scrum_end_timeline"
+      ]
+    },
+    {
+      "observation_type": "hindmost_player_id",
+      "coverage_ids": [
+        "19.36(b)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "hindmost_player_context",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "hooker_foot_position",
+      "coverage_ids": [
+        "19.12(d)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "foot_visibility",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "hooker_position",
+      "coverage_ids": [
+        "19.9"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "referee_mark",
+        "scale_visibility"
+      ]
+    },
+    {
+      "observation_type": "hooker_strike_observed",
+      "coverage_ids": [
+        "19.22"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "foot_visibility",
+        "player_roles",
+        "throwing_entitlement"
+      ]
+    },
+    {
+      "observation_type": "initial_binding_maintained",
+      "coverage_ids": [
+        "19.11(d)"
+      ],
+      "evidence_types": [
+        "multi_angle_video",
+        "video"
+      ],
+      "context_requirements": [
+        "binding_visibility",
+        "continuous_timeline"
+      ]
+    },
+    {
+      "observation_type": "intent_hypothesis",
+      "coverage_ids": [
+        "19.23",
+        "19.34(e)",
+        "19.37(c)",
+        "19.37(d)",
+        "19.37(e)",
+        "19.38(f)"
+      ],
+      "evidence_types": [
+        "multi_angle_video",
+        "referee_explanation",
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "continuous_timeline",
+        "feed_direction",
+        "intent_review",
+        "no_infringement_context",
+        "player_roles",
+        "repeated_kick_history",
+        "safety_event_visibility"
+      ]
+    },
+    {
+      "observation_type": "kneel_time_s",
+      "coverage_ids": [
+        "19.37(e)"
+      ],
+      "evidence_types": [
+        "multi_angle_video",
+        "referee_explanation",
+        "video"
+      ],
+      "context_requirements": [
+        "intent_review",
+        "safety_event_visibility"
+      ]
+    },
+    {
+      "observation_type": "last_ball_playing_team_id",
+      "coverage_ids": [
+        "restart_01",
+        "restart_02",
+        "restart_03",
+        "restart_04",
+        "restart_05",
+        "restart_06",
+        "restart_07",
+        "restart_08",
+        "restart_09",
+        "restart_10",
+        "restart_11",
+        "restart_12",
+        "restart_13",
+        "restart_14",
+        "restart_15",
+        "restart_16",
+        "restart_17"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "preceding_play_video",
+        "referee_audio",
+        "referee_signal"
+      ],
+      "context_requirements": [
+        "pitch_geometry",
+        "preceding_play",
+        "restart_table",
+        "throwing_entitlement"
+      ]
+    },
+    {
+      "observation_type": "last_team_moving_forward_id",
+      "coverage_ids": [
+        "restart_01",
+        "restart_02",
+        "restart_03",
+        "restart_04",
+        "restart_05",
+        "restart_06",
+        "restart_07",
+        "restart_08",
+        "restart_09",
+        "restart_10",
+        "restart_11",
+        "restart_12",
+        "restart_13",
+        "restart_14",
+        "restart_15",
+        "restart_16",
+        "restart_17"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "preceding_play_video",
+        "referee_audio",
+        "referee_signal"
+      ],
+      "context_requirements": [
+        "pitch_geometry",
+        "preceding_play",
+        "restart_table",
+        "throwing_entitlement"
+      ]
+    },
+    {
+      "observation_type": "legal_scrum_end_time_s",
+      "coverage_ids": [
+        "19.33",
+        "19.34(b)",
+        "19.36"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "continuous_timeline",
+        "no_infringement_context",
+        "safety_event_visibility",
+        "scrum_end_timeline"
+      ]
+    },
+    {
+      "observation_type": "legal_scrum_start_time_s",
+      "coverage_ids": [
+        "19.16"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "continuous_timeline",
+        "feed_visibility"
+      ]
+    },
+    {
+      "observation_type": "non_participant_offside_line",
+      "coverage_ids": [
+        "19.32"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "video"
+      ],
+      "context_requirements": [
+        "pitch_geometry",
+        "player_roles",
+        "scrum_end_timeline"
+      ]
+    },
+    {
+      "observation_type": "non_possessing_scrum_half_position_choice",
+      "coverage_ids": [
+        "19.30"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "video"
+      ],
+      "context_requirements": [
+        "alternative_position_choice",
+        "legal_start_timeline",
+        "player_roles",
+        "possession_timeline",
+        "ruleset_applicability"
+      ]
+    },
+    {
+      "observation_type": "non_throwing_scrum_half_player_id",
+      "coverage_ids": [
+        "19.28"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "video"
+      ],
+      "context_requirements": [
+        "legal_start_timeline",
+        "player_roles",
+        "throwing_entitlement"
+      ]
+    },
+    {
+      "observation_type": "number_eight_player_id",
+      "coverage_ids": [
+        "19.36(c)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "opponent_contact_time_s",
+      "coverage_ids": [
+        "19.37(a)"
+      ],
+      "evidence_types": [
+        "multi_angle_video",
+        "video"
+      ],
+      "context_requirements": [
+        "engagement_timeline",
+        "player_roles",
+        "safety_event_visibility"
+      ]
+    },
+    {
+      "observation_type": "opponent_hold_observed",
+      "coverage_ids": [
+        "19.38(c)"
+      ],
+      "evidence_types": [
+        "multi_angle_video",
+        "video"
+      ],
+      "context_requirements": [
+        "binding_visibility",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "opponent_player_id",
+      "coverage_ids": [
+        "19.37(b)",
+        "19.37(c)",
+        "19.38(c)"
+      ],
+      "evidence_types": [
+        "multi_angle_video",
+        "referee_explanation",
+        "video"
+      ],
+      "context_requirements": [
+        "binding_visibility",
+        "intent_review",
+        "player_roles",
+        "safety_event_visibility"
+      ]
+    },
+    {
+      "observation_type": "opponent_push_observed",
+      "coverage_ids": [
+        "19.38(c)"
+      ],
+      "evidence_types": [
+        "multi_angle_video",
+        "video"
+      ],
+      "context_requirements": [
+        "binding_visibility",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "opponent_response",
+      "coverage_ids": [
+        "19.38(f)"
+      ],
+      "evidence_types": [
+        "multi_angle_video",
+        "referee_explanation",
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "intent_review",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "opponent_role",
+      "coverage_ids": [
+        "19.11(a)",
+        "19.11(b)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "binding_visibility",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "opposing_scrum_half_position",
+      "coverage_ids": [
+        "19.28(a)"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "video"
+      ],
+      "context_requirements": [
+        "alternative_position_choice",
+        "legal_start_timeline",
+        "pitch_geometry",
+        "player_roles",
+        "throwing_entitlement"
+      ]
+    },
+    {
+      "observation_type": "opposing_scrum_player_count",
+      "coverage_ids": [
+        "19.6"
+      ],
+      "evidence_types": [
+        "match_metadata",
+        "referee_audio",
+        "roster",
+        "video"
+      ],
+      "context_requirements": [
+        "law_3_15_reference",
+        "player_reduction_context",
+        "team_player_counts"
+      ]
+    },
+    {
+      "observation_type": "opposition_displacement",
+      "coverage_ids": [
+        "19.18"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "video"
+      ],
+      "context_requirements": [
+        "pitch_geometry",
+        "possession_timeline",
+        "push_visibility"
+      ]
+    },
+    {
+      "observation_type": "original_feed_side",
+      "coverage_ids": [
+        "19.23"
+      ],
+      "evidence_types": [
+        "multi_angle_video",
+        "referee_explanation",
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "feed_direction",
+        "intent_review",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "player_lift_time_s",
+      "coverage_ids": [
+        "19.25",
+        "19.37(c)"
+      ],
+      "evidence_types": [
+        "multi_angle_video",
+        "referee_audio",
+        "referee_explanation",
+        "referee_signal",
+        "video"
+      ],
+      "context_requirements": [
+        "continuous_timeline",
+        "intent_review",
+        "safety_event_visibility"
+      ]
+    },
+    {
+      "observation_type": "player_position",
+      "coverage_ids": [
+        "19.27",
+        "19.28(a)",
+        "19.28(b)",
+        "19.30(b)",
+        "19.30(c)",
+        "19.31",
+        "diagram_03"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "source_diagram",
+        "video"
+      ],
+      "context_requirements": [
+        "alternative_position_choice",
+        "legal_start_timeline",
+        "offside_diagram",
+        "pitch_geometry",
+        "player_roles",
+        "possession_timeline",
+        "scrum_end_timeline",
+        "throwing_entitlement"
+      ]
+    },
+    {
+      "observation_type": "player_reduction_reason",
+      "coverage_ids": [
+        "19.6"
+      ],
+      "evidence_types": [
+        "match_metadata",
+        "referee_audio",
+        "roster",
+        "video"
+      ],
+      "context_requirements": [
+        "law_3_15_reference",
+        "player_reduction_context",
+        "team_player_counts"
+      ]
+    },
+    {
+      "observation_type": "players_on_field_count",
+      "coverage_ids": [
+        "19.5",
+        "19.6"
+      ],
+      "evidence_types": [
+        "match_metadata",
+        "referee_audio",
+        "roster",
+        "video"
+      ],
+      "context_requirements": [
+        "binding_context",
+        "formation_diagram",
+        "law_3_15_reference",
+        "player_reduction_context",
+        "player_roles",
+        "team_player_counts"
+      ]
+    },
+    {
+      "observation_type": "position_observation_interval",
+      "coverage_ids": [
+        "19.28(b)",
+        "19.30(b)",
+        "19.30(c)"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "video"
+      ],
+      "context_requirements": [
+        "alternative_position_choice",
+        "legal_start_timeline",
+        "pitch_geometry",
+        "player_roles",
+        "possession_timeline",
+        "scrum_end_timeline"
+      ]
+    },
+    {
+      "observation_type": "possession_change_time_s",
+      "coverage_ids": [
+        "19.18"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "video"
+      ],
+      "context_requirements": [
+        "pitch_geometry",
+        "possession_timeline",
+        "push_visibility"
+      ]
+    },
+    {
+      "observation_type": "possession_contest_interval",
+      "coverage_ids": [
+        "19.34(d)",
+        "principle"
+      ],
+      "evidence_types": [
+        "preceding_play_video",
+        "referee_audio",
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "no_infringement_context",
+        "possession_timeline",
+        "preceding_play"
+      ]
+    },
+    {
+      "observation_type": "possession_team_id",
+      "coverage_ids": [
+        "19.18",
+        "19.29",
+        "19.34(d)",
+        "principle"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "preceding_play_video",
+        "referee_audio",
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "legal_start_timeline",
+        "no_infringement_context",
+        "pitch_geometry",
+        "player_roles",
+        "possession_timeline",
+        "preceding_play",
+        "push_visibility"
+      ]
+    },
+    {
+      "observation_type": "posture_observation_interval",
+      "coverage_ids": [
+        "19.10(a)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "engagement_timeline",
+        "player_roles",
+        "posture_visibility"
+      ]
+    },
+    {
+      "observation_type": "pre_start_position_choice",
+      "coverage_ids": [
+        "19.28"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "video"
+      ],
+      "context_requirements": [
+        "legal_start_timeline",
+        "player_roles",
+        "throwing_entitlement"
+      ]
+    },
+    {
+      "observation_type": "previous_throwing_team_id",
+      "coverage_ids": [
+        "19.35"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "reset_linkage",
+        "throwing_entitlement"
+      ]
+    },
+    {
+      "observation_type": "prior_possession_team_id",
+      "coverage_ids": [
+        "restart_01",
+        "restart_02",
+        "restart_03",
+        "restart_04",
+        "restart_05",
+        "restart_06",
+        "restart_07",
+        "restart_08",
+        "restart_09",
+        "restart_10",
+        "restart_11",
+        "restart_12",
+        "restart_13",
+        "restart_14",
+        "restart_15",
+        "restart_16",
+        "restart_17"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "preceding_play_video",
+        "referee_audio",
+        "referee_signal"
+      ],
+      "context_requirements": [
+        "pitch_geometry",
+        "preceding_play",
+        "restart_table",
+        "throwing_entitlement"
+      ]
+    },
+    {
+      "observation_type": "pull_direction",
+      "coverage_ids": [
+        "19.37(b)"
+      ],
+      "evidence_types": [
+        "multi_angle_video",
+        "video"
+      ],
+      "context_requirements": [
+        "binding_visibility",
+        "safety_event_visibility"
+      ]
+    },
+    {
+      "observation_type": "pulling_action",
+      "coverage_ids": [
+        "19.37(b)"
+      ],
+      "evidence_types": [
+        "multi_angle_video",
+        "video"
+      ],
+      "context_requirements": [
+        "binding_visibility",
+        "safety_event_visibility"
+      ]
+    },
+    {
+      "observation_type": "push_direction",
+      "coverage_ids": [
+        "19.19"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "multi_angle_video",
+        "video"
+      ],
+      "context_requirements": [
+        "pitch_geometry",
+        "push_visibility"
+      ]
+    },
+    {
+      "observation_type": "push_start_time_s",
+      "coverage_ids": [
+        "19.17"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "legal_start_timeline",
+        "push_visibility"
+      ]
+    },
+    {
+      "observation_type": "push_stop_time_s",
+      "coverage_ids": [
+        "19.25"
+      ],
+      "evidence_types": [
+        "referee_audio",
+        "referee_signal",
+        "video"
+      ],
+      "context_requirements": [
+        "continuous_timeline",
+        "safety_event_visibility"
+      ]
+    },
+    {
+      "observation_type": "push_vertical_angle",
+      "coverage_ids": [
+        "19.19"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "multi_angle_video",
+        "video"
+      ],
+      "context_requirements": [
+        "pitch_geometry",
+        "push_visibility"
+      ]
+    },
+    {
+      "observation_type": "readiness_elapsed_s",
+      "coverage_ids": [
+        "19.4"
+      ],
+      "evidence_types": [
+        "referee_audio",
+        "video"
+      ],
+      "context_requirements": [
+        "continuous_timeline",
+        "referee_mark"
+      ]
+    },
+    {
+      "observation_type": "readiness_to_push",
+      "coverage_ids": [
+        "19.12(b)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "engagement_timeline",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "referee_indicated_infringement",
+      "coverage_ids": [
+        "19.34"
+      ],
+      "evidence_types": [
+        "referee_audio",
+        "referee_signal",
+        "video"
+      ],
+      "context_requirements": [
+        "continuous_timeline",
+        "referee_decision_context"
+      ]
+    },
+    {
+      "observation_type": "referee_mark_time_s",
+      "coverage_ids": [
+        "19.4"
+      ],
+      "evidence_types": [
+        "referee_audio",
+        "video"
+      ],
+      "context_requirements": [
+        "continuous_timeline",
+        "referee_mark"
+      ]
+    },
+    {
+      "observation_type": "referee_whistle_reason",
+      "coverage_ids": [
+        "19.36(d)"
+      ],
+      "evidence_types": [
+        "referee_audio",
+        "referee_explanation",
+        "referee_signal",
+        "video"
+      ],
+      "context_requirements": [
+        "command_audio",
+        "referee_decision_context"
+      ]
+    },
+    {
+      "observation_type": "reset_reason",
+      "coverage_ids": [
+        "19.34"
+      ],
+      "evidence_types": [
+        "referee_audio",
+        "referee_signal",
+        "video"
+      ],
+      "context_requirements": [
+        "continuous_timeline",
+        "referee_decision_context"
+      ]
+    },
+    {
+      "observation_type": "reset_throwing_team_id",
+      "coverage_ids": [
+        "19.35"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "reset_linkage",
+        "throwing_entitlement"
+      ]
+    },
+    {
+      "observation_type": "reset_whistle_time_s",
+      "coverage_ids": [
+        "19.34"
+      ],
+      "evidence_types": [
+        "referee_audio",
+        "referee_signal",
+        "video"
+      ],
+      "context_requirements": [
+        "continuous_timeline",
+        "referee_decision_context"
+      ]
+    },
+    {
+      "observation_type": "restart_award_time_s",
+      "coverage_ids": [
+        "19.1"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "preceding_play_video",
+        "referee_audio",
+        "referee_signal"
+      ],
+      "context_requirements": [
+        "pitch_geometry",
+        "preceding_play",
+        "restart_table"
+      ]
+    },
+    {
+      "observation_type": "restart_location",
+      "coverage_ids": [
+        "19.1",
+        "restart_01",
+        "restart_02",
+        "restart_03",
+        "restart_04",
+        "restart_05",
+        "restart_06",
+        "restart_07",
+        "restart_08",
+        "restart_09",
+        "restart_10",
+        "restart_11",
+        "restart_12",
+        "restart_13",
+        "restart_14",
+        "restart_15",
+        "restart_16",
+        "restart_17"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "preceding_play_video",
+        "referee_audio",
+        "referee_signal"
+      ],
+      "context_requirements": [
+        "pitch_geometry",
+        "preceding_play",
+        "restart_table",
+        "throwing_entitlement"
+      ]
+    },
+    {
+      "observation_type": "restart_option_chosen",
+      "coverage_ids": [
+        "restart_01",
+        "restart_02",
+        "restart_03",
+        "restart_04",
+        "restart_05",
+        "restart_06",
+        "restart_07",
+        "restart_08",
+        "restart_09",
+        "restart_10",
+        "restart_11",
+        "restart_12",
+        "restart_13",
+        "restart_14",
+        "restart_15",
+        "restart_16",
+        "restart_17"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "preceding_play_video",
+        "referee_audio",
+        "referee_signal"
+      ],
+      "context_requirements": [
+        "pitch_geometry",
+        "preceding_play",
+        "restart_table",
+        "throwing_entitlement"
+      ]
+    },
+    {
+      "observation_type": "restart_reason",
+      "coverage_ids": [
+        "19.1",
+        "principle",
+        "restart_01",
+        "restart_02",
+        "restart_03",
+        "restart_04",
+        "restart_05",
+        "restart_06",
+        "restart_07",
+        "restart_08",
+        "restart_09",
+        "restart_10",
+        "restart_11",
+        "restart_12",
+        "restart_13",
+        "restart_14",
+        "restart_15",
+        "restart_16",
+        "restart_17"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "preceding_play_video",
+        "referee_audio",
+        "referee_signal",
+        "video"
+      ],
+      "context_requirements": [
+        "pitch_geometry",
+        "possession_timeline",
+        "preceding_play",
+        "restart_table",
+        "throwing_entitlement"
+      ]
+    },
+    {
+      "observation_type": "restricted_practice_observation_type",
+      "coverage_ids": [
+        "19.38"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "retirement_time_s",
+      "coverage_ids": [
+        "19.30(b)",
+        "19.30(c)"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "video"
+      ],
+      "context_requirements": [
+        "alternative_position_choice",
+        "legal_start_timeline",
+        "pitch_geometry",
+        "player_roles",
+        "possession_timeline"
+      ]
+    },
+    {
+      "observation_type": "scrum_breakup_time_s",
+      "coverage_ids": [
+        "19.34(b)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "continuous_timeline",
+        "no_infringement_context",
+        "safety_event_visibility"
+      ]
+    },
+    {
+      "observation_type": "scrum_collapse_time_s",
+      "coverage_ids": [
+        "19.25",
+        "19.34(b)",
+        "19.37(d)"
+      ],
+      "evidence_types": [
+        "multi_angle_video",
+        "referee_audio",
+        "referee_explanation",
+        "referee_signal",
+        "video"
+      ],
+      "context_requirements": [
+        "continuous_timeline",
+        "intent_review",
+        "no_infringement_context",
+        "safety_event_visibility"
+      ]
+    },
+    {
+      "observation_type": "scrum_end_reason",
+      "coverage_ids": [
+        "19.36"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "continuous_timeline"
+      ]
+    },
+    {
+      "observation_type": "scrum_formation",
+      "coverage_ids": [
+        "19.5",
+        "diagram_01"
+      ],
+      "evidence_types": [
+        "roster",
+        "source_diagram",
+        "video"
+      ],
+      "context_requirements": [
+        "binding_context",
+        "formation_diagram",
+        "player_roles",
+        "team_player_counts"
+      ]
+    },
+    {
+      "observation_type": "scrum_formation_location",
+      "coverage_ids": [
+        "19.2"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "referee_signal",
+        "video"
+      ],
+      "context_requirements": [
+        "pitch_geometry",
+        "referee_mark"
+      ]
+    },
+    {
+      "observation_type": "scrum_half_foot_positions",
+      "coverage_ids": [
+        "19.29",
+        "19.30(a)"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "video"
+      ],
+      "context_requirements": [
+        "alternative_position_choice",
+        "ball_visibility",
+        "global_trial_applicability",
+        "legal_start_timeline",
+        "pitch_geometry",
+        "player_roles",
+        "possession_timeline"
+      ]
+    },
+    {
+      "observation_type": "scrum_half_shoulder_alignment",
+      "coverage_ids": [
+        "19.15(f)"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "video"
+      ],
+      "context_requirements": [
+        "feed_visibility",
+        "pitch_geometry",
+        "tunnel_geometry"
+      ]
+    },
+    {
+      "observation_type": "scrum_mark_location",
+      "coverage_ids": [
+        "19.2",
+        "19.3",
+        "19.9"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "referee_signal",
+        "video"
+      ],
+      "context_requirements": [
+        "pitch_geometry",
+        "player_roles",
+        "referee_mark",
+        "scale_visibility"
+      ]
+    },
+    {
+      "observation_type": "scrum_middle_line_heading",
+      "coverage_ids": [
+        "19.15(f)",
+        "19.3",
+        "19.34(c)",
+        "19.8"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "referee_signal",
+        "video"
+      ],
+      "context_requirements": [
+        "continuous_timeline",
+        "feed_visibility",
+        "no_infringement_context",
+        "pitch_geometry",
+        "referee_mark",
+        "tunnel_geometry"
+      ]
+    },
+    {
+      "observation_type": "scrum_offside_lines_end_time_s",
+      "coverage_ids": [
+        "19.33"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "scrum_end_timeline"
+      ]
+    },
+    {
+      "observation_type": "scrum_participation",
+      "coverage_ids": [
+        "19.31"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "video"
+      ],
+      "context_requirements": [
+        "offside_diagram",
+        "pitch_geometry",
+        "player_roles",
+        "scrum_end_timeline"
+      ]
+    },
+    {
+      "observation_type": "scrum_phase",
+      "coverage_ids": [
+        "19.27"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "video"
+      ],
+      "context_requirements": [
+        "legal_start_timeline",
+        "pitch_geometry",
+        "player_roles",
+        "possession_timeline",
+        "scrum_end_timeline"
+      ]
+    },
+    {
+      "observation_type": "scrum_player_count",
+      "coverage_ids": [
+        "19.5",
+        "19.6",
+        "diagram_01"
+      ],
+      "evidence_types": [
+        "match_metadata",
+        "referee_audio",
+        "roster",
+        "source_diagram",
+        "video"
+      ],
+      "context_requirements": [
+        "binding_context",
+        "formation_diagram",
+        "law_3_15_reference",
+        "player_reduction_context",
+        "player_roles",
+        "team_player_counts"
+      ]
+    },
+    {
+      "observation_type": "scrum_rotation_degrees",
+      "coverage_ids": [
+        "19.34(c)"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "video"
+      ],
+      "context_requirements": [
+        "continuous_timeline",
+        "no_infringement_context",
+        "pitch_geometry"
+      ]
+    },
+    {
+      "observation_type": "scrum_stationary",
+      "coverage_ids": [
+        "19.26"
+      ],
+      "evidence_types": [
+        "referee_audio",
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "command_audio",
+        "continuous_timeline"
+      ]
+    },
+    {
+      "observation_type": "scrum_translation",
+      "coverage_ids": [
+        "19.18"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "video"
+      ],
+      "context_requirements": [
+        "pitch_geometry",
+        "possession_timeline",
+        "push_visibility"
+      ]
+    },
+    {
+      "observation_type": "second_row_lock_count",
+      "coverage_ids": [
+        "19.5"
+      ],
+      "evidence_types": [
+        "roster",
+        "video"
+      ],
+      "context_requirements": [
+        "binding_context",
+        "formation_diagram",
+        "player_roles",
+        "team_player_counts"
+      ]
+    },
+    {
+      "observation_type": "second_row_player_id",
+      "coverage_ids": [
+        "19.36(c)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "set_command_time_s",
+      "coverage_ids": [
+        "19.12",
+        "19.12(a)"
+      ],
+      "evidence_types": [
+        "referee_audio",
+        "video"
+      ],
+      "context_requirements": [
+        "command_audio",
+        "engagement_timeline",
+        "foot_visibility"
+      ]
+    },
+    {
+      "observation_type": "shoulder_height_relative_to_hips",
+      "coverage_ids": [
+        "19.10(a)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "engagement_timeline",
+        "player_roles",
+        "posture_visibility"
+      ]
+    },
+    {
+      "observation_type": "simultaneous_two_foot_strike",
+      "coverage_ids": [
+        "19.21"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "foot_visibility",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "stability_observation",
+      "coverage_ids": [
+        "19.10(c)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "engagement_timeline",
+        "foot_visibility",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "strike_time_s",
+      "coverage_ids": [
+        "19.20"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "legal_start_timeline",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "striking_foot",
+      "coverage_ids": [
+        "19.21"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "foot_visibility",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "team_facing_direction",
+      "coverage_ids": [
+        "19.8"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "video"
+      ],
+      "context_requirements": [
+        "pitch_geometry",
+        "referee_mark"
+      ]
+    },
+    {
+      "observation_type": "team_id",
+      "coverage_ids": [
+        "19.17",
+        "19.18",
+        "19.19",
+        "19.32",
+        "19.5",
+        "19.6",
+        "19.8"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "match_metadata",
+        "multi_angle_video",
+        "referee_audio",
+        "roster",
+        "video"
+      ],
+      "context_requirements": [
+        "binding_context",
+        "formation_diagram",
+        "law_3_15_reference",
+        "legal_start_timeline",
+        "pitch_geometry",
+        "player_reduction_context",
+        "player_roles",
+        "possession_timeline",
+        "push_visibility",
+        "referee_mark",
+        "scrum_end_timeline",
+        "team_player_counts"
+      ]
+    },
+    {
+      "observation_type": "team_side_of_middle_line",
+      "coverage_ids": [
+        "19.28(a)",
+        "19.8"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "video"
+      ],
+      "context_requirements": [
+        "alternative_position_choice",
+        "legal_start_timeline",
+        "pitch_geometry",
+        "player_roles",
+        "referee_mark",
+        "throwing_entitlement"
+      ]
+    },
+    {
+      "observation_type": "teams_ready_for_feed_time_s",
+      "coverage_ids": [
+        "19.15(c)"
+      ],
+      "evidence_types": [
+        "referee_audio",
+        "video"
+      ],
+      "context_requirements": [
+        "continuous_timeline",
+        "engagement_timeline"
+      ]
+    },
+    {
+      "observation_type": "teams_ready_time_s",
+      "coverage_ids": [
+        "19.4"
+      ],
+      "evidence_types": [
+        "referee_audio",
+        "video"
+      ],
+      "context_requirements": [
+        "continuous_timeline",
+        "referee_mark"
+      ]
+    },
+    {
+      "observation_type": "teams_square",
+      "coverage_ids": [
+        "19.10",
+        "19.11",
+        "19.12",
+        "19.15"
+      ],
+      "evidence_types": [
+        "referee_audio",
+        "video"
+      ],
+      "context_requirements": [
+        "command_audio",
+        "engagement_timeline",
+        "feed_visibility",
+        "foot_visibility"
+      ]
+    },
+    {
+      "observation_type": "teams_stable",
+      "coverage_ids": [
+        "19.10",
+        "19.11",
+        "19.12",
+        "19.15"
+      ],
+      "evidence_types": [
+        "referee_audio",
+        "video"
+      ],
+      "context_requirements": [
+        "command_audio",
+        "engagement_timeline",
+        "feed_visibility",
+        "foot_visibility"
+      ]
+    },
+    {
+      "observation_type": "teams_stationary",
+      "coverage_ids": [
+        "19.10",
+        "19.11",
+        "19.12",
+        "19.15"
+      ],
+      "evidence_types": [
+        "referee_audio",
+        "video"
+      ],
+      "context_requirements": [
+        "command_audio",
+        "engagement_timeline",
+        "feed_visibility",
+        "foot_visibility"
+      ]
+    },
+    {
+      "observation_type": "throwing_scrum_half_player_id",
+      "coverage_ids": [
+        "19.13",
+        "19.14"
+      ],
+      "evidence_types": [
+        "source_diagram",
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "feed_diagram",
+        "feed_visibility",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "throwing_team_id",
+      "coverage_ids": [
+        "19.1",
+        "19.22",
+        "restart_01",
+        "restart_02",
+        "restart_03",
+        "restart_04",
+        "restart_05",
+        "restart_06",
+        "restart_07",
+        "restart_08",
+        "restart_09",
+        "restart_10",
+        "restart_11",
+        "restart_12",
+        "restart_13",
+        "restart_14",
+        "restart_15",
+        "restart_16",
+        "restart_17"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "preceding_play_video",
+        "referee_audio",
+        "referee_signal",
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "foot_visibility",
+        "pitch_geometry",
+        "player_roles",
+        "preceding_play",
+        "restart_table",
+        "throwing_entitlement"
+      ]
+    },
+    {
+      "observation_type": "touch_line_heading",
+      "coverage_ids": [
+        "19.34(c)"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "video"
+      ],
+      "context_requirements": [
+        "continuous_timeline",
+        "no_infringement_context",
+        "pitch_geometry"
+      ]
+    },
+    {
+      "observation_type": "try_line_heading",
+      "coverage_ids": [
+        "19.3"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "referee_signal",
+        "video"
+      ],
+      "context_requirements": [
+        "pitch_geometry",
+        "referee_mark"
+      ]
+    },
+    {
+      "observation_type": "tunnel_boundary",
+      "coverage_ids": [
+        "19.15(b)",
+        "19.15(g)",
+        "19.34(a)",
+        "19.36(a)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "feed_visibility",
+        "no_infringement_context",
+        "tunnel_geometry"
+      ]
+    },
+    {
+      "observation_type": "tunnel_centre_line",
+      "coverage_ids": [
+        "19.30(a)"
+      ],
+      "evidence_types": [
+        "calibrated_pitch_geometry",
+        "video"
+      ],
+      "context_requirements": [
+        "alternative_position_choice",
+        "global_trial_applicability",
+        "legal_start_timeline",
+        "pitch_geometry",
+        "player_roles",
+        "possession_timeline"
+      ]
+    },
+    {
+      "observation_type": "tunnel_exit_kick_count",
+      "coverage_ids": [
+        "19.34(e)"
+      ],
+      "evidence_types": [
+        "multi_angle_video",
+        "referee_explanation",
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "continuous_timeline",
+        "intent_review",
+        "no_infringement_context",
+        "repeated_kick_history"
+      ]
+    },
+    {
+      "observation_type": "tunnel_formed",
+      "coverage_ids": [
+        "19.12(a)"
+      ],
+      "evidence_types": [
+        "referee_audio",
+        "video"
+      ],
+      "context_requirements": [
+        "command_audio",
+        "engagement_timeline",
+        "foot_visibility"
+      ]
+    },
+    {
+      "observation_type": "under_19_variations_adoption",
+      "coverage_ids": [
+        "19.39"
+      ],
+      "evidence_types": [
+        "applicable_ruleset",
+        "match_metadata"
+      ],
+      "context_requirements": [
+        "ruleset_applicability",
+        "union_authority"
+      ]
+    },
+    {
+      "observation_type": "use_it_command_time_s",
+      "coverage_ids": [
+        "19.26"
+      ],
+      "evidence_types": [
+        "referee_audio",
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "command_audio",
+        "continuous_timeline"
+      ]
+    },
+    {
+      "observation_type": "weight_bearing_evidence",
+      "coverage_ids": [
+        "19.12(c)"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "foot_visibility",
+        "player_roles"
+      ]
+    },
+    {
+      "observation_type": "whistle_time_s",
+      "coverage_ids": [
+        "19.25",
+        "19.36(d)"
+      ],
+      "evidence_types": [
+        "referee_audio",
+        "referee_explanation",
+        "referee_signal",
+        "video"
+      ],
+      "context_requirements": [
+        "command_audio",
+        "continuous_timeline",
+        "referee_decision_context",
+        "safety_event_visibility"
+      ]
+    }
+  ],
+  "value_storage": "Structured JSON in observations.observed_value_json; preserve units, coordinate frame, times and observability. No observed values are seeded."
+}

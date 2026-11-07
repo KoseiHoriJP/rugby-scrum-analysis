@@ -1,0 +1,3210 @@
+{
+  "schema_version": 1,
+  "source_provenance": {
+    "acquisition_method": "user_supplied_html",
+    "declared_source_url": "https://passport.world.rugby/laws-of-the-game/laws-by-number/19-scrum/",
+    "source_filename": "貼り付けたテキスト.txt",
+    "source_bytes": 152969,
+    "source_sha256": "fbf3f5c31cd2ea7513c390d3fb4c8533cf008d92cc798224873af0037833a07b",
+    "edition_date": null,
+    "historical_applicability_verified": false,
+    "independently_fetched": false,
+    "script_execution": false,
+    "reference_role": "official_rule_reference_not_match_ground_truth",
+    "numbered_clause_source": "law19/law19_clauses.json",
+    "source_asset_verification": "HTML text and image/video references inspected; linked image pixels and video footage not fetched or verified."
+  },
+  "scope": "All 88 numbered source records plus the unnumbered principle, 17 restart-table rows and three diagram references. Normal compliant play, permissions, roles, possession, geometry, commands, timing, reset/end and restrictions are all covered.",
+  "counts": {
+    "numbered_clause_records": 88,
+    "supplementary_records": 21,
+    "principle_records": 1,
+    "restart_table_rows": 17,
+    "diagram_references": 3,
+    "coverage_items": 109,
+    "source_video_elements": 31,
+    "video_elements_are_additional_rules": false,
+    "numbered_records_by_domain": {
+      "dangerous": 6,
+      "during": 11,
+      "end": 6,
+      "engagement": 15,
+      "forming": 12,
+      "offside": 12,
+      "reset": 7,
+      "restart": 1,
+      "restricted": 7,
+      "throw": 10,
+      "variations": 1
+    }
+  },
+  "annotation_contract": {
+    "rule_assessment_values": [
+      "unreviewed",
+      "satisfied",
+      "not_satisfied",
+      "not_observable",
+      "not_applicable"
+    ],
+    "rule_assessment_definition": "A reviewed comparison with the source requirement under the applicable ruleset, not a finding of referee fault or automatic guilt. Status may be stored as rule_assessments.requirement_status.",
+    "status_semantics": {
+      "unreviewed": "No assessment has been made.",
+      "satisfied": "Relevant observable evidence supports compliance with the applicable requirement.",
+      "not_satisfied": "Relevant observable evidence supports failure of the applicable requirement; identify evidence and uncertainty.",
+      "not_observable": "Required evidence is missing, obscured or inadequate; do not infer compliance or failure.",
+      "not_applicable": "The condition, alternative, variation or standalone legal requirement does not apply."
+    },
+    "informational_record_policy": "Retain parent introductions, principle and reference assets as context. Do not force a separate infringement assessment; ordinarily use not_applicable for a standalone requirement while still recording their observations.",
+    "alternative_and_permission_policy": "Assess chosen alternatives and applicable conditions. Permitted choices or successful legal play must not become offences solely because another option was available.",
+    "referee_decision_policy": "Store the referee actual decision, signal, explanation and stated offender independently of an annotator rule assessment; an observed reset or safety whistle is not proof of a penalty.",
+    "intent_and_causation_policy": "Keep observed action, causal attribution and intent_hypothesis separate. A collapse, shirt number, rule example or association with an official teaching video must not automatically produce an offending-player or intention label.",
+    "identity_policy": "actor_player_id, opponent_player_id and role/team labels are null whenever not observable or otherwise reviewed with adequate support. Do not derive a culprit from the conventional number-three role.",
+    "observation_storage": "observation_fields are a vocabulary of observation_type values for normalized observations with value_json, unit, timing and evidence references; they are not mandatory wide-table columns.",
+    "common_observation_metadata_fields": [
+      "observation_id",
+      "event_id",
+      "observation_type",
+      "value_json",
+      "unit",
+      "start_time_s",
+      "end_time_s",
+      "actor_player_id",
+      "team_id",
+      "evidence_ids",
+      "visibility",
+      "review_status"
+    ],
+    "video_reference_policy": "31 HTML video elements are source references associated with clauses, not 31 extra legal rules, verified match events, actor identities or verified examples of misconduct.",
+    "diagram_policy": "Three image references are retained separately. No pixels were fetched or reviewed, and no geometry is invented from their empty alt text.",
+    "variation_policy": "Source edition and historical applicability are unknown. Only 19.30(a) is marked GLOBAL LAW TRIAL. 19.39 grants variation authority but does not supply the exact under-19 rules."
+  },
+  "evidence_type_registry": {
+    "video": "Timecoded match video with the relevant body, ball or event visible.",
+    "multi_angle_video": "Synchronized additional views supporting contact, causal or depth assessment.",
+    "referee_audio": "Audible referee words or whistle with a time reference; ASR output requires review.",
+    "referee_signal": "Visible referee mark, arm signal or indication, independently transcribed.",
+    "referee_explanation": "An attributable referee explanation; keep it separate from an annotator hypothesis.",
+    "preceding_play_video": "Video before the scrum establishing restart cause and prior possession or movement.",
+    "match_metadata": "Match, competition, date, team size or competition-level facts from identified sources.",
+    "roster": "Reviewed roster or substitution evidence linking player identity and role; shirt number alone is insufficient.",
+    "calibrated_pitch_geometry": "Visible calibrated pitch reference resolving location, distance or orientation.",
+    "applicable_ruleset": "Identified edition, competition rules, union adoption and trial applicability.",
+    "source_diagram": "Source image pixels reviewed separately; the current HTML only provides image references."
+  },
+  "context_requirement_registry": {
+    "preceding_play": "Enough prior play to identify restart cause, possession and movement.",
+    "restart_table": "The applicable 19.1 row and any scrum-option choice.",
+    "pitch_geometry": "Pitch direction, touch/try lines, scale and camera perspective.",
+    "referee_mark": "A visible or audible mark event and mark location.",
+    "continuous_timeline": "Uninterrupted or reliably linked timing; do not measure from an arbitrary clip start.",
+    "team_player_counts": "Players actually on field and in each scrum, supported beyond a cropped view.",
+    "player_roles": "Reviewed team, scrum role and participation; player identity may be null.",
+    "formation_diagram": "Formation image reference; exact diagram visual criteria await pixel review.",
+    "binding_context": "Other binding clauses and their explicit qualifications.",
+    "player_reduction_context": "Reason and authorization for reduced player numbers.",
+    "law_3_15_reference": "External Law 3.15 is referenced but its full conditions are not reproduced here.",
+    "binding_visibility": "Relevant arms and binding contacts visible over the assessed interval.",
+    "scale_visibility": "A usable physical comparison such as arm length; no invented metre threshold.",
+    "command_audio": "Audible command or whistle aligned with video; absent audio is not a failed call.",
+    "engagement_timeline": "Crouch, bind, set and engagement events separated in time.",
+    "posture_visibility": "Body landmarks and ground reference visible with adequate perspective.",
+    "head_contact_visibility": "Head, opponent and relevant contact areas sufficiently visible.",
+    "foot_visibility": "Feet and ground contacts sufficiently visible.",
+    "grip_visibility": "Hand grip and jersey contact sufficiently visible.",
+    "feed_visibility": "Ball, scrum-half and release motion visible around the feed.",
+    "ball_visibility": "Ball sufficiently visible to establish the claimed contact or event.",
+    "feed_diagram": "19.14 ball-hold image reference; exact visual criteria await pixel review.",
+    "chosen_feed_side_context": "Record the scrum-half choice under 19.13 before comparing the feed.",
+    "tunnel_geometry": "Tunnel entry, exits and boundary visible in the relevant view.",
+    "legal_start_timeline": "Ball-leaves-hands timing under 19.16, distinct from referee commands.",
+    "push_visibility": "Enough movement/contact evidence to distinguish active push from passive displacement.",
+    "possession_timeline": "Team in possession and changes tracked with explicit unknown intervals.",
+    "throwing_entitlement": "Team awarded the feed and actual throwing team tracked independently.",
+    "feed_direction": "Original feed side and direction established before a tunnel exit assessment.",
+    "intent_review": "Separate visible action, causal evidence, intention hypothesis and referee decision; no automatic guilty player.",
+    "safety_event_visibility": "Collapse, lifting, upward forcing or dangerous contact visible with timing.",
+    "scrum_end_timeline": "One or more 19.36 ending events supported and timecoded.",
+    "alternative_position_choice": "Apply the chosen alternative rather than requiring all listed options simultaneously.",
+    "ruleset_applicability": "Match date, competition, edition and adopted variations verified externally; source edition is unknown.",
+    "global_trial_applicability": "Only 19.30(a) is labelled GLOBAL LAW TRIAL here; historic match applicability is unverified.",
+    "offside_diagram": "Offside graphic reference; pixels not fetched or reviewed.",
+    "referee_decision_context": "Referee actual decision and stated reason recorded separately from assessment.",
+    "no_infringement_context": "19.34 parent qualification; do not assume absence or presence of an infringement.",
+    "repeated_kick_history": "Linked kicks/reset history for the express repeated-kick exception in 19.34(e).",
+    "reset_linkage": "Link the reset to the immediately previous feed entitlement and attempt.",
+    "hindmost_player_context": "Actual hindmost participant at that time, rather than assumed number eight.",
+    "union_authority": "Identified union, level and adoption authority for any under-19 variation."
+  },
+  "numbered_clause_coverage": [
+    {
+      "coverage_id": "19.1",
+      "clause_id": "19.1",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "restart",
+      "record_role": "informational_parent",
+      "observation_fields": [
+        "restart_reason",
+        "restart_location",
+        "throwing_team_id",
+        "restart_award_time_s"
+      ],
+      "evidence_types": [
+        "preceding_play_video",
+        "referee_audio",
+        "referee_signal",
+        "calibrated_pitch_geometry"
+      ],
+      "context_requirements": [
+        "preceding_play",
+        "restart_table",
+        "pitch_geometry"
+      ],
+      "rationale": "Record why play restarts, the mark, and throwing entitlement using the 17 table cases; a scrum-only clip may not establish the preceding cause.",
+      "source_law_text": "Where the game is restarted with a scrum and which team throws in is determined as follows:",
+      "parent_clause_id": null,
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.2",
+      "clause_id": "19.2",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "forming",
+      "record_role": "operative_requirement",
+      "observation_fields": [
+        "scrum_mark_location",
+        "scrum_formation_location"
+      ],
+      "evidence_types": [
+        "video",
+        "referee_signal",
+        "calibrated_pitch_geometry"
+      ],
+      "context_requirements": [
+        "pitch_geometry",
+        "referee_mark"
+      ],
+      "rationale": "Compare the formed scrum with the indicated mark and scrum zone.",
+      "source_law_text": "A scrum is formed in the scrum zone at a mark indicated by the referee.",
+      "parent_clause_id": null,
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.3",
+      "clause_id": "19.3",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "forming",
+      "record_role": "operative_requirement",
+      "observation_fields": [
+        "scrum_mark_location",
+        "scrum_middle_line_heading",
+        "try_line_heading"
+      ],
+      "evidence_types": [
+        "video",
+        "referee_signal",
+        "calibrated_pitch_geometry"
+      ],
+      "context_requirements": [
+        "pitch_geometry",
+        "referee_mark"
+      ],
+      "rationale": "Observe the referee mark and middle line parallel to the try lines; perspective alone is insufficient for calibrated geometry.",
+      "source_law_text": "The referee makes the mark to create the middle line of the scrum, which runs parallel to the try lines.",
+      "parent_clause_id": null,
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.4",
+      "clause_id": "19.4",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "forming",
+      "record_role": "operative_requirement",
+      "observation_fields": [
+        "referee_mark_time_s",
+        "teams_ready_time_s",
+        "readiness_elapsed_s"
+      ],
+      "evidence_types": [
+        "video",
+        "referee_audio"
+      ],
+      "context_requirements": [
+        "referee_mark",
+        "continuous_timeline"
+      ],
+      "rationale": "Measure readiness from the mark, with the 30-second limit; clip start is not the mark timestamp.",
+      "source_law_text": "Teams must be ready to form the scrum within 30 seconds of the mark being made.",
+      "parent_clause_id": null,
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.5",
+      "clause_id": "19.5",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "forming",
+      "record_role": "operative_requirement",
+      "observation_fields": [
+        "team_id",
+        "players_on_field_count",
+        "scrum_player_count",
+        "front_row_prop_count",
+        "front_row_hooker_count",
+        "second_row_lock_count",
+        "back_row_player_count",
+        "scrum_formation"
+      ],
+      "evidence_types": [
+        "video",
+        "roster"
+      ],
+      "context_requirements": [
+        "team_player_counts",
+        "player_roles",
+        "formation_diagram",
+        "binding_context"
+      ],
+      "rationale": "Assess the eight-player arrangement when both teams have 15, retaining the 19.7(d) qualification and the diagram reference.",
+      "source_law_text": "When both teams have 15 players, eight players from each team bind together in formation (subject to 19.7d) as suggested in the diagram. Each team must have two props and one hooker in the front row and two locks in the second row. Three back-row players from each team complete the scrum.",
+      "parent_clause_id": null,
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.6",
+      "clause_id": "19.6",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "forming",
+      "record_role": "conditional_requirement",
+      "observation_fields": [
+        "team_id",
+        "players_on_field_count",
+        "scrum_player_count",
+        "player_reduction_reason",
+        "opposing_scrum_player_count"
+      ],
+      "evidence_types": [
+        "video",
+        "roster",
+        "match_metadata",
+        "referee_audio"
+      ],
+      "context_requirements": [
+        "team_player_counts",
+        "player_reduction_context",
+        "law_3_15_reference"
+      ],
+      "rationale": "A reduced team may reduce scrum numbers, never below five; the other team need not match. Do not demand equal counts or invent the missing Law 3.15 conditions.",
+      "source_law_text": "When a team is reduced to fewer than 15 for any reason, then the number of players in each team in the scrum may be similarly reduced. Where a permitted reduction is made by one team, there is no requirement for the other team to make a similar reduction. However, a team must not have fewer than five players in the scrum. (see also law 3.15)",
+      "parent_clause_id": null,
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.7",
+      "clause_id": "19.7",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "forming",
+      "record_role": "informational_parent",
+      "observation_fields": [
+        "binding_configuration"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "binding_context"
+      ],
+      "rationale": "Organizes the four binding requirements; retain as context rather than a separate generic offence.",
+      "source_law_text": "The players in the scrum bind in the following way:",
+      "parent_clause_id": null,
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.7(a)",
+      "clause_id": "19.7(a)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "forming",
+      "record_role": "operative_requirement",
+      "observation_fields": [
+        "actor_player_id",
+        "actor_role",
+        "binding_target_player_id",
+        "binding_target_role"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "binding_visibility"
+      ],
+      "rationale": "Observe each prop binding to the hooker; role or actor remains null if hidden.",
+      "source_law_text": "The props bind to the hooker.",
+      "parent_clause_id": "19.7",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.7(b)",
+      "clause_id": "19.7(b)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "forming",
+      "record_role": "operative_requirement",
+      "observation_fields": [
+        "actor_player_id",
+        "actor_role",
+        "binding_arm_count",
+        "binding_arm_position"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "binding_visibility"
+      ],
+      "rationale": "Both hooker arms must bind; over and under the props’ arms are both permitted.",
+      "source_law_text": "The hooker binds with both arms. This can be either over or under the arms of the props.",
+      "parent_clause_id": "19.7",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.7(c)",
+      "clause_id": "19.7(c)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "forming",
+      "record_role": "operative_requirement",
+      "observation_fields": [
+        "actor_player_id",
+        "actor_role",
+        "binding_target_player_id",
+        "binding_target_role",
+        "binding_configuration"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "binding_visibility"
+      ],
+      "rationale": "Observe locks binding to the props immediately ahead and to each other.",
+      "source_law_text": "The locks bind with the props immediately in front of them and with each other.",
+      "parent_clause_id": "19.7",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.7(d)",
+      "clause_id": "19.7(d)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "forming",
+      "record_role": "operative_requirement",
+      "observation_fields": [
+        "actor_player_id",
+        "actor_role",
+        "binding_arm_count",
+        "binding_target_role",
+        "binding_contact_area"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "binding_visibility"
+      ],
+      "rationale": "Other scrum players bind with at least one arm on a lock’s body, preserving the qualification referenced by 19.5.",
+      "source_law_text": "All other players in the scrum bind on a lock’s body with at least one arm.",
+      "parent_clause_id": "19.7",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.8",
+      "clause_id": "19.8",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "forming",
+      "record_role": "operative_requirement",
+      "observation_fields": [
+        "team_id",
+        "team_facing_direction",
+        "scrum_middle_line_heading",
+        "team_side_of_middle_line"
+      ],
+      "evidence_types": [
+        "video",
+        "calibrated_pitch_geometry"
+      ],
+      "context_requirements": [
+        "pitch_geometry",
+        "referee_mark"
+      ],
+      "rationale": "Observe opposing groups on either side of and parallel to the middle line.",
+      "source_law_text": "The two groups face each other, either side of and parallel to the middle line.",
+      "parent_clause_id": null,
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.9",
+      "clause_id": "19.9",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "forming",
+      "record_role": "operative_requirement",
+      "observation_fields": [
+        "front_row_separation_arm_lengths",
+        "hooker_position",
+        "scrum_mark_location"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "referee_mark",
+        "scale_visibility"
+      ],
+      "rationale": "Record front-row separation relative to an arm’s length and hookers at the mark; do not invent a universal metre threshold.",
+      "source_law_text": "The two front rows stand not more than an arm’s length apart with the hookers at the mark.",
+      "parent_clause_id": null,
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.10",
+      "clause_id": "19.10",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "engagement",
+      "record_role": "informational_parent",
+      "observation_fields": [
+        "crouch_command_time_s",
+        "teams_square",
+        "teams_stable",
+        "teams_stationary"
+      ],
+      "evidence_types": [
+        "video",
+        "referee_audio"
+      ],
+      "context_requirements": [
+        "command_audio",
+        "engagement_timeline"
+      ],
+      "rationale": "Capture the referee’s crouch call and prerequisite state; retain this parent as command context for 19.10(a–c).",
+      "source_law_text": "When both sides are square, stable and stationary, the referee calls “crouch”.",
+      "parent_clause_id": null,
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.10(a)",
+      "clause_id": "19.10(a)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "engagement",
+      "record_role": "operative_requirement",
+      "observation_fields": [
+        "actor_player_id",
+        "actor_role",
+        "crouched_position",
+        "head_height_relative_to_hips",
+        "shoulder_height_relative_to_hips",
+        "posture_observation_interval"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "posture_visibility",
+        "engagement_timeline"
+      ],
+      "rationale": "Observe crouch posture and maintenance throughout the scrum; one frame cannot establish the entire interval.",
+      "source_law_text": "The front-rows then adopt a crouched position if they have not already done so. Their heads and shoulders are no lower than their hips, a position that is maintained for the duration of the scrum.",
+      "parent_clause_id": "19.10",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.10(b)",
+      "clause_id": "19.10(b)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "engagement",
+      "record_role": "operative_requirement",
+      "observation_fields": [
+        "actor_player_id",
+        "actor_role",
+        "head_side_relative_to_opponent",
+        "head_contact_opponent_body_area"
+      ],
+      "evidence_types": [
+        "video",
+        "multi_angle_video"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "head_contact_visibility"
+      ],
+      "rationale": "Record heads to the left of immediate opponents and any head contact with opponent neck or shoulders.",
+      "source_law_text": "The front-rows crouch with their heads to the left of their immediate opponents’, so that no player’s head is touching the neck or shoulders of an opponent.",
+      "parent_clause_id": "19.10",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.10(c)",
+      "clause_id": "19.10(c)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "engagement",
+      "record_role": "operative_requirement",
+      "observation_fields": [
+        "actor_player_id",
+        "actor_role",
+        "brake_foot_position",
+        "brake_foot_contact",
+        "stability_observation"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "foot_visibility",
+        "engagement_timeline"
+      ],
+      "rationale": "Record the hooker brake foot; avoid claiming measured axial force from ordinary video.",
+      "source_law_text": "Hookers must have a 'brake' foot positioned to help stability and to avoid axial loading.",
+      "parent_clause_id": "19.10",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.11",
+      "clause_id": "19.11",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "engagement",
+      "record_role": "informational_parent",
+      "observation_fields": [
+        "bind_command_time_s",
+        "teams_square",
+        "teams_stable",
+        "teams_stationary"
+      ],
+      "evidence_types": [
+        "video",
+        "referee_audio"
+      ],
+      "context_requirements": [
+        "command_audio",
+        "engagement_timeline"
+      ],
+      "rationale": "Capture bind and its prerequisite state, preserving child-specific requirements and sanctions.",
+      "source_law_text": "When both sides are square, stable and stationary, the referee calls “bind”.",
+      "parent_clause_id": null,
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.11(a)",
+      "clause_id": "19.11(a)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "engagement",
+      "record_role": "operative_requirement",
+      "observation_fields": [
+        "actor_player_id",
+        "actor_role",
+        "binding_arm",
+        "binding_arm_position",
+        "opponent_role"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "binding_visibility"
+      ],
+      "rationale": "Observe loosehead left arm inside opposing tighthead right arm; jersey number alone does not establish role.",
+      "source_law_text": "Each loose-head prop binds by placing the left arm inside the right arm of the opposing tight-head prop.",
+      "parent_clause_id": "19.11",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.11(b)",
+      "clause_id": "19.11(b)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "engagement",
+      "record_role": "operative_requirement",
+      "observation_fields": [
+        "actor_player_id",
+        "actor_role",
+        "binding_arm",
+        "binding_arm_position",
+        "opponent_role"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "binding_visibility"
+      ],
+      "rationale": "Observe tighthead right arm outside opposing loosehead left upper arm.",
+      "source_law_text": "Each tight-head prop binds by placing the right arm outside the left upper arm of the opposing loose-head prop.",
+      "parent_clause_id": "19.11",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.11(c)",
+      "clause_id": "19.11(c)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "engagement",
+      "record_role": "operative_requirement",
+      "observation_fields": [
+        "actor_player_id",
+        "actor_role",
+        "grip_contact_area",
+        "grip_contact_material"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "grip_visibility"
+      ],
+      "rationale": "Assess grip on opponent jersey back or side; hidden hands are not evidence of a missing bind.",
+      "source_law_text": "Each prop binds by gripping the back or side of their opponent’s jersey.",
+      "parent_clause_id": "19.11",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.11(d)",
+      "clause_id": "19.11(d)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "engagement",
+      "record_role": "operative_requirement",
+      "observation_fields": [
+        "actor_player_id",
+        "binding_configuration",
+        "initial_binding_maintained",
+        "binding_observation_interval"
+      ],
+      "evidence_types": [
+        "video",
+        "multi_angle_video"
+      ],
+      "context_requirements": [
+        "binding_visibility",
+        "continuous_timeline"
+      ],
+      "rationale": "Compare initial binds over the scrum duration; lost visibility does not prove a changed bind.",
+      "source_law_text": "All players’ binding is maintained, in the position they started in, for the duration of the scrum.",
+      "parent_clause_id": "19.11",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.11(e)",
+      "clause_id": "19.11(e)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "engagement",
+      "record_role": "conditional_requirement",
+      "observation_fields": [
+        "actor_player_id",
+        "actor_role",
+        "brake_foot_adjustment",
+        "brake_foot_position",
+        "brake_foot_contact"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "foot_visibility",
+        "engagement_timeline"
+      ],
+      "rationale": "Adjustment is permitted while the foot still acts as a brake; do not flag adjustment alone.",
+      "source_law_text": "Hookers may adjust their 'brake' foot but it must still be acting as a brake.",
+      "parent_clause_id": "19.11",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.12",
+      "clause_id": "19.12",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "engagement",
+      "record_role": "informational_parent",
+      "observation_fields": [
+        "set_command_time_s",
+        "teams_square",
+        "teams_stable",
+        "teams_stationary",
+        "brake_foot_contact"
+      ],
+      "evidence_types": [
+        "video",
+        "referee_audio"
+      ],
+      "context_requirements": [
+        "command_audio",
+        "engagement_timeline",
+        "foot_visibility"
+      ],
+      "rationale": "Capture set with stable sides and brake foot still applied; set is not the legal start of play.",
+      "source_law_text": "When both sides are square, stable and stationary, with the hooker still applying the brake foot, the referee calls “set”.",
+      "parent_clause_id": null,
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.12(a)",
+      "clause_id": "19.12(a)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "engagement",
+      "record_role": "operative_requirement",
+      "observation_fields": [
+        "set_command_time_s",
+        "brake_foot_removal_time_s",
+        "engagement_time_s",
+        "tunnel_formed"
+      ],
+      "evidence_types": [
+        "video",
+        "referee_audio"
+      ],
+      "context_requirements": [
+        "command_audio",
+        "engagement_timeline",
+        "foot_visibility"
+      ],
+      "rationale": "Compare removal and engagement to set, and observe tunnel completion; do not use engagement as legal scrum start.",
+      "source_law_text": "Only then must the hooker remove the 'brake' foot and the teams engage, completing the formation of the scrum and creating a tunnel into which the ball will be thrown.",
+      "parent_clause_id": "19.12",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.12(b)",
+      "clause_id": "19.12(b)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "engagement",
+      "record_role": "operative_requirement",
+      "observation_fields": [
+        "actor_player_id",
+        "actor_position",
+        "readiness_to_push"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "engagement_timeline"
+      ],
+      "rationale": "Observe players in position and visibly ready; readiness may remain not observable rather than inferred from later force.",
+      "source_law_text": "All players must be in position and ready to push forward.",
+      "parent_clause_id": "19.12",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.12(c)",
+      "clause_id": "19.12(c)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "engagement",
+      "record_role": "operative_requirement",
+      "observation_fields": [
+        "actor_player_id",
+        "actor_role",
+        "feet_ground_contact_count",
+        "weight_bearing_evidence"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "foot_visibility"
+      ],
+      "rationale": "Record two grounded feet and visible weight-bearing evidence; pressure distribution cannot be measured from obscured feet.",
+      "source_law_text": "Each front-row player must have both their feet on the ground, with their weight firmly on at least one foot.",
+      "parent_clause_id": "19.12",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.12(d)",
+      "clause_id": "19.12(d)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "engagement",
+      "record_role": "operative_requirement",
+      "observation_fields": [
+        "actor_player_id",
+        "actor_role",
+        "hooker_foot_position",
+        "foremost_prop_foot_position"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "foot_visibility"
+      ],
+      "rationale": "Compare hooker feet to that team’s foremost prop foot using a view that resolves depth.",
+      "source_law_text": "Each hooker’s feet must be in line with, or behind, the foremost foot of that team’s props.",
+      "parent_clause_id": "19.12",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.13",
+      "clause_id": "19.13",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "throw",
+      "record_role": "permitted_action",
+      "observation_fields": [
+        "throwing_scrum_half_player_id",
+        "chosen_feed_side"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "feed_visibility"
+      ],
+      "rationale": "Either side may be chosen by the scrum-half; side choice itself is not a breach.",
+      "source_law_text": "The scrum-half chooses which side of the scrum to throw in the ball.",
+      "parent_clause_id": null,
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.14",
+      "clause_id": "19.14",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "throw",
+      "record_role": "operative_requirement",
+      "observation_fields": [
+        "throwing_scrum_half_player_id",
+        "ball_hold_configuration"
+      ],
+      "evidence_types": [
+        "video",
+        "source_diagram"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "ball_visibility",
+        "feed_diagram"
+      ],
+      "rationale": "The source requires the pictured ball hold. Image pixels have not been fetched or reviewed; exact diagram-based criteria remain pending.",
+      "source_law_text": "The scrum-half holds the ball as shown in the diagram.",
+      "parent_clause_id": null,
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.15",
+      "clause_id": "19.15",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "throw",
+      "record_role": "informational_parent",
+      "observation_fields": [
+        "ball_feed_time_s",
+        "teams_square",
+        "teams_stable",
+        "teams_stationary"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "feed_visibility",
+        "engagement_timeline"
+      ],
+      "rationale": "Preserve square, stable and stationary feed context for children; do not make the introductory record a second infringement.",
+      "source_law_text": "When both sides are square, stable and stationary, the scrum-half throws in the ball:",
+      "parent_clause_id": null,
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.15(a)",
+      "clause_id": "19.15(a)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "throw",
+      "record_role": "operative_requirement",
+      "observation_fields": [
+        "chosen_feed_side",
+        "actual_feed_side"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "feed_visibility",
+        "chosen_feed_side_context"
+      ],
+      "rationale": "Compare actual feed to the chosen side, allowing either choice under 19.13.",
+      "source_law_text": "From the chosen side.",
+      "parent_clause_id": "19.15",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.15(b)",
+      "clause_id": "19.15(b)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "throw",
+      "record_role": "operative_requirement",
+      "observation_fields": [
+        "ball_release_position",
+        "tunnel_boundary"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "feed_visibility",
+        "tunnel_geometry"
+      ],
+      "rationale": "Record release from outside the tunnel; obscured ball release is not an assumed failure.",
+      "source_law_text": "From outside the tunnel.",
+      "parent_clause_id": "19.15",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.15(c)",
+      "clause_id": "19.15(c)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "throw",
+      "record_role": "operative_requirement",
+      "observation_fields": [
+        "teams_ready_for_feed_time_s",
+        "ball_feed_time_s",
+        "feed_delay_s"
+      ],
+      "evidence_types": [
+        "video",
+        "referee_audio"
+      ],
+      "context_requirements": [
+        "continuous_timeline",
+        "engagement_timeline"
+      ],
+      "rationale": "Observe any delay after readiness without inventing a numerical limit not printed in this clause.",
+      "source_law_text": "Without delay.",
+      "parent_clause_id": "19.15",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.15(d)",
+      "clause_id": "19.15(d)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "throw",
+      "record_role": "operative_requirement",
+      "observation_fields": [
+        "ball_feed_motion_count",
+        "ball_feed_motion_direction"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "feed_visibility",
+        "continuous_timeline"
+      ],
+      "rationale": "Observe a single forward movement rather than deriving compliance from the ball’s final position.",
+      "source_law_text": "With a single forward movement.",
+      "parent_clause_id": "19.15",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.15(e)",
+      "clause_id": "19.15(e)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "throw",
+      "record_role": "operative_requirement",
+      "observation_fields": [
+        "ball_feed_speed",
+        "ball_feed_duration_s"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "feed_visibility",
+        "continuous_timeline"
+      ],
+      "rationale": "Record speed evidence for the qualitative quick-speed requirement; no unsupported speed threshold is supplied.",
+      "source_law_text": "At a quick speed.",
+      "parent_clause_id": "19.15",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.15(f)",
+      "clause_id": "19.15(f)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "throw",
+      "record_role": "operative_requirement",
+      "observation_fields": [
+        "ball_feed_trajectory",
+        "scrum_middle_line_heading",
+        "scrum_half_shoulder_alignment"
+      ],
+      "evidence_types": [
+        "video",
+        "calibrated_pitch_geometry"
+      ],
+      "context_requirements": [
+        "feed_visibility",
+        "tunnel_geometry",
+        "pitch_geometry"
+      ],
+      "rationale": "Assess straight feed while retaining the permitted shoulder-width alignment nearer the scrum-half’s own side.",
+      "source_law_text": "Straight. The scrum-half may align their shoulder on the middle line of the scrum, thereby standing a shoulder-width closer to their side of the scrum.",
+      "parent_clause_id": "19.15",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.15(g)",
+      "clause_id": "19.15(g)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "throw",
+      "record_role": "operative_requirement",
+      "observation_fields": [
+        "ball_first_ground_contact_time_s",
+        "ball_first_ground_contact_location",
+        "tunnel_boundary"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "tunnel_geometry"
+      ],
+      "rationale": "Observe the first ground contact inside the tunnel; later ball location does not establish first contact.",
+      "source_law_text": "So that it first touches the ground inside the tunnel.",
+      "parent_clause_id": "19.15",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.16",
+      "clause_id": "19.16",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "during",
+      "record_role": "event_definition",
+      "observation_fields": [
+        "ball_leave_hands_time_s",
+        "legal_scrum_start_time_s"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "feed_visibility",
+        "continuous_timeline"
+      ],
+      "rationale": "Legal play starts when the ball leaves the scrum-half’s hands, independently of crouch, bind, set or engagement.",
+      "source_law_text": "The scrum begins when the ball leaves the hands of the scrum-half.",
+      "parent_clause_id": null,
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.17",
+      "clause_id": "19.17",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "during",
+      "record_role": "operative_requirement",
+      "observation_fields": [
+        "team_id",
+        "push_start_time_s",
+        "ball_leave_hands_time_s"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "legal_start_timeline",
+        "push_visibility"
+      ],
+      "rationale": "Compare pushing onset to ball release; movement alone may not establish active pushing.",
+      "source_law_text": "Only when the scrum begins may the teams push.",
+      "parent_clause_id": null,
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.18",
+      "clause_id": "19.18",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "during",
+      "record_role": "permitted_action",
+      "observation_fields": [
+        "team_id",
+        "possession_team_id",
+        "possession_change_time_s",
+        "scrum_translation",
+        "opposition_displacement",
+        "ball_position"
+      ],
+      "evidence_types": [
+        "video",
+        "calibrated_pitch_geometry"
+      ],
+      "context_requirements": [
+        "possession_timeline",
+        "push_visibility",
+        "pitch_geometry"
+      ],
+      "rationale": "Winning possession by driving opponents backwards and off the ball is permitted; backward movement is not inherently an offence.",
+      "source_law_text": "Possession may be gained by pushing the opposition backwards and off the ball.",
+      "parent_clause_id": null,
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.19",
+      "clause_id": "19.19",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "during",
+      "record_role": "conditional_requirement",
+      "observation_fields": [
+        "actor_player_id",
+        "team_id",
+        "push_direction",
+        "push_vertical_angle"
+      ],
+      "evidence_types": [
+        "video",
+        "multi_angle_video",
+        "calibrated_pitch_geometry"
+      ],
+      "context_requirements": [
+        "push_visibility",
+        "pitch_geometry"
+      ],
+      "rationale": "Assess straight, ground-parallel push using sufficient geometry; distinguish visible displacement from the direction of applied force.",
+      "source_law_text": "Players may push provided they do so straight and parallel to the ground.",
+      "parent_clause_id": null,
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.20",
+      "clause_id": "19.20",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "during",
+      "record_role": "conditional_requirement",
+      "observation_fields": [
+        "actor_player_id",
+        "actor_role",
+        "strike_time_s",
+        "ball_first_ground_contact_time_s"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "ball_visibility",
+        "legal_start_timeline"
+      ],
+      "rationale": "A front-row strike is permitted only after ground contact in the tunnel; track timing and possession attempts.",
+      "source_law_text": "Front-row players may gain possession by striking for the ball but only once the ball touches the ground in the tunnel.",
+      "parent_clause_id": null,
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.21",
+      "clause_id": "19.21",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "during",
+      "record_role": "conditional_requirement",
+      "observation_fields": [
+        "actor_player_id",
+        "actor_role",
+        "striking_foot",
+        "simultaneous_two_foot_strike"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "foot_visibility",
+        "ball_visibility"
+      ],
+      "rationale": "Either foot may strike, but not both simultaneously; unresolved occlusion remains not observable.",
+      "source_law_text": "A front-row player striking for the ball may do so with either foot but not both at the same time.",
+      "parent_clause_id": null,
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.22",
+      "clause_id": "19.22",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "during",
+      "record_role": "operative_requirement",
+      "observation_fields": [
+        "actor_player_id",
+        "actor_role",
+        "throwing_team_id",
+        "hooker_strike_observed"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "throwing_entitlement",
+        "foot_visibility",
+        "ball_visibility"
+      ],
+      "rationale": "Observe the feeding team hooker’s required strike rather than treating every player as subject to it.",
+      "source_law_text": "The hooker from the team which threw in the ball must strike for the ball.",
+      "parent_clause_id": null,
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.23",
+      "clause_id": "19.23",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "during",
+      "record_role": "prohibition",
+      "observation_fields": [
+        "actor_player_id",
+        "actor_role",
+        "ball_kick_time_s",
+        "ball_exit_direction",
+        "original_feed_side",
+        "intent_hypothesis"
+      ],
+      "evidence_types": [
+        "video",
+        "multi_angle_video",
+        "referee_explanation"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "ball_visibility",
+        "feed_direction",
+        "intent_review"
+      ],
+      "rationale": "Record the front-row kick and entry-side exit, keeping intention a supported hypothesis distinct from fact and referee decision.",
+      "source_law_text": "A front-row player must not intentionally kick the ball out of the tunnel from the direction it was thrown.",
+      "parent_clause_id": null,
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.24",
+      "clause_id": "19.24",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "during",
+      "record_role": "conditional_requirement",
+      "observation_fields": [
+        "actor_player_id",
+        "actor_role",
+        "ball_contact_body_part",
+        "ball_lift_observed"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "ball_visibility"
+      ],
+      "rationale": "Players within the scrum may play with feet or lower legs, without lifting; also retain specific end permissions in 19.36.",
+      "source_law_text": "Any player within the scrum may play the ball but only with their feet or lower legs and they must not lift the ball.",
+      "parent_clause_id": null,
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.25",
+      "clause_id": "19.25",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "during",
+      "record_role": "safety_response",
+      "observation_fields": [
+        "scrum_collapse_time_s",
+        "player_lift_time_s",
+        "forced_upward_time_s",
+        "whistle_time_s",
+        "push_stop_time_s"
+      ],
+      "evidence_types": [
+        "video",
+        "referee_audio",
+        "referee_signal"
+      ],
+      "context_requirements": [
+        "continuous_timeline",
+        "safety_event_visibility"
+      ],
+      "rationale": "Observe an immediate safety whistle and stop pushing after collapse, lifting or forcing up; the clause does not automatically assign fault or a penalty.",
+      "source_law_text": "If a scrum collapses or if a player in the scrum is lifted or is forced upwards out of the scrum, the referee must blow the whistle immediately so that players stop pushing.",
+      "parent_clause_id": null,
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.26",
+      "clause_id": "19.26",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "during",
+      "record_role": "conditional_requirement",
+      "observation_fields": [
+        "scrum_stationary",
+        "ball_available_at_back_time_s",
+        "use_it_command_time_s",
+        "ball_played_out_time_s",
+        "availability_duration_s"
+      ],
+      "evidence_types": [
+        "video",
+        "referee_audio"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "command_audio",
+        "continuous_timeline"
+      ],
+      "rationale": "Record 3–5 seconds of available ball at a stationary scrum, the use-it call and immediate play; the call itself does not end the scrum.",
+      "source_law_text": "When the scrum is stationary and the ball has been available at the back of the scrum for three-five seconds, the referee calls “use it”. The team must then play the ball out of the scrum immediately.",
+      "parent_clause_id": null,
+      "printed_explicit_sanction": "Scrum.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.27",
+      "clause_id": "19.27",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "offside",
+      "record_role": "operative_requirement",
+      "observation_fields": [
+        "actor_player_id",
+        "actor_role",
+        "player_position",
+        "applicable_offside_line",
+        "scrum_phase"
+      ],
+      "evidence_types": [
+        "video",
+        "calibrated_pitch_geometry"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "possession_timeline",
+        "legal_start_timeline",
+        "scrum_end_timeline",
+        "pitch_geometry"
+      ],
+      "rationale": "Apply the appropriate scrum offside line throughout the scrum, using the specific role and phase rules below.",
+      "source_law_text": "Players remain onside for the duration of the scrum.",
+      "parent_clause_id": null,
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.28",
+      "clause_id": "19.28",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "offside",
+      "record_role": "informational_parent",
+      "observation_fields": [
+        "non_throwing_scrum_half_player_id",
+        "pre_start_position_choice"
+      ],
+      "evidence_types": [
+        "video",
+        "calibrated_pitch_geometry"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "throwing_entitlement",
+        "legal_start_timeline"
+      ],
+      "rationale": "Preserve the pre-start alternatives in (a) or (b); do not require both positions simultaneously.",
+      "source_law_text": "Prior to the start of play in the scrum, the scrum-half of the team not throwing in the ball stands:",
+      "parent_clause_id": null,
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.28(a)",
+      "clause_id": "19.28(a)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "offside",
+      "record_role": "alternative_requirement",
+      "observation_fields": [
+        "actor_player_id",
+        "player_position",
+        "team_side_of_middle_line",
+        "opposing_scrum_half_position"
+      ],
+      "evidence_types": [
+        "video",
+        "calibrated_pitch_geometry"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "throwing_entitlement",
+        "legal_start_timeline",
+        "pitch_geometry",
+        "alternative_position_choice"
+      ],
+      "rationale": "One permitted pre-start position is own side of the middle line beside the opposing scrum-half; the alternative is 19.28(b).",
+      "source_law_text": "On that team’s side of the middle line next to the opposing scrum-half, or",
+      "parent_clause_id": "19.28",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.28(b)",
+      "clause_id": "19.28(b)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "offside",
+      "record_role": "alternative_requirement",
+      "observation_fields": [
+        "actor_player_id",
+        "player_position",
+        "hindmost_foot_position",
+        "distance_behind_hindmost_foot",
+        "position_observation_interval"
+      ],
+      "evidence_types": [
+        "video",
+        "calibrated_pitch_geometry"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "legal_start_timeline",
+        "scrum_end_timeline",
+        "pitch_geometry",
+        "alternative_position_choice"
+      ],
+      "rationale": "If the five-metre alternative is chosen, retain it to completion; choosing (a) does not breach (b).",
+      "source_law_text": "At least five metres behind the hindmost foot of their team’s last player in the scrum and remains there until the completion of the scrum.",
+      "parent_clause_id": "19.28",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.29",
+      "clause_id": "19.29",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "offside",
+      "record_role": "operative_requirement",
+      "observation_fields": [
+        "actor_player_id",
+        "possession_team_id",
+        "ball_position",
+        "scrum_half_foot_positions"
+      ],
+      "evidence_types": [
+        "video",
+        "calibrated_pitch_geometry"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "possession_timeline",
+        "legal_start_timeline",
+        "ball_visibility"
+      ],
+      "rationale": "During play, the possessing team scrum-half needs at least one foot level with or behind the ball; update after possession changes.",
+      "source_law_text": "Once play in the scrum begins, the scrum-half of the team in possession has at least one foot level with or behind the ball.",
+      "parent_clause_id": null,
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.30",
+      "clause_id": "19.30",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "offside",
+      "record_role": "informational_parent",
+      "observation_fields": [
+        "actor_player_id",
+        "non_possessing_scrum_half_position_choice"
+      ],
+      "evidence_types": [
+        "video",
+        "calibrated_pitch_geometry"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "possession_timeline",
+        "legal_start_timeline",
+        "alternative_position_choice",
+        "ruleset_applicability"
+      ],
+      "rationale": "Preserve the three alternative positions; only 19.30(a) is marked GLOBAL LAW TRIAL in this supplied HTML.",
+      "source_law_text": "Once play in the scrum begins, the scrum-half of the team not in possession:",
+      "parent_clause_id": null,
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.30(a)",
+      "clause_id": "19.30(a)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "offside",
+      "record_role": "alternative_requirement",
+      "observation_fields": [
+        "actor_player_id",
+        "scrum_half_foot_positions",
+        "tunnel_centre_line"
+      ],
+      "evidence_types": [
+        "video",
+        "calibrated_pitch_geometry"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "possession_timeline",
+        "legal_start_timeline",
+        "pitch_geometry",
+        "alternative_position_choice",
+        "global_trial_applicability"
+      ],
+      "rationale": "Near-scrum feet must not pass the tunnel centre line for this alternative. This subclause alone carries GLOBAL LAW TRIAL; match applicability requires external ruleset confirmation.",
+      "source_law_text": "Takes up a position near the scrum with both feet no further than the centre line of the tunnel, or",
+      "parent_clause_id": "19.30",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": true
+    },
+    {
+      "coverage_id": "19.30(b)",
+      "clause_id": "19.30(b)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "offside",
+      "record_role": "alternative_requirement",
+      "observation_fields": [
+        "actor_player_id",
+        "player_position",
+        "hindmost_foot_position",
+        "retirement_time_s",
+        "position_observation_interval"
+      ],
+      "evidence_types": [
+        "video",
+        "calibrated_pitch_geometry"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "possession_timeline",
+        "legal_start_timeline",
+        "pitch_geometry",
+        "alternative_position_choice"
+      ],
+      "rationale": "Record permanent retirement to the hindmost-foot offside line if chosen, without requiring this alternative of a player choosing (a) or (c).",
+      "source_law_text": "Permanently retires to a point on the offside line either at that team’s hindmost foot, or",
+      "parent_clause_id": "19.30",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.30(c)",
+      "clause_id": "19.30(c)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "offside",
+      "record_role": "alternative_requirement",
+      "observation_fields": [
+        "actor_player_id",
+        "player_position",
+        "hindmost_foot_position",
+        "distance_behind_hindmost_foot",
+        "retirement_time_s",
+        "position_observation_interval"
+      ],
+      "evidence_types": [
+        "video",
+        "calibrated_pitch_geometry"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "possession_timeline",
+        "legal_start_timeline",
+        "pitch_geometry",
+        "alternative_position_choice"
+      ],
+      "rationale": "Record permanent retirement at least five metres behind the hindmost foot when chosen; alternative positions are not cumulative duties.",
+      "source_law_text": "Permanently retires at least five metres behind the hindmost foot.",
+      "parent_clause_id": "19.30",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.31",
+      "clause_id": "19.31",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "offside",
+      "record_role": "operative_requirement",
+      "observation_fields": [
+        "actor_player_id",
+        "scrum_participation",
+        "player_position",
+        "hindmost_foot_position",
+        "distance_behind_hindmost_foot"
+      ],
+      "evidence_types": [
+        "video",
+        "calibrated_pitch_geometry"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "pitch_geometry",
+        "offside_diagram",
+        "scrum_end_timeline"
+      ],
+      "rationale": "Non-participants stay at least five metres behind their own hindmost foot, subject to the try-line adjustment in 19.32.",
+      "source_law_text": "All players not participating at the scrum remain at least five metres behind the hindmost foot of their team.",
+      "parent_clause_id": null,
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.32",
+      "clause_id": "19.32",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "offside",
+      "record_role": "conditional_requirement",
+      "observation_fields": [
+        "team_id",
+        "hindmost_foot_position",
+        "distance_hindmost_foot_to_try_line",
+        "non_participant_offside_line"
+      ],
+      "evidence_types": [
+        "video",
+        "calibrated_pitch_geometry"
+      ],
+      "context_requirements": [
+        "pitch_geometry",
+        "player_roles",
+        "scrum_end_timeline"
+      ],
+      "rationale": "When the hindmost foot is in-goal or within five metres, use the try line for that team’s non-participants.",
+      "source_law_text": "When the hindmost foot of a team is in in-goal or within five metres of that team’s try line, the offside line for that team’s non-participants is the try line.",
+      "parent_clause_id": null,
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.33",
+      "clause_id": "19.33",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "offside",
+      "record_role": "event_definition",
+      "observation_fields": [
+        "legal_scrum_end_time_s",
+        "scrum_offside_lines_end_time_s"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "scrum_end_timeline"
+      ],
+      "rationale": "Scrum offside lines end as soon as the scrum ends; do not extend them beyond a verified 19.36 end event.",
+      "source_law_text": "As soon as the scrum ends, offside lines no longer apply.",
+      "parent_clause_id": null,
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.34",
+      "clause_id": "19.34",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "reset",
+      "record_role": "informational_parent",
+      "observation_fields": [
+        "reset_whistle_time_s",
+        "reset_reason",
+        "referee_indicated_infringement"
+      ],
+      "evidence_types": [
+        "video",
+        "referee_audio",
+        "referee_signal"
+      ],
+      "context_requirements": [
+        "referee_decision_context",
+        "continuous_timeline"
+      ],
+      "rationale": "All five reset conditions inherit “when there is no infringement”; a collapse or reset alone does not establish a penalty or offender.",
+      "source_law_text": "When there is no infringement, the referee will stop play and reset the scrum if:",
+      "parent_clause_id": null,
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.34(a)",
+      "clause_id": "19.34(a)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "reset",
+      "record_role": "conditional_reset",
+      "observation_fields": [
+        "ball_feed_time_s",
+        "ball_exit_time_s",
+        "ball_exit_direction",
+        "tunnel_boundary"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "tunnel_geometry",
+        "no_infringement_context"
+      ],
+      "rationale": "Observe a fed ball exiting either tunnel end as a no-infringement reset reason; do not confuse tunnel exit with the ordinary end in 19.36(a).",
+      "source_law_text": "The scrum-half throws in the ball and it comes out at either end of the tunnel.",
+      "parent_clause_id": "19.34",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.34(b)",
+      "clause_id": "19.34(b)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "reset",
+      "record_role": "conditional_reset",
+      "observation_fields": [
+        "scrum_collapse_time_s",
+        "scrum_breakup_time_s",
+        "legal_scrum_end_time_s"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "continuous_timeline",
+        "safety_event_visibility",
+        "no_infringement_context"
+      ],
+      "rationale": "Reset for collapse or breakup before another end condition, only with the parent no-infringement qualification.",
+      "source_law_text": "The scrum collapses or breaks up before it has otherwise ended.",
+      "parent_clause_id": "19.34",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.34(c)",
+      "clause_id": "19.34(c)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "reset",
+      "record_role": "conditional_reset",
+      "observation_fields": [
+        "scrum_rotation_degrees",
+        "scrum_middle_line_heading",
+        "touch_line_heading"
+      ],
+      "evidence_types": [
+        "video",
+        "calibrated_pitch_geometry"
+      ],
+      "context_requirements": [
+        "pitch_geometry",
+        "continuous_timeline",
+        "no_infringement_context"
+      ],
+      "rationale": "Record wheeling beyond 90 degrees and middle line beyond touchline-parallel; camera rotation must be separated from scrum rotation.",
+      "source_law_text": "The scrum is wheeled through more than 90 degrees, so the middle line has passed beyond a position parallel to the touchline.",
+      "parent_clause_id": "19.34",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.34(d)",
+      "clause_id": "19.34(d)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "reset",
+      "record_role": "conditional_reset",
+      "observation_fields": [
+        "possession_team_id",
+        "possession_contest_interval"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "possession_timeline",
+        "no_infringement_context"
+      ],
+      "rationale": "Record neither side winning possession as a reset condition, rather than guessing possession from body movement.",
+      "source_law_text": "Neither side wins possession.",
+      "parent_clause_id": "19.34",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.34(e)",
+      "clause_id": "19.34(e)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "reset",
+      "record_role": "conditional_reset_with_exception",
+      "observation_fields": [
+        "ball_kick_time_s",
+        "ball_exit_direction",
+        "tunnel_exit_kick_count",
+        "intent_hypothesis"
+      ],
+      "evidence_types": [
+        "video",
+        "multi_angle_video",
+        "referee_explanation"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "continuous_timeline",
+        "repeated_kick_history",
+        "no_infringement_context",
+        "intent_review"
+      ],
+      "rationale": "Unintentional tunnel kick-out supports reset; repeated kick-outs must be treated as intentional under the printed exception, with a penalty. Retain repetition history and independent referee decision.",
+      "source_law_text": "The ball is unintentionally kicked out of the tunnel. Exception: If the ball is repeatedly kicked out, the referee must treat this as intentional.",
+      "parent_clause_id": "19.34",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "conditional_exception_only",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.35",
+      "clause_id": "19.35",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "reset",
+      "record_role": "operative_requirement",
+      "observation_fields": [
+        "previous_throwing_team_id",
+        "reset_throwing_team_id"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "throwing_entitlement",
+        "reset_linkage"
+      ],
+      "rationale": "The same team throws in after reset; link attempts rather than treating each reset as an unrelated award.",
+      "source_law_text": "When a scrum is reset, the ball is thrown in by the team that previously threw it in.",
+      "parent_clause_id": null,
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.36",
+      "clause_id": "19.36",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "end",
+      "record_role": "informational_parent",
+      "observation_fields": [
+        "legal_scrum_end_time_s",
+        "scrum_end_reason"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "continuous_timeline"
+      ],
+      "rationale": "Organizes the five end conditions; preserve the actual event, while official-whistle purpose remains independently recorded.",
+      "source_law_text": "The scrum ends:",
+      "parent_clause_id": null,
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.36(a)",
+      "clause_id": "19.36(a)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "end",
+      "record_role": "event_definition",
+      "observation_fields": [
+        "ball_exit_time_s",
+        "ball_exit_direction",
+        "tunnel_boundary"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "tunnel_geometry"
+      ],
+      "rationale": "Ball out except via the tunnel ends the scrum; tunnel exits belong to reset or restricted-practice assessment.",
+      "source_law_text": "When the ball comes out of the scrum in any direction except the tunnel.",
+      "parent_clause_id": "19.36",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.36(b)",
+      "clause_id": "19.36(b)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "end",
+      "record_role": "event_definition",
+      "observation_fields": [
+        "ball_at_hindmost_feet_time_s",
+        "hindmost_player_id",
+        "ball_pickup_time_s",
+        "ball_played_by_scrum_half_time_s"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "ball_visibility",
+        "hindmost_player_context"
+      ],
+      "rationale": "Ending requires the ball at hindmost feet plus pickup by that player or play by that team’s scrum-half, not availability alone.",
+      "source_law_text": "When the ball reaches the feet of the hindmost player and it is picked up by that player or is played by that team’s scrum-half.",
+      "parent_clause_id": "19.36",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.36(c)",
+      "clause_id": "19.36(c)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "end",
+      "record_role": "event_definition",
+      "observation_fields": [
+        "number_eight_player_id",
+        "second_row_player_id",
+        "ball_pickup_time_s",
+        "ball_pickup_origin"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "ball_visibility"
+      ],
+      "rationale": "Number eight may pick up from a second-row player’s feet; role must be observed or roster-supported rather than inferred solely from shirt number.",
+      "source_law_text": "When the number eight picks up the ball from the feet of a second-row player.",
+      "parent_clause_id": "19.36",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.36(d)",
+      "clause_id": "19.36(d)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "end",
+      "record_role": "event_definition",
+      "observation_fields": [
+        "whistle_time_s",
+        "referee_whistle_reason"
+      ],
+      "evidence_types": [
+        "video",
+        "referee_audio",
+        "referee_signal",
+        "referee_explanation"
+      ],
+      "context_requirements": [
+        "command_audio",
+        "referee_decision_context"
+      ],
+      "rationale": "An infringement whistle ends the scrum; distinguish a safety or reset whistle and do not infer an offender from the sound alone.",
+      "source_law_text": "When the referee blows the whistle for an infringement.",
+      "parent_clause_id": "19.36",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.36(e)",
+      "clause_id": "19.36(e)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "end",
+      "record_role": "event_definition",
+      "observation_fields": [
+        "ball_position",
+        "ball_on_or_over_try_line_time_s"
+      ],
+      "evidence_types": [
+        "video",
+        "calibrated_pitch_geometry"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "pitch_geometry"
+      ],
+      "rationale": "A ball in the scrum on or over the try line ends it; the whole scrum need not cross.",
+      "source_law_text": "When the ball in a scrum is on or over the try line.",
+      "parent_clause_id": "19.36",
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.37",
+      "clause_id": "19.37",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "dangerous",
+      "record_role": "informational_parent",
+      "observation_fields": [
+        "dangerous_play_observation_type"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "safety_event_visibility"
+      ],
+      "rationale": "Group heading for dangerous practices; it does not convert every collapse, lift or fall into a proven intentional offence.",
+      "source_law_text": "Dangerous play in a scrum includes:",
+      "parent_clause_id": null,
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.37(a)",
+      "clause_id": "19.37(a)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "dangerous",
+      "record_role": "prohibition",
+      "observation_fields": [
+        "actor_player_id",
+        "actor_role",
+        "charge_time_s",
+        "charge_motion",
+        "opponent_contact_time_s"
+      ],
+      "evidence_types": [
+        "video",
+        "multi_angle_video"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "engagement_timeline",
+        "safety_event_visibility"
+      ],
+      "rationale": "Observe a front-row charge against opponents; use contact sequence and movement rather than attributing fault from outcome alone.",
+      "source_law_text": "A front-row charging against the opposition.",
+      "parent_clause_id": "19.37",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.37(b)",
+      "clause_id": "19.37(b)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "dangerous",
+      "record_role": "prohibition",
+      "observation_fields": [
+        "actor_player_id",
+        "opponent_player_id",
+        "pulling_action",
+        "pull_direction"
+      ],
+      "evidence_types": [
+        "video",
+        "multi_angle_video"
+      ],
+      "context_requirements": [
+        "binding_visibility",
+        "safety_event_visibility"
+      ],
+      "rationale": "Distinguish a visible pull from an opponent’s independent movement; actor identity and causal attribution can remain unknown.",
+      "source_law_text": "Pulling an opponent.",
+      "parent_clause_id": "19.37",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.37(c)",
+      "clause_id": "19.37(c)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "dangerous",
+      "record_role": "prohibition",
+      "observation_fields": [
+        "actor_player_id",
+        "opponent_player_id",
+        "player_lift_time_s",
+        "forced_upward_time_s",
+        "apparent_action_sequence",
+        "intent_hypothesis"
+      ],
+      "evidence_types": [
+        "video",
+        "multi_angle_video",
+        "referee_explanation"
+      ],
+      "context_requirements": [
+        "safety_event_visibility",
+        "intent_review"
+      ],
+      "rationale": "Separate observed lifting or forced upward movement from intentional action and responsible-player attribution; an official example does not identify a dataset culprit.",
+      "source_law_text": "Intentionally lifting an opponent off their feet or forcing them upwards out of the scrum.",
+      "parent_clause_id": "19.37",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.37(d)",
+      "clause_id": "19.37(d)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "dangerous",
+      "record_role": "prohibition",
+      "observation_fields": [
+        "actor_player_id",
+        "scrum_collapse_time_s",
+        "apparent_action_sequence",
+        "intent_hypothesis"
+      ],
+      "evidence_types": [
+        "video",
+        "multi_angle_video",
+        "referee_explanation"
+      ],
+      "context_requirements": [
+        "safety_event_visibility",
+        "intent_review"
+      ],
+      "rationale": "A collapse is observable; intentional collapse and a specific player’s causal responsibility require independent supporting evidence.",
+      "source_law_text": "Intentionally collapsing a scrum.",
+      "parent_clause_id": "19.37",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.37(e)",
+      "clause_id": "19.37(e)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "dangerous",
+      "record_role": "prohibition",
+      "observation_fields": [
+        "actor_player_id",
+        "fall_time_s",
+        "kneel_time_s",
+        "apparent_action_sequence",
+        "intent_hypothesis"
+      ],
+      "evidence_types": [
+        "video",
+        "multi_angle_video",
+        "referee_explanation"
+      ],
+      "context_requirements": [
+        "safety_event_visibility",
+        "intent_review"
+      ],
+      "rationale": "Separate falling or kneeling from intentional action; the law text and teaching-video reference are not automatic guilty-player labels.",
+      "source_law_text": "Intentionally falling or kneeling.",
+      "parent_clause_id": "19.37",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.38",
+      "clause_id": "19.38",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "restricted",
+      "record_role": "informational_parent",
+      "observation_fields": [
+        "restricted_practice_observation_type"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "ball_visibility"
+      ],
+      "rationale": "Group heading preserves six distinct restrictions with different printed sanctions; it is not a generic penalty label.",
+      "source_law_text": "Other restricted practices at a scrum include:",
+      "parent_clause_id": null,
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.38(a)",
+      "clause_id": "19.38(a)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "restricted",
+      "record_role": "prohibition",
+      "observation_fields": [
+        "actor_player_id",
+        "ball_exit_time_s",
+        "fall_on_ball_time_s",
+        "fall_relative_to_ball"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "continuous_timeline"
+      ],
+      "rationale": "Record falling on or over the ball immediately after emergence, preserving the event sequence.",
+      "source_law_text": "Falling on or over the ball immediately after it has emerged from the scrum.",
+      "parent_clause_id": "19.38",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.38(b)",
+      "clause_id": "19.38(b)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "restricted",
+      "record_role": "prohibition",
+      "observation_fields": [
+        "actor_player_id",
+        "actor_role",
+        "ball_kick_time_s",
+        "ball_location_at_kick"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "ball_visibility",
+        "tunnel_geometry"
+      ],
+      "rationale": "The restriction concerns scrum-half kicking while the ball remains in the scrum; do not apply to a permitted front-row strike.",
+      "source_law_text": "Scrum-half kicking the ball while it is in the scrum.",
+      "parent_clause_id": "19.38",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.38(c)",
+      "clause_id": "19.38(c)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "restricted",
+      "record_role": "prohibition",
+      "observation_fields": [
+        "actor_player_id",
+        "actor_role",
+        "opponent_player_id",
+        "opponent_hold_observed",
+        "opponent_push_observed"
+      ],
+      "evidence_types": [
+        "video",
+        "multi_angle_video"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "binding_visibility"
+      ],
+      "rationale": "Identify non-front-row status and direct holding or pushing of an opponent, distinct from legal teammate binding.",
+      "source_law_text": "Non-front-row player holding or pushing an opponent.",
+      "parent_clause_id": "19.38",
+      "printed_explicit_sanction": "Penalty.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.38(d)",
+      "clause_id": "19.38(d)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "restricted",
+      "record_role": "prohibition",
+      "observation_fields": [
+        "actor_player_id",
+        "ball_exit_time_s",
+        "ball_reentry_time_s",
+        "ball_reentry_path"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "ball_visibility",
+        "continuous_timeline",
+        "tunnel_geometry"
+      ],
+      "rationale": "Observe a ball brought back after leaving, retaining a prior verified exit rather than treating any backward movement as re-entry.",
+      "source_law_text": "Bringing the ball back into the scrum once it has left.",
+      "parent_clause_id": "19.38",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.38(e)",
+      "clause_id": "19.38(e)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "restricted",
+      "record_role": "prohibition",
+      "observation_fields": [
+        "actor_player_id",
+        "actor_role",
+        "ball_contact_time_s",
+        "ball_location_at_contact"
+      ],
+      "evidence_types": [
+        "video"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "ball_visibility",
+        "tunnel_geometry"
+      ],
+      "rationale": "Non-front-row contact in the tunnel is restricted; role and location must both be supported.",
+      "source_law_text": "Non-front-row players playing the ball in the tunnel.",
+      "parent_clause_id": "19.38",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.38(f)",
+      "clause_id": "19.38(f)",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "restricted",
+      "record_role": "prohibition",
+      "observation_fields": [
+        "actor_player_id",
+        "actor_role",
+        "ball_position",
+        "apparent_action_sequence",
+        "opponent_response",
+        "intent_hypothesis"
+      ],
+      "evidence_types": [
+        "video",
+        "multi_angle_video",
+        "referee_explanation"
+      ],
+      "context_requirements": [
+        "player_roles",
+        "ball_visibility",
+        "intent_review"
+      ],
+      "rationale": "Record the scrum-half action and actual ball position; an attempt to deceive is an intention assessment, not a deduction from opponent reaction alone.",
+      "source_law_text": "Scrum-half attempting to make an opponent believe the ball is out of the scrum when it is not.",
+      "parent_clause_id": "19.38",
+      "printed_explicit_sanction": "Free-kick.",
+      "sanction_scope": "printed_text_requires_clause_and_parent_context",
+      "global_law_trial": false
+    },
+    {
+      "coverage_id": "19.39",
+      "clause_id": "19.39",
+      "source_record_type": "numbered_clause",
+      "annotation_domain": "variations",
+      "record_role": "administrative_authority",
+      "observation_fields": [
+        "governing_union",
+        "competition_level",
+        "under_19_variations_adoption",
+        "applicable_ruleset_id"
+      ],
+      "evidence_types": [
+        "applicable_ruleset",
+        "match_metadata"
+      ],
+      "context_requirements": [
+        "ruleset_applicability",
+        "union_authority"
+      ],
+      "rationale": "The union may implement under-19 scrum variations at defined levels. Exact variation rules are not provided in this HTML and must not be invented or assessed without the applicable source.",
+      "source_law_text": "A union may implement the under-19 scrum law variations at defined levels of the game within its jurisdiction.",
+      "parent_clause_id": null,
+      "printed_explicit_sanction": null,
+      "sanction_scope": null,
+      "global_law_trial": false
+    }
+  ],
+  "supplementary_coverage": [
+    {
+      "coverage_id": "principle",
+      "clause_id": null,
+      "source_record_type": "unnumbered_principle",
+      "annotation_domain": "principle",
+      "record_role": "informational",
+      "source_text": "The purpose of a scrum is to restart play with a contest for possession after a minor infringement or stoppage.",
+      "observation_fields": [
+        "restart_reason",
+        "possession_contest_interval",
+        "possession_team_id"
+      ],
+      "evidence_types": [
+        "preceding_play_video",
+        "video",
+        "referee_audio"
+      ],
+      "context_requirements": [
+        "preceding_play",
+        "possession_timeline"
+      ],
+      "rationale": "Capture normal restart and possession-contest purpose; this principle is not a standalone sanction or compulsory offence label."
+    },
+    {
+      "coverage_id": "restart_01",
+      "clause_id": "19.1",
+      "source_record_type": "restart_table_row",
+      "annotation_domain": "restart",
+      "record_role": "conditional_requirement",
+      "source_restart_reason": "A knock forward in the field of play or throw forward, apart from at a lineout.",
+      "source_location_requirement": "In the scrum zone at the point closest to the place of infringement.",
+      "source_throwing_team_requirement": "The non-offending team.",
+      "observation_fields": [
+        "restart_reason",
+        "restart_location",
+        "throwing_team_id",
+        "prior_possession_team_id",
+        "last_team_moving_forward_id",
+        "last_ball_playing_team_id",
+        "restart_option_chosen"
+      ],
+      "evidence_types": [
+        "preceding_play_video",
+        "referee_audio",
+        "referee_signal",
+        "calibrated_pitch_geometry"
+      ],
+      "context_requirements": [
+        "preceding_play",
+        "restart_table",
+        "pitch_geometry",
+        "throwing_entitlement"
+      ],
+      "rationale": "Assess reason, mark and throwing entitlement together when this table case applies; preceding-play facts may be unavailable from the scrum clip alone."
+    },
+    {
+      "coverage_id": "restart_02",
+      "clause_id": "19.1",
+      "source_record_type": "restart_table_row",
+      "annotation_domain": "restart",
+      "record_role": "conditional_requirement",
+      "source_restart_reason": "A knock forward or throw forward at a lineout; incorrect throw at a lineout; incorrect quick throw.",
+      "source_location_requirement": "15 metres in from the mark of touch.",
+      "source_throwing_team_requirement": "The non-offending team.",
+      "observation_fields": [
+        "restart_reason",
+        "restart_location",
+        "throwing_team_id",
+        "prior_possession_team_id",
+        "last_team_moving_forward_id",
+        "last_ball_playing_team_id",
+        "restart_option_chosen"
+      ],
+      "evidence_types": [
+        "preceding_play_video",
+        "referee_audio",
+        "referee_signal",
+        "calibrated_pitch_geometry"
+      ],
+      "context_requirements": [
+        "preceding_play",
+        "restart_table",
+        "pitch_geometry",
+        "throwing_entitlement"
+      ],
+      "rationale": "Assess reason, mark and throwing entitlement together when this table case applies; preceding-play facts may be unavailable from the scrum clip alone."
+    },
+    {
+      "coverage_id": "restart_03",
+      "clause_id": "19.1",
+      "source_record_type": "restart_table_row",
+      "annotation_domain": "restart",
+      "record_role": "conditional_requirement",
+      "source_restart_reason": "Offside in open play (scrum option).",
+      "source_location_requirement": "In the scrum zone at the point closest to where the offending team last played the ball.",
+      "source_throwing_team_requirement": "The non-offending team.",
+      "observation_fields": [
+        "restart_reason",
+        "restart_location",
+        "throwing_team_id",
+        "prior_possession_team_id",
+        "last_team_moving_forward_id",
+        "last_ball_playing_team_id",
+        "restart_option_chosen"
+      ],
+      "evidence_types": [
+        "preceding_play_video",
+        "referee_audio",
+        "referee_signal",
+        "calibrated_pitch_geometry"
+      ],
+      "context_requirements": [
+        "preceding_play",
+        "restart_table",
+        "pitch_geometry",
+        "throwing_entitlement"
+      ],
+      "rationale": "Assess reason, mark and throwing entitlement together when this table case applies; preceding-play facts may be unavailable from the scrum clip alone."
+    },
+    {
+      "coverage_id": "restart_04",
+      "clause_id": "19.1",
+      "source_record_type": "restart_table_row",
+      "annotation_domain": "restart",
+      "record_role": "conditional_requirement",
+      "source_restart_reason": "A penalty (scrum option).",
+      "source_location_requirement": "In the scrum zone at the point closest to where the infringement took place.",
+      "source_throwing_team_requirement": "The non-offending team.",
+      "observation_fields": [
+        "restart_reason",
+        "restart_location",
+        "throwing_team_id",
+        "prior_possession_team_id",
+        "last_team_moving_forward_id",
+        "last_ball_playing_team_id",
+        "restart_option_chosen"
+      ],
+      "evidence_types": [
+        "preceding_play_video",
+        "referee_audio",
+        "referee_signal",
+        "calibrated_pitch_geometry"
+      ],
+      "context_requirements": [
+        "preceding_play",
+        "restart_table",
+        "pitch_geometry",
+        "throwing_entitlement"
+      ],
+      "rationale": "Assess reason, mark and throwing entitlement together when this table case applies; preceding-play facts may be unavailable from the scrum clip alone."
+    },
+    {
+      "coverage_id": "restart_05",
+      "clause_id": "19.1",
+      "source_record_type": "restart_table_row",
+      "annotation_domain": "restart",
+      "record_role": "conditional_requirement",
+      "source_restart_reason": "The ball is played by, or taken into in-goal by the defending team and made dead.",
+      "source_location_requirement": "In the scrum zone at the point closest to where the ball was made dead.",
+      "source_throwing_team_requirement": "The attacking team.",
+      "observation_fields": [
+        "restart_reason",
+        "restart_location",
+        "throwing_team_id",
+        "prior_possession_team_id",
+        "last_team_moving_forward_id",
+        "last_ball_playing_team_id",
+        "restart_option_chosen"
+      ],
+      "evidence_types": [
+        "preceding_play_video",
+        "referee_audio",
+        "referee_signal",
+        "calibrated_pitch_geometry"
+      ],
+      "context_requirements": [
+        "preceding_play",
+        "restart_table",
+        "pitch_geometry",
+        "throwing_entitlement"
+      ],
+      "rationale": "Assess reason, mark and throwing entitlement together when this table case applies; preceding-play facts may be unavailable from the scrum clip alone."
+    },
+    {
+      "coverage_id": "restart_06",
+      "clause_id": "19.1",
+      "source_record_type": "restart_table_row",
+      "annotation_domain": "restart",
+      "record_role": "conditional_requirement",
+      "source_restart_reason": "An unplayable tackle or ruck.",
+      "source_location_requirement": "In the scrum zone at the point closest to where the tackle or ruck took place.",
+      "source_throwing_team_requirement": "The team last moving forward.",
+      "observation_fields": [
+        "restart_reason",
+        "restart_location",
+        "throwing_team_id",
+        "prior_possession_team_id",
+        "last_team_moving_forward_id",
+        "last_ball_playing_team_id",
+        "restart_option_chosen"
+      ],
+      "evidence_types": [
+        "preceding_play_video",
+        "referee_audio",
+        "referee_signal",
+        "calibrated_pitch_geometry"
+      ],
+      "context_requirements": [
+        "preceding_play",
+        "restart_table",
+        "pitch_geometry",
+        "throwing_entitlement"
+      ],
+      "rationale": "Assess reason, mark and throwing entitlement together when this table case applies; preceding-play facts may be unavailable from the scrum clip alone."
+    },
+    {
+      "coverage_id": "restart_07",
+      "clause_id": "19.1",
+      "source_record_type": "restart_table_row",
+      "annotation_domain": "restart",
+      "record_role": "conditional_requirement",
+      "source_restart_reason": "A maul that ends unsuccessfully.",
+      "source_location_requirement": "In the scrum zone at the point closest to where the maul ended.",
+      "source_throwing_team_requirement": "The team not in possession at the start of the maul. If the referee cannot decide which team had possession, the team last moving forward before the maul stopped.",
+      "observation_fields": [
+        "restart_reason",
+        "restart_location",
+        "throwing_team_id",
+        "prior_possession_team_id",
+        "last_team_moving_forward_id",
+        "last_ball_playing_team_id",
+        "restart_option_chosen"
+      ],
+      "evidence_types": [
+        "preceding_play_video",
+        "referee_audio",
+        "referee_signal",
+        "calibrated_pitch_geometry"
+      ],
+      "context_requirements": [
+        "preceding_play",
+        "restart_table",
+        "pitch_geometry",
+        "throwing_entitlement"
+      ],
+      "rationale": "Assess reason, mark and throwing entitlement together when this table case applies; preceding-play facts may be unavailable from the scrum clip alone."
+    },
+    {
+      "coverage_id": "restart_08",
+      "clause_id": "19.1",
+      "source_record_type": "restart_table_row",
+      "annotation_domain": "restart",
+      "record_role": "conditional_requirement",
+      "source_restart_reason": "An unplayable maul after an opponent's kick in open play.",
+      "source_location_requirement": "In the scrum zone at the point nearest to place of maul.",
+      "source_throwing_team_requirement": "The team in possession at the start of the maul.",
+      "observation_fields": [
+        "restart_reason",
+        "restart_location",
+        "throwing_team_id",
+        "prior_possession_team_id",
+        "last_team_moving_forward_id",
+        "last_ball_playing_team_id",
+        "restart_option_chosen"
+      ],
+      "evidence_types": [
+        "preceding_play_video",
+        "referee_audio",
+        "referee_signal",
+        "calibrated_pitch_geometry"
+      ],
+      "context_requirements": [
+        "preceding_play",
+        "restart_table",
+        "pitch_geometry",
+        "throwing_entitlement"
+      ],
+      "rationale": "Assess reason, mark and throwing entitlement together when this table case applies; preceding-play facts may be unavailable from the scrum clip alone."
+    },
+    {
+      "coverage_id": "restart_09",
+      "clause_id": "19.1",
+      "source_record_type": "restart_table_row",
+      "annotation_domain": "restart",
+      "record_role": "conditional_requirement",
+      "source_restart_reason": "An incorrect kick-off or restart kick (scrum option).",
+      "source_location_requirement": "In the scrum zone at the point closest to where the ball was kicked.",
+      "source_throwing_team_requirement": "The non-kicking team.",
+      "observation_fields": [
+        "restart_reason",
+        "restart_location",
+        "throwing_team_id",
+        "prior_possession_team_id",
+        "last_team_moving_forward_id",
+        "last_ball_playing_team_id",
+        "restart_option_chosen"
+      ],
+      "evidence_types": [
+        "preceding_play_video",
+        "referee_audio",
+        "referee_signal",
+        "calibrated_pitch_geometry"
+      ],
+      "context_requirements": [
+        "preceding_play",
+        "restart_table",
+        "pitch_geometry",
+        "throwing_entitlement"
+      ],
+      "rationale": "Assess reason, mark and throwing entitlement together when this table case applies; preceding-play facts may be unavailable from the scrum clip alone."
+    },
+    {
+      "coverage_id": "restart_10",
+      "clause_id": "19.1",
+      "source_record_type": "restart_table_row",
+      "annotation_domain": "restart",
+      "record_role": "conditional_requirement",
+      "source_restart_reason": "Failure to “use it” at scrum, ruck or maul.",
+      "source_location_requirement": "In the scrum zone at the point closest to where the scrum, ruck or maul took place.",
+      "source_throwing_team_requirement": "The team not in possession.",
+      "observation_fields": [
+        "restart_reason",
+        "restart_location",
+        "throwing_team_id",
+        "prior_possession_team_id",
+        "last_team_moving_forward_id",
+        "last_ball_playing_team_id",
+        "restart_option_chosen"
+      ],
+      "evidence_types": [
+        "preceding_play_video",
+        "referee_audio",
+        "referee_signal",
+        "calibrated_pitch_geometry"
+      ],
+      "context_requirements": [
+        "preceding_play",
+        "restart_table",
+        "pitch_geometry",
+        "throwing_entitlement"
+      ],
+      "rationale": "Assess reason, mark and throwing entitlement together when this table case applies; preceding-play facts may be unavailable from the scrum clip alone."
+    },
+    {
+      "coverage_id": "restart_11",
+      "clause_id": "19.1",
+      "source_record_type": "restart_table_row",
+      "annotation_domain": "restart",
+      "record_role": "conditional_requirement",
+      "source_restart_reason": "The ball or ball-carrier touches the referee and either team gains an advantage.",
+      "source_location_requirement": "In the scrum zone at the point closest to the incident.",
+      "source_throwing_team_requirement": "The team that last played the ball.",
+      "observation_fields": [
+        "restart_reason",
+        "restart_location",
+        "throwing_team_id",
+        "prior_possession_team_id",
+        "last_team_moving_forward_id",
+        "last_ball_playing_team_id",
+        "restart_option_chosen"
+      ],
+      "evidence_types": [
+        "preceding_play_video",
+        "referee_audio",
+        "referee_signal",
+        "calibrated_pitch_geometry"
+      ],
+      "context_requirements": [
+        "preceding_play",
+        "restart_table",
+        "pitch_geometry",
+        "throwing_entitlement"
+      ],
+      "rationale": "Assess reason, mark and throwing entitlement together when this table case applies; preceding-play facts may be unavailable from the scrum clip alone."
+    },
+    {
+      "coverage_id": "restart_12",
+      "clause_id": "19.1",
+      "source_record_type": "restart_table_row",
+      "annotation_domain": "restart",
+      "record_role": "conditional_requirement",
+      "source_restart_reason": "Stoppage due to injury.",
+      "source_location_requirement": "In the scrum zone at the point where the ball was last played.",
+      "source_throwing_team_requirement": "The team last in possession.",
+      "observation_fields": [
+        "restart_reason",
+        "restart_location",
+        "throwing_team_id",
+        "prior_possession_team_id",
+        "last_team_moving_forward_id",
+        "last_ball_playing_team_id",
+        "restart_option_chosen"
+      ],
+      "evidence_types": [
+        "preceding_play_video",
+        "referee_audio",
+        "referee_signal",
+        "calibrated_pitch_geometry"
+      ],
+      "context_requirements": [
+        "preceding_play",
+        "restart_table",
+        "pitch_geometry",
+        "throwing_entitlement"
+      ],
+      "rationale": "Assess reason, mark and throwing entitlement together when this table case applies; preceding-play facts may be unavailable from the scrum clip alone."
+    },
+    {
+      "coverage_id": "restart_13",
+      "clause_id": "19.1",
+      "source_record_type": "restart_table_row",
+      "annotation_domain": "restart",
+      "record_role": "conditional_requirement",
+      "source_restart_reason": "Reset scrum – no infringement.",
+      "source_location_requirement": "Where the original scrum took place.",
+      "source_throwing_team_requirement": "The team originally awarded the scrum.",
+      "observation_fields": [
+        "restart_reason",
+        "restart_location",
+        "throwing_team_id",
+        "prior_possession_team_id",
+        "last_team_moving_forward_id",
+        "last_ball_playing_team_id",
+        "restart_option_chosen"
+      ],
+      "evidence_types": [
+        "preceding_play_video",
+        "referee_audio",
+        "referee_signal",
+        "calibrated_pitch_geometry"
+      ],
+      "context_requirements": [
+        "preceding_play",
+        "restart_table",
+        "pitch_geometry",
+        "throwing_entitlement"
+      ],
+      "rationale": "Assess reason, mark and throwing entitlement together when this table case applies; preceding-play facts may be unavailable from the scrum clip alone."
+    },
+    {
+      "coverage_id": "restart_14",
+      "clause_id": "19.1",
+      "source_record_type": "restart_table_row",
+      "annotation_domain": "restart",
+      "record_role": "conditional_requirement",
+      "source_restart_reason": "A penalty attempt at goal not taken within the time limit.",
+      "source_location_requirement": "In the scrum zone at the point closest to where the penalty was awarded.",
+      "source_throwing_team_requirement": "The non-offending team.",
+      "observation_fields": [
+        "restart_reason",
+        "restart_location",
+        "throwing_team_id",
+        "prior_possession_team_id",
+        "last_team_moving_forward_id",
+        "last_ball_playing_team_id",
+        "restart_option_chosen"
+      ],
+      "evidence_types": [
+        "preceding_play_video",
+        "referee_audio",
+        "referee_signal",
+        "calibrated_pitch_geometry"
+      ],
+      "context_requirements": [
+        "preceding_play",
+        "restart_table",
+        "pitch_geometry",
+        "throwing_entitlement"
+      ],
+      "rationale": "Assess reason, mark and throwing entitlement together when this table case applies; preceding-play facts may be unavailable from the scrum clip alone."
+    },
+    {
+      "coverage_id": "restart_15",
+      "clause_id": "19.1",
+      "source_record_type": "restart_table_row",
+      "annotation_domain": "restart",
+      "record_role": "conditional_requirement",
+      "source_restart_reason": "Ball kicked dead through in-goal (scrum option)",
+      "source_location_requirement": "In the scrum zone at the point closest to where the ball was kicked.",
+      "source_throwing_team_requirement": "The non-kicking team.",
+      "observation_fields": [
+        "restart_reason",
+        "restart_location",
+        "throwing_team_id",
+        "prior_possession_team_id",
+        "last_team_moving_forward_id",
+        "last_ball_playing_team_id",
+        "restart_option_chosen"
+      ],
+      "evidence_types": [
+        "preceding_play_video",
+        "referee_audio",
+        "referee_signal",
+        "calibrated_pitch_geometry"
+      ],
+      "context_requirements": [
+        "preceding_play",
+        "restart_table",
+        "pitch_geometry",
+        "throwing_entitlement"
+      ],
+      "rationale": "Assess reason, mark and throwing entitlement together when this table case applies; preceding-play facts may be unavailable from the scrum clip alone."
+    },
+    {
+      "coverage_id": "restart_16",
+      "clause_id": "19.1",
+      "source_record_type": "restart_table_row",
+      "annotation_domain": "restart",
+      "record_role": "conditional_requirement",
+      "source_restart_reason": "Penalty kick or free kick not taken correctly, or as first indicated",
+      "source_location_requirement": "Place of infringement.",
+      "source_throwing_team_requirement": "The non-offending team.",
+      "observation_fields": [
+        "restart_reason",
+        "restart_location",
+        "throwing_team_id",
+        "prior_possession_team_id",
+        "last_team_moving_forward_id",
+        "last_ball_playing_team_id",
+        "restart_option_chosen"
+      ],
+      "evidence_types": [
+        "preceding_play_video",
+        "referee_audio",
+        "referee_signal",
+        "calibrated_pitch_geometry"
+      ],
+      "context_requirements": [
+        "preceding_play",
+        "restart_table",
+        "pitch_geometry",
+        "throwing_entitlement"
+      ],
+      "rationale": "Assess reason, mark and throwing entitlement together when this table case applies; preceding-play facts may be unavailable from the scrum clip alone."
+    },
+    {
+      "coverage_id": "restart_17",
+      "clause_id": "19.1",
+      "source_record_type": "restart_table_row",
+      "annotation_domain": "restart",
+      "record_role": "conditional_requirement",
+      "source_restart_reason": "The referee awards a scrum for any other reason not covered in law.",
+      "source_location_requirement": "In the scrum zone at the point closest to the place of stoppage.",
+      "source_throwing_team_requirement": "The team that was last moving forward.",
+      "observation_fields": [
+        "restart_reason",
+        "restart_location",
+        "throwing_team_id",
+        "prior_possession_team_id",
+        "last_team_moving_forward_id",
+        "last_ball_playing_team_id",
+        "restart_option_chosen"
+      ],
+      "evidence_types": [
+        "preceding_play_video",
+        "referee_audio",
+        "referee_signal",
+        "calibrated_pitch_geometry"
+      ],
+      "context_requirements": [
+        "preceding_play",
+        "restart_table",
+        "pitch_geometry",
+        "throwing_entitlement"
+      ],
+      "rationale": "Assess reason, mark and throwing entitlement together when this table case applies; preceding-play facts may be unavailable from the scrum clip alone."
+    },
+    {
+      "coverage_id": "diagram_01",
+      "clause_id": null,
+      "related_clause_ids": [
+        "19.5",
+        "19.6",
+        "19.7",
+        "19.7(a)",
+        "19.7(b)",
+        "19.7(c)",
+        "19.7(d)"
+      ],
+      "source_record_type": "diagram",
+      "annotation_domain": "forming",
+      "record_role": "reference_asset",
+      "source_image_url": "https://resources.world.rugby/worldrugby/photo/2020/11/04/12bda2a2-6e28-43d8-a2e5-54de7d17602c/scrum.jpg",
+      "source_alt_text": "",
+      "asset_status": "not_fetched_not_reviewed",
+      "observation_fields": [
+        "scrum_formation",
+        "scrum_player_count",
+        "binding_configuration"
+      ],
+      "evidence_types": [
+        "source_diagram",
+        "video"
+      ],
+      "context_requirements": [
+        "formation_diagram"
+      ],
+      "rationale": "Retain this image reference, literal caption and document position. Alt text is empty and pixels have not been fetched or reviewed; exact diagram-dependent geometry remains pending.",
+      "source_caption": "Scrum formation (subject to 19.7)",
+      "source_section": "Forming a scrum",
+      "source_position_context": "Before 19.2; caption explicitly refers to 19.7.",
+      "association_basis": "Semantic coverage from section/caption and related law text; not a direct image-to-clause HTML link."
+    },
+    {
+      "coverage_id": "diagram_02",
+      "clause_id": null,
+      "related_clause_ids": [
+        "19.14",
+        "19.15",
+        "19.15(a)",
+        "19.15(b)",
+        "19.15(c)",
+        "19.15(d)",
+        "19.15(e)",
+        "19.15(f)",
+        "19.15(g)"
+      ],
+      "source_record_type": "diagram",
+      "annotation_domain": "throw",
+      "record_role": "reference_asset",
+      "source_image_url": "https://resources.world.rugby/worldrugby/photo/2020/11/04/90608a4b-1759-4d37-91b9-abaf6cbad15b/throw-in-at-scrum-2018.jpg",
+      "source_alt_text": "",
+      "asset_status": "not_fetched_not_reviewed",
+      "observation_fields": [
+        "ball_hold_configuration"
+      ],
+      "evidence_types": [
+        "source_diagram",
+        "video"
+      ],
+      "context_requirements": [
+        "feed_diagram"
+      ],
+      "rationale": "Retain this image reference, literal caption and document position. Alt text is empty and pixels have not been fetched or reviewed; exact diagram-dependent geometry remains pending.",
+      "source_caption": "Throw-in at the scrum",
+      "source_section": "Throw",
+      "source_position_context": "After 19.15(g), before the During a scrum heading.",
+      "association_basis": "Semantic coverage from section/caption and related law text; not a direct image-to-clause HTML link."
+    },
+    {
+      "coverage_id": "diagram_03",
+      "clause_id": null,
+      "related_clause_ids": [
+        "19.27",
+        "19.28",
+        "19.28(a)",
+        "19.28(b)",
+        "19.29",
+        "19.30",
+        "19.30(a)",
+        "19.30(b)",
+        "19.30(c)",
+        "19.31",
+        "19.32",
+        "19.33"
+      ],
+      "source_record_type": "diagram",
+      "annotation_domain": "offside",
+      "record_role": "reference_asset",
+      "source_image_url": "/media/tywovhpc/2607en-scrum-offside-graphic.png?rmode=max&width=500&height=462",
+      "source_alt_text": "",
+      "asset_status": "not_fetched_not_reviewed",
+      "observation_fields": [
+        "player_position",
+        "applicable_offside_line",
+        "hindmost_foot_position",
+        "ball_position"
+      ],
+      "evidence_types": [
+        "source_diagram",
+        "video"
+      ],
+      "context_requirements": [
+        "offside_diagram"
+      ],
+      "rationale": "Retain this image reference, literal caption and document position. Alt text is empty and pixels have not been fetched or reviewed; exact diagram-dependent geometry remains pending.",
+      "source_caption": "Scrum offside",
+      "source_section": "Offside at a scrum",
+      "source_position_context": "After 19.33, before the Resetting a scrum heading.",
+      "association_basis": "Semantic coverage from section/caption and related law text; not a direct image-to-clause HTML link."
+    }
+  ]
+}

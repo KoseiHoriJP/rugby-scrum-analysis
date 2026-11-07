@@ -1,0 +1,1 @@
+team_observation_id,event_id,team_id,start_s,end_s,players_on_field,players_in_scrum,prop_count,hooker_count,lock_count,back_row_count,reduction_context,formation_ready_s,actual_throwing_team,possession_team,evidence_ids,review_status,reviewer,notes
