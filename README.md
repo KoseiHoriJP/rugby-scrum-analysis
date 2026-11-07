@@ -1,5 +1,7 @@
 # Rugby scrum phase pilot
 
+[English](README.md) | [日本語](README.ja.md)
+
 Prepare the supplied **Rugby Scrum Pilot Dataset** for manual scrum-phase annotation.
 The first build preserves 279 sampled frames from five clips / three matches,
 1,378 automatic person detections and 23,426 COCO keypoints. It does **not**
