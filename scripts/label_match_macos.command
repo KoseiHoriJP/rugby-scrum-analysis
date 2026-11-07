@@ -31,12 +31,14 @@ else
   autoclip_video="$(osascript -e 'POSIX path of (choose file with prompt "Select your full-match MP4 with referee audio")')"
 fi
 autoclip_run="runs/match-$(date +%Y%m%d-%H%M%S)"
-.venv-auto/bin/python autoclip.py scan --video "$autoclip_video" --output "$autoclip_run"
+echo "Dataset target: Men's Rugby World Cup 2023. Historical law edition and trial applicability still require review."
+.venv-auto/bin/python autoclip.py scan --video "$autoclip_video" --ruleset-preset rwc2023 --output "$autoclip_run"
 open "$autoclip_run/review.html"
-echo "In the browser, select the same match file. Check the candidates, mark actual ends, confirm views, and save the reviewed JSON."
+echo "Select the same match in the browser. Review the cues, scrum end, referee explanation end and retained clip end, then confirm the view."
+echo "The Law 19 page also records match rules, observations, law assessments and separate referee decisions. Save law19_reviewed_events.json before closing."
 read -r -p "Press Return after you have saved your reviewed JSON (or Ctrl+C to export later): " autoclip_continue
 autoclip_events="$(osascript -e 'POSIX path of (choose file with prompt "Select the reviewed scrum-events JSON you saved from the browser")')"
 autoclip_output="datasets/match-$(date +%Y%m%d-%H%M%S)"
 .venv-auto/bin/python autoclip.py export --video "$autoclip_video" --events "$autoclip_events" --output "$autoclip_output"
 open "$autoclip_output"
-echo "Finished. Aerial and side clips are in $autoclip_output. Mixed and unreviewed events remain held."
+echo "Finished. Aerial/side clips and seven annotation tables are in $autoclip_output. Mixed and unreviewed events remain held."

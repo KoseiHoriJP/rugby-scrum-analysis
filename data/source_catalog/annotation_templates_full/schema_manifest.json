@@ -1,6 +1,6 @@
 {
-  "schema_id": "law19_full_annotation_v1",
-  "status": "annotation_specification_not_app_integration",
+  "schema_id": "law19_full_annotation_v2",
+  "status": "annotation_runtime_v2",
   "source": {
     "method": "user_supplied_html",
     "declared_url": "https://passport.world.rugby/laws-of-the-game/laws-by-number/19-scrum/",
@@ -55,7 +55,13 @@
         "context_status",
         "review_status",
         "reviewer",
-        "notes"
+        "notes",
+        "include",
+        "end_status",
+        "view_status",
+        "cue_status",
+        "cue_confidence",
+        "evidence_ids"
       ],
       "rows_seeded": 0
     },
@@ -282,6 +288,23 @@
       "confirmed",
       "candidate",
       "unknown"
+    ],
+    "context_status": [
+      "unknown",
+      "unverified",
+      "verified"
+    ],
+    "end_status": [
+      "needs_review",
+      "reviewed"
+    ],
+    "view_status": [
+      "unverified",
+      "reviewed"
+    ],
+    "cue_status": [
+      "unverified",
+      "reviewed"
     ]
   },
   "relationships": [
@@ -291,7 +314,8 @@
     "restarts.restart_table_row_id references law19_full restart rows; reset_reason_clause independently references 19.34 conditions.",
     "A decision and its referee-stated reason do not automatically populate the independent rule assessment or physical-cause labels.",
     "Official media associations are reference metadata, not player-identity, intent, view or infringement ground truth.",
-    "All recordings and derived examples of one match require a common match_group for splitting; source hashes alone cannot identify alternate recordings."
+    "All recordings and derived examples of one match require a common match_group for splitting; source hashes alone cannot identify alternate recordings.",
+    "evidence_ids and supporting_observation_ids reference observations in the same event; physical attempt_end_s and explanation_end_s are retained independently, with clip_end_s covering both."
   ],
   "unknowns": "Blank is unannotated. unknown/unobservable are explicit states, never converted to false or not_satisfied.",
   "timebase": "Seconds in the original source video, not scoreboard time; legal scrum start under 19.16 is ball_feed_s.",
@@ -299,7 +323,7 @@
     "video_contents_reviewed": false,
     "diagram_pixels_reviewed": false
   },
-  "implementation_note": "Templates and vocabularies only. No data rows or automatically inferred legal verdicts; current browser UI has not been extended to these tables.",
+  "implementation_note": "Runtime v2 supports offline seven-table review, validation, lossless JSON resume and CSV export. Conservative fact checks are draft suggestions requiring review; neither tracking nor a referee decision automatically establishes an infringement.",
   "evidence_type_definitions": {
     "video": "Timecoded match video with the relevant body, ball or event visible.",
     "multi_angle_video": "Synchronized additional views supporting contact, causal or depth assessment.",

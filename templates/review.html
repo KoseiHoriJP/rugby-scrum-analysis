@@ -299,9 +299,13 @@
       if (file.size > 10 * 1024 * 1024) throw new Error("Draft JSON is unexpectedly large (maximum 10 MB).");
       const incoming = JSON.parse(await file.text());
       if (incoming.version !== 1 || incoming.label_schema !== "scrum_phase_v1" || !Array.isArray(incoming.annotations)) throw new Error("Expected a version 1 scrum_phase_v1 draft JSON export.");
+      const rootFields = new Set(["version", "label_schema", "exported_at", "annotations"]);
+      if (Object.keys(incoming).some(field => !rootFields.has(field))) throw new Error("This phase-only tool cannot preserve additional annotation tables. Open the full Law 19 review page for legal assessments or referee decisions.");
       const validated = new Map();
       for (const row of incoming.annotations) {
         if (!row || typeof row !== "object" || typeof row.clip_id !== "string" || !Number.isInteger(row.source_frame_index)) throw new Error("An annotation has an invalid frame key.");
+        const phaseFields = new Set(["clip_id", "source_frame_index", "label_schema", "label", "review_status", "annotator", "notes", "updated_at"]);
+        if (Object.keys(row).some(field => !phaseFields.has(field))) throw new Error("Additional annotation fields would be lost in this phase-only tool. Use the full Law 19 review page.");
         const id = key(row);
         if (!frameByKey.has(id)) throw new Error("A saved annotation refers to a frame outside this dataset.");
         if (validated.has(id)) throw new Error("The import contains duplicate frame keys.");

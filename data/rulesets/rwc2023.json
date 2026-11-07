@@ -1,0 +1,19 @@
+{
+  "preset_id": "rwc2023",
+  "ruleset_id": "world_rugby_rwc_2023_men",
+  "competition": "Men's Rugby World Cup 2023",
+  "verification_status": "target_only_unverified",
+  "law_edition": null,
+  "trial_context": "unknown",
+  "reference_source_sha256": "fbf3f5c31cd2ea7513c390d3fb4c8533cf008d92cc798224873af0037833a07b",
+  "reference_source_url": "https://passport.world.rugby/laws-of-the-game/laws-by-number/19-scrum/",
+  "reference_edition_verified_for_competition": false,
+  "historical_rules_sources": [],
+  "review_required": [
+    "Identify the law edition and competition regulations actually applicable in 2023.",
+    "Verify each relevant trial or variation against a dated official source.",
+    "Do not apply the supplied page's 19.30(a) GLOBAL LAW TRIAL to 2023 by default.",
+    "Retain source references as observations before confirming event rules context."
+  ],
+  "notes": "User-selected dataset target. This preset identifies the competition and does not certify that an undated Law 19 snapshot or its trial provisions applied in 2023."
+}

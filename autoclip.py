@@ -1,4 +1,4 @@
-"""Find scrum speech cues, review real endings, and batch-export local clips."""
+"""Collect scrum clips, review Law 19 evidence, and export annotations."""
 
 from __future__ import annotations
 
@@ -126,7 +126,84 @@ def render_review(directory, manifest):
     (directory / 'review.html').write_text(template.read_text(encoding='utf-8').replace('__SCRUM_EVENTS_JSON__', payload), encoding='utf-8')
 
 
-def scan(video, output, transcript=None, model='small.en', max_sequence_seconds=20.0, model_dir=None):
+def law_document(data, source=None):
+    """Migrate the collection manifest without discarding its original fields."""
+    from law_annotations import upgrade_manifest, validate_document
+    if isinstance(data, dict) and data.get('schema_version') == 1:
+        data = upgrade_manifest(validate_manifest(data, source))
+    return validate_document(data, source=source)
+
+
+def apply_ruleset_preset(document, preset):
+    """Identify a collection target; a preset never verifies historical laws."""
+    if preset is None:
+        return document
+    check(preset == 'rwc2023', 'Unknown ruleset preset')
+    profile = load_json(Path(__file__).parent / 'data' / 'rulesets' / 'rwc2023.json')
+    previous_target = document['extensions'].get('ruleset_target')
+    check(previous_target is None or (isinstance(previous_target, dict) and previous_target.get('preset_id') == preset),
+          'Preset conflicts with existing target metadata; review it manually')
+    for event in document['tables']['events']:
+        check(event['ruleset_id'] in {None, profile['ruleset_id']},
+              'Preset conflicts with an existing ruleset; preserve the annotation and review it manually')
+        check(event['competition'] in {None, profile['competition']},
+              'Preset conflicts with an existing competition; review that match context manually')
+    for event in document['tables']['events']:
+        event['competition'] = event['competition'] or profile['competition']
+        event['ruleset_id'] = profile['ruleset_id']
+        event['trial_context'] = event['trial_context'] or 'unknown'
+        if event['context_status'] != 'verified':
+            event['context_status'] = 'unverified'
+    document['extensions'].setdefault('ruleset_target', profile)
+    return law_document(document)
+
+
+def render_law_review(directory, document):
+    from law_annotations import review_payload
+    from automation.law_checks import check_document
+    payload = review_payload(document)
+    payload['suggestions'] = check_document(document)
+    encoded = json.dumps(payload, ensure_ascii=False, allow_nan=False)
+    encoded = encoded.replace('<', '\\u003c').replace('\u2028', '\\u2028').replace('\u2029', '\\u2029')
+    template = Path(__file__).parent / 'templates' / 'law19_review.html'
+    (Path(directory) / 'review.html').write_text(
+        template.read_text(encoding='utf-8').replace('__LAW19_REVIEW_DATA__', encoded), encoding='utf-8')
+
+
+def review_laws(events_path, output, video=None, ruleset_preset=None):
+    """Create a fresh offline full-law review, preserving the input JSON."""
+    output = Path(output)
+    check(not output.exists(), 'Review output exists; use a new directory')
+    document = apply_ruleset_preset(law_document(load_json(events_path), source_info(video) if video else None), ruleset_preset)
+    output.parent.mkdir(parents=True, exist_ok=True)
+    with tempfile.TemporaryDirectory(prefix='.law19-review-', dir=output.parent) as temp:
+        staging = Path(temp) / 'review'
+        staging.mkdir()
+        write_json(staging / 'events-law19.json', document)
+        render_law_review(staging, document)
+        check(not output.exists(), 'Review output appeared; refusing overwrite')
+        staging.rename(output)
+    return document
+
+
+def check_laws(events_path, output):
+    """Save a suggestion snapshot alongside, rather than over, human labels."""
+    from automation.law_checks import check_document
+    document = law_document(load_json(events_path))
+    tables_bytes = json.dumps(document['tables'], sort_keys=True, ensure_ascii=False, allow_nan=False).encode('utf-8')
+    document['extensions']['rule_check_suggestions'] = {
+        'input_tables_sha256': hashlib.sha256(tables_bytes).hexdigest(),
+        'review_required': True, 'items': check_document(document),
+    }
+    encoded = json.dumps(document, indent=2, ensure_ascii=False, allow_nan=False) + '\n'
+    output = Path(output)
+    output.parent.mkdir(parents=True, exist_ok=True)
+    with output.open('x', encoding='utf-8') as handle:
+        handle.write(encoded)
+    return document
+
+
+def scan(video, output, transcript=None, model='small.en', max_sequence_seconds=20.0, model_dir=None, ruleset_preset=None):
     video, output = Path(video).resolve(), Path(output)
     check(not output.exists(), 'Output exists; use a new run directory to preserve prior work')
     details = probe(video)
@@ -158,10 +235,18 @@ def scan(video, output, transcript=None, model='small.en', max_sequence_seconds=
         write_json(staging / 'transcript.json', speech)
         write_json(staging / 'events.json', manifest)
         render_review(staging, manifest)
+        (staging / 'review.html').rename(staging / 'legacy_clip_review.html')
+        document = apply_ruleset_preset(law_document(manifest), ruleset_preset)
+        for event in document['tables']['events']:
+            event['audio_status'] = 'present' if details['audio_present'] else 'absent'
+        write_json(staging / 'events-law19.json', document)
+        render_law_review(staging, document)
         (staging / 'START_HERE.txt').write_text(
             'Open review.html in Safari/Chrome and select the same source match video.\n'
-            'Listen to each candidate; reject commentary/false positives. Mark the observed scrum end and review the camera view.\n'
-            'Save reviewed JSON before closing. Export clips with autoclip.py export.\n'
+            'Review speech candidates, physical scrum end, explanation end, retained clip end and camera view.\n'
+            'Record applicable rules, observations, independent law assessments and actual referee decisions in the seven tables.\n'
+            'Save law19_reviewed_events.json before closing. Export clips and tables with autoclip.py export.\n'
+            'events.json and legacy_clip_review.html retain the original collection-only workflow.\n'
             'No real scrum endings or camera views have been inferred by the speech scan.\n', encoding='utf-8')
         check(not output.exists(), 'Output appeared during scan; refusing overwrite')
         staging.rename(output)
@@ -170,9 +255,14 @@ def scan(video, output, transcript=None, model='small.en', max_sequence_seconds=
 
 def ready_events(manifest):
     ready, held = [], []
-    for event in manifest['events']:
+    full_law = manifest['schema_version'] == 2
+    for event in manifest['tables']['events'] if full_law else manifest['events']:
+        if full_law:
+            event = {**event, 'start_s': event['clip_start_s'], 'end_s': event['clip_end_s']}
         if not event['include']:
             held.append({'event_id': event['event_id'], 'reason': 'rejected_by_reviewer'})
+        elif full_law and event['cue_status'] != 'reviewed':
+            held.append({'event_id': event['event_id'], 'reason': 'speech_cues_need_review'})
         elif event['end_status'] != 'reviewed' or event['end_s'] is None:
             held.append({'event_id': event['event_id'], 'reason': 'scrum_end_needs_review'})
         elif event['view_status'] != 'reviewed':
@@ -189,7 +279,9 @@ def export_clips(video, events_path, output):
     check(not output.exists(), 'Export output exists; use a new directory')
     source = source_info(video)
     source_has_audio = probe(video)['audio_present']
-    manifest = validate_manifest(load_json(events_path), source=source)
+    data = load_json(events_path)
+    full_law = isinstance(data, dict) and data.get('schema_version') == 2
+    manifest = law_document(data, source) if full_law else validate_manifest(data, source=source)
     ready, held = ready_events(manifest)
     check(ready, 'No reviewed aerial/side events are ready; confirm actual scrum ends and camera views in review.html first')
     output.parent.mkdir(parents=True, exist_ok=True)
@@ -198,6 +290,8 @@ def export_clips(video, events_path, output):
         staging = Path(temp) / 'clips'
         staging.mkdir()
         for e in ready:
+            check(isinstance(e['event_id'], str) and re.fullmatch(r'[A-Za-z0-9_-]{1,80}', e['event_id']),
+                  'Unsafe event_id cannot be used for a clip filename')
             relative = Path(e['camera_view']) / (e['event_id'] + '.mp4')
             target = staging / relative
             target.parent.mkdir(exist_ok=True)
@@ -217,11 +311,18 @@ def export_clips(video, events_path, output):
                          'start_s': e['start_s'], 'end_s': e['end_s'],
                          'lead_in_truncated': e.get('lead_in_truncated', e['crouch_s'] < 15),
                          'duration_s': actual['duration_s'], 'clip_sha256': digest(target), 'status': 'reviewed'})
+            if full_law:
+                rows[-1].update(attempt_end_s=e['attempt_end_s'], explanation_end_s=e['explanation_end_s'],
+                                clip_start_s=e['clip_start_s'], clip_end_s=e['clip_end_s'],
+                                law_review_status=e['review_status'], status='clip_reviewed')
         with (staging / 'clips.csv').open('w', encoding='utf-8', newline='') as handle:
             writer = csv.DictWriter(handle, fieldnames=list(rows[0]))
             writer.writeheader()
             writer.writerows(rows)
         write_json(staging / 'reviewed_events.json', manifest)
+        if full_law:
+            from law_annotations import export_tables
+            export_tables(manifest, staging / 'annotations')
         write_json(staging / 'export_report.json', {'clips_exported': len(rows), 'held_events': held,
                                                    'audio_preserved': source_has_audio,
                                                    'split_guidance': 'Keep all clips from one match in the same split. The source SHA groups this file; alternate recordings of that match still need a common match_group.'})
@@ -234,13 +335,20 @@ def suggest_views(video, events_path, output, model='openai/clip-vit-base-patch3
     from automation.views import classify_view
     output = Path(output)
     check(not output.exists(), 'Suggestion JSON exists; use a new filename')
-    manifest = validate_manifest(load_json(events_path), source=source_info(video))
-    for e in manifest['events']:
+    data = load_json(events_path)
+    full_law = isinstance(data, dict) and data.get('schema_version') == 2
+    manifest = law_document(data, source_info(video)) if full_law else validate_manifest(data, source=source_info(video))
+    for e in manifest['tables']['events'] if full_law else manifest['events']:
         # Human-reviewed view labels are never overwritten by a model suggestion.
-        if not e['include'] or e['end_s'] is None or e['view_status'] == 'reviewed':
+        end = e['clip_end_s'] if full_law else e['end_s']
+        start = e['clip_start_s'] if full_law else e['start_s']
+        if not e['include'] or end is None or e['view_status'] == 'reviewed':
             continue
-        suggestion = classify_view(Path(video), e['start_s'], e['end_s'], model_name=model)
-        e['view_suggestion'] = suggestion
+        suggestion = classify_view(Path(video), start, end, model_name=model)
+        if full_law:
+            manifest['extensions'].setdefault('view_suggestions', {})[e['event_id']] = suggestion
+        else:
+            e['view_suggestion'] = suggestion
         e['camera_view'] = suggestion['camera_view']
         e['view_status'] = 'unverified'
     output.parent.mkdir(parents=True, exist_ok=True)
@@ -279,11 +387,23 @@ def main():
     p.add_argument('--model', default='small.en', help='Faster Whisper model name or local model folder')
     p.add_argument('--model-dir', type=Path)
     p.add_argument('--max-sequence-seconds', type=float, default=20.0)
+    p.add_argument('--ruleset-preset', choices=['rwc2023'], help='Competition target only; historical law applicability still requires review')
     p = commands.add_parser('suggest-views', help='Optional unverified CLIP view suggestions for events with marked ends')
     p.add_argument('--video', required=True, type=Path)
     p.add_argument('--events', required=True, type=Path)
     p.add_argument('--output', required=True, type=Path)
     p.add_argument('--model', default='openai/clip-vit-base-patch32')
+    p = commands.add_parser('review-laws', help='Create or resume the full seven-table Law 19 review page')
+    p.add_argument('--events', required=True, type=Path, help='Collection v1 or full annotation v2 JSON')
+    p.add_argument('--video', type=Path, help='Optionally verify source video SHA-256 before review')
+    p.add_argument('--output', required=True, type=Path, help='New review directory')
+    p.add_argument('--ruleset-preset', choices=['rwc2023'])
+    p = commands.add_parser('check-laws', help='Save conservative evidence-based suggestions without changing human assessments')
+    p.add_argument('--events', required=True, type=Path)
+    p.add_argument('--output', required=True, type=Path, help='New v2 JSON with a suggestion snapshot')
+    p = commands.add_parser('export-annotations', help='Validate and export all seven annotation tables, including drafts')
+    p.add_argument('--events', required=True, type=Path)
+    p.add_argument('--output', required=True, type=Path)
     p = commands.add_parser('export', help='Batch-export only human-reviewed aerial and side events')
     p.add_argument('--video', required=True, type=Path)
     p.add_argument('--events', required=True, type=Path)
@@ -291,13 +411,22 @@ def main():
     args = parser.parse_args()
     try:
         if args.command == 'scan':
-            result = scan(args.video, args.output, args.transcript, args.model, args.max_sequence_seconds, args.model_dir)
+            result = scan(args.video, args.output, args.transcript, args.model, args.max_sequence_seconds, args.model_dir, args.ruleset_preset)
             print(f"Found {len(result['events'])} automatic candidates. Open {args.output / 'review.html'} to review them.")
         elif args.command == 'export':
             print(json.dumps(export_clips(args.video, args.events, args.output), indent=2))
         elif args.command == 'suggest-views':
             suggest_views(args.video, args.events, args.output, args.model)
             print(f'Saved model suggestions for human review: {args.output}')
+        elif args.command == 'review-laws':
+            review_laws(args.events, args.output, args.video, args.ruleset_preset)
+            print(f'Open {args.output / "review.html"}; save your JSON before closing the browser.')
+        elif args.command == 'check-laws':
+            check_laws(args.events, args.output)
+            print(f'Saved suggestions requiring review: {args.output}. Human assessments were preserved.')
+        elif args.command == 'export-annotations':
+            from law_annotations import export_tables
+            print(json.dumps(export_tables(law_document(load_json(args.events)), args.output), indent=2))
         elif args.command == 'download':
             download_match(args.url, args.output)
             print(f'Downloaded {args.output / "match.mp4"}')

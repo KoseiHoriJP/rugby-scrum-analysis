@@ -36,7 +36,9 @@ bash scripts/label_match_macos.command
 It selects a local match, scans its audio, opens the browser review page, then
 asks you to select the reviewed JSON and exports the approved clips. The first
 run installs the pinned speech dependency in `.venv-auto`. You still need to
-mark actual endings and review camera views. The individual commands below
+mark actual endings and review camera views. The guided launcher targets Men's
+Rugby World Cup 2023 with unverified historical rules context. Use the individual
+commands below without that preset for other competitions. These commands
 provide the same workflow with more control.
 
 ## 1. Supply a playable full match
@@ -85,13 +87,17 @@ the transcript and rescan into a new output directory with:
 python autoclip.py scan --video media/match01/match.mp4 --transcript corrected-transcript.json --output runs/match01-corrected
 ```
 
-## 3. Confirm ends and camera views
+## 3. Review the event and Law 19 evidence
 
 In `review.html`, select the same local video, inspect each proposed event, and
 reject any false positive. Play through the scrum and mark its observed end.
 Whistles may signal resets, so judge the visible event and audio together.
-Choose its camera view and explicitly mark it reviewed, then save the reviewed
-JSON before closing the tab. Browser memory alone is not persistent storage.
+Confirm the speech cues, choose its camera view and explicitly mark it reviewed.
+The default page now supports [all seven Law 19 tables](LAW19_WORKFLOW.md),
+including rules context, observations, assessments and actual referee decisions.
+Mark the physical scrum end separately from any later referee explanation,
+and set the retained clip end to cover both. Save `law19_reviewed_events.json`
+before closing the tab. Browser memory alone is not persistent storage.
 
 `aerial` means an overhead view of the scrum. `side` means a sideline/oblique
 view. If a broadcast changes between these during the event window, use
@@ -104,11 +110,13 @@ sample, not a replacement for the requested complete event.
 Use the actual path/name of the JSON downloaded by the review page:
 
 ```sh
-python autoclip.py export --video media/match01/match.mp4 --events "$HOME/Downloads/scrum-events-reviewed.json" --output datasets/match01
+python autoclip.py export --video media/match01/match.mp4 --events "$HOME/Downloads/law19_reviewed_events.json" --output datasets/match01
 ```
 
 Clips are encoded as H.264 MP4 with AAC audio, split into `aerial/` and `side/`.
-Each runs from Crouch −15 seconds through the reviewed scrum end. Existing
+Each runs from Crouch −15 seconds through the retained end, including any
+recorded referee explanation. V2 exports also include all seven annotation
+tables in `annotations/`. Existing
 files/directories are never overwritten. Mixed/unknown views, rejected
 candidates and unreviewed ends are held back, with reasons in
 `export_report.json`. `clips.csv` records source/clip hashes and original
@@ -124,10 +132,11 @@ After marking ends, an optional generic CLIP model can suggest views:
 
 ```sh
 python -m pip install -r requirements-autoclip-vision.txt
-python autoclip.py suggest-views --video media/match01/match.mp4 --events "$HOME/Downloads/scrum-events-reviewed.json" --output runs/match01/view-suggestions.json
+python autoclip.py suggest-views --video media/match01/match.mp4 --events "$HOME/Downloads/law19_reviewed_events.json" --output runs/match01/view-suggestions.json
 ```
 
 Resume that JSON in the review page and visually check its suggestions.
+For older collection-only v1 JSON, run `review-laws` first to migrate it.
 Already-reviewed views are preserved. Other results stay unverified and cannot
 be exported until explicitly reviewed. This model is not trained or validated
 for scrum camera classification. Seven sampled frames can miss a camera cut;

@@ -1,27 +1,36 @@
-# Rugby scrum phase pilot
+# Rugby scrum datasets and Law 19 annotation
 
 [English](README.md) | [日本語](README.ja.md)
+
+Collect new scrum clips and annotate their timeline, evidence, applicable laws
+and referee decisions with the full Law 19 workflow below.
+For downloading and opening this version on a Mac, see the
+[Japanese Mac start guide](docs/MAC_START.ja.md).
 
 Prepare the supplied **Rugby Scrum Pilot Dataset** for manual scrum-phase annotation.
 The first build preserves 279 sampled frames from five clips / three matches,
 1,378 automatic person detections and 23,426 COCO keypoints. It does **not**
 invent phase labels or treat YOLO estimates as verified human poses.
 
-## Full Law 19 annotation design
+## Full Law 19 annotation workflow
 
 For the new dataset, see the [full annotation specification](data/source_catalog/scrum_full_annotation_plan.md),
 [clause-by-clause coverage](data/source_catalog/law19_rule_coverage.md), and
 [blank annotation tables](data/source_catalog/annotation_templates_full/).
-These cover normal play and the complete supplied Law 19 content. They are
-specifications and templates; the existing browser tool has not been extended
-to these fields, and the referenced images/videos have not been reviewed.
+The new offline review page supports all seven tables, all 88 numbered
+records, the restart table and source reference metadata. See the
+[Law 19 workflow](docs/LAW19_WORKFLOW.md) for validation, evidence-based draft
+checks and CSV export. Referenced image/video contents remain unreviewed.
+Enter the match's competition, law edition and trial applicability; the supplied
+World Rugby page does not establish a particular World Cup's regulations.
 
 ## Automate new scrum clips
 
 Use [the Mac automatic clipping workflow](docs/AUTOMATIC_CLIPPING.md) to find
 referee Crouch/Bind/Set candidates, confirm each actual scrum ending and camera
 view in a browser, and batch-export clips into `aerial/` and `side/`. Every clip
-starts 15 seconds before Crouch and runs through the reviewed end; there is no
+starts 15 seconds before Crouch and retains the reviewed end and any marked
+referee explanation; there is no
 fixed ten-second cutoff. Optional camera-model suggestions remain unverified.
 
 ## Download

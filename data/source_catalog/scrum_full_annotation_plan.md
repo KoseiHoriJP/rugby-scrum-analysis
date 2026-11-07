@@ -156,5 +156,8 @@ verdict. Edited examples may not contain the 15-second lead-in, referee calls,
 full scrum ending or post-decision explanation. Reference and match footage
 from the same original game must be checked for duplicate/split leakage.
 
-This specification and its blank templates do not alter the existing pilot's
-labels or implement these fields in the current annotation application.
+The existing pilot labels remain unchanged. The separate v2 runtime now
+implements these seven tables in `law_annotations.py` and the offline full-law
+review page. See [the runtime workflow](../../docs/LAW19_WORKFLOW.md).
+Automatic suggestions cover a small evidence-supported subset; full source
+coverage in the annotation form is not full automatic infringement detection.

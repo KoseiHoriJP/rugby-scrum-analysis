@@ -46,7 +46,7 @@
       "not_observable",
       "not_applicable"
     ],
-    "rule_assessment_definition": "A reviewed comparison with the source requirement under the applicable ruleset, not a finding of referee fault or automatic guilt. Status may be stored as rule_assessments.requirement_status.",
+    "rule_assessment_definition": "A reviewed comparison with the source requirement under the applicable ruleset, not a finding of referee fault or automatic guilt. Status may be stored as rule_assessments.assessment_status.",
     "status_semantics": {
       "unreviewed": "No assessment has been made.",
       "satisfied": "Relevant observable evidence supports compliance with the applicable requirement.",
